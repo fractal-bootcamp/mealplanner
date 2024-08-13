@@ -5,12 +5,12 @@ import {
   UserButton,
 } from "@clerk/clerk-react";
 import React from "react";
-import RecipeCreator from "./components/pages/RecipeCreator";
+import Front from "../src/components/pages/Front";
 
 export default function App() {
   return (
     <>
-      <header>
+      <header className="text-white">
         <SignedOut>
           <SignInButton />
         </SignedOut>
@@ -19,8 +19,7 @@ export default function App() {
         </SignedIn>
       </header>
       <div>
-        <h1>Home</h1>
-        <RecipeCreator />
+        <Front />
       </div>
     </>
   );

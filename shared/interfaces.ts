@@ -3,35 +3,26 @@ import { object } from "prop-types";
 export interface Recipe {
     name: string;
     URL?: string;
-    instructions: Step[];
+    instructions: string[];
     notes: string;
-    RecipeIngredients: object[];
-}
-
-export interface Step {
-    content: string;
-    ingredients: Ingredient[];
+    RecipeIngredients: Ingredient[];
 }
 
 
 export interface Ingredient {
     name: string;
     category: Category;
-    amount: number;
-    notes: string;
-
+    // notes: string;
 }
 
 export interface Category {
     name: 'Fruit' | 'Vegetable' | 'Meat' | 'Dairy' | 'Grain' | 'Spice' | 'Herb' | 'Fats and Oils';
-    description: string;
 }
 
 export interface RecipeIngredient {
-
     ingredient: Ingredient;
+    notes: string;
     amount: number;
-    preparation: string;
 }
 
 export interface Recipes {
