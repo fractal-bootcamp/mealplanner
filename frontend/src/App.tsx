@@ -4,6 +4,8 @@ import {
   SignInButton,
   UserButton,
 } from "@clerk/clerk-react";
+import React from "react";
+import RecipeCreator from "./components/pages/RecipeCreator";
 
 export default function App() {
   return (
@@ -18,6 +20,7 @@ export default function App() {
       </header>
       <div>
         <h1>Home</h1>
+        <RecipeCreator />
       </div>
     </>
   );
