@@ -13,6 +13,7 @@ export interface Step {
     ingredients: Ingredient[];
 }
 
+
 export interface Ingredient {
     name: string;
     category: Category;
@@ -35,4 +36,8 @@ export interface RecipeIngredient {
 
 export interface Recipes {
     recipes: Recipe[];
+}
+
+export interface ShoppingList {
+    ingredients: Ingredient[];
 }
