@@ -15,9 +15,7 @@ export interface Ingredient {
     // notes: string;
 }
 
-export interface Category {
-    name: 'Fruit' | 'Vegetable' | 'Meat' | 'Dairy' | 'Grain' | 'Spice' | 'Herb' | 'Fats and Oils';
-}
+export type Category = 'Fruit' | 'Vegetable' | 'Meat' | 'Fish' | 'Dairy' | 'Grain' | 'Spice' | 'Herb' | 'Fats and Oils' | 'Eggs' | 'Flour' | 'Sugar' | 'Liquid' | 'Other';
 
 export interface RecipeIngredient {
     ingredient: Ingredient;

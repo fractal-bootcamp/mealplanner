@@ -23,7 +23,9 @@ const Front = () => {
           <button onClick={() => handleViewChange("shopping")}>Shopping</button>
         </h2>
         <div className="p-6 font-gothic">
-          <h2 className="text-4xl">Meal Planner</h2>
+          <h2 className="text-6xl font-bold border-4 border-gold bg-black text-white p-4 mx-auto inline-block">
+            Meal Planner
+          </h2>
           <h3 className="text-xl w-96 max-w-96">- For all of Us,</h3>
           <h3 className="text-xl w-96 max-w-96">
             the unsubscribed to Manna from Heaven™
