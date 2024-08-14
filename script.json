@@ -1,0 +1,2155 @@
+{
+    "146Kelk75iwxKQ2hBjI5": {
+        "Button2": "http://www.matterbio.com/",
+        "description": "Matter Bio is a longevity holding company focused on preserving genome integrity As we age, our genome is constantly being damaged by exogenous and endogenous sources.",
+        "dateCreated": "2024-08-12T16:42:27.891Z",
+        "lon": -74.00528469999999,
+        "display": "profile",
+        "sticker": "emoji/1f3e0",
+        "address": "180 Varick St, New York, NY 10014, USA",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi16c43ae8607b.jpeg?alt=media&token=98e08c9e-cf54-4a7c-929a-8ce1597786c1"
+        ],
+        "link": "https://maps.google.com/?q=180+Varick+St,+New+York,+NY+10014,+USA&ftid=0x89c259729b5b73a7:0x5e061d3bd1855460",
+        "ne": {
+            "lat": 40.72889468029149,
+            "lon": -74.00403661970849
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sw": {
+            "lon": -74.0067345802915,
+            "lat": 40.72619671970849
+        },
+        "t": "Matter Bio",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lat": 40.7275364
+    },
+    "1qHZILgkXkjzAUg8rhWC": {
+        "address": "300 Kent Ave, Brooklyn, NY 11249",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJx-2pR-FZwokRKTfdmEpNjos",
+        "ne": {
+            "lat": 40.71614608029149,
+            "lon": -73.9661860197085
+        },
+        "lon": -73.9674181,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button1": "https://whop.com/careers/?a_nav_type=careers&a_nav_location=footer",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi3d97d5bcdb4d3.png?alt=media&token=89a435d0-a58e-4981-91f1-cf3eaa06eb17"
+        ],
+        "description": "One-stop-shop for all the latest and greatest digital products to help you earn online.",
+        "sticker": "achgbjx6vLYr9QPXgckN",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "Button2": "https://www.whop.com",
+        "dateCreated": "2024-07-21T03:16:53.011Z",
+        "display": "profile",
+        "lat": 40.7147639,
+        "sw": {
+            "lon": -73.96888398029151,
+            "lat": 40.7134481197085
+        },
+        "t": "Whop"
+    },
+    "2G8VoUE2IoemK0bQ5wZV": {
+        "lon": -73.9882873,
+        "ne": {
+            "lon": -73.98693831970849,
+            "lat": 40.7360004802915
+        },
+        "address": "E 15th St & Irving Pl, New York, NY 10003, USA",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "dateCreated": "2024-08-08T03:00:20.379Z",
+        "lat": 40.7346515,
+        "sticker": "emoji/1f6e3",
+        "sw": {
+            "lon": -73.98963628029149,
+            "lat": 40.7333025197085
+        },
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "description": "Supademo helps teams demonstrate products more effectively with beautiful AI-powered interactive demos.",
+        "link": "https://maps.google.com/?q=East+15th+Street+%26+Irving+Place&ftid=0x89c2599f37111a53:0xc525f0f56159b95c",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fidf12715c3a2d3.jpeg?alt=media&token=064c95ea-f42a-4653-9603-5a842e330389"
+        ],
+        "t": "Supademo",
+        "Button2": "https://supademo.com/"
+    },
+    "35BNAQVvDX20q39mS53V": {
+        "dateCreated": "2024-08-08T14:52:11.447Z",
+        "address": "1216 Broadway, New York, NY 10001, USA",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "link": "https://maps.google.com/?q=1216+Broadway,+New+York,+NY+10001,+USA&ftid=0x89c259a8a4a4ad81:0x4b957310e5fe3d0a",
+        "t": "Isometrics",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lon": -73.9882599,
+        "ne": {
+            "lon": -73.9870379697085,
+            "lat": 40.7479663802915
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi400f3db8dca79.jpeg?alt=media&token=9fcc7e57-71cd-4b7c-81bc-1d8a6fd5cefc"
+        ],
+        "Button2": "http://isometric.com/",
+        "lat": 40.7466005,
+        "description": "High quality carbon credits, backed by science. Isometric is a carbon removal standard and registry.",
+        "display": "profile",
+        "sw": {
+            "lat": 40.7452684197085,
+            "lon": -73.9897359302915
+        },
+        "sticker": "emoji/1f3e0"
+    },
+    "3qtlRj6I4gH8vBRbRHbS": {
+        "Button2": "https://www.adonis.io/",
+        "lon": -74.0116941,
+        "dateCreated": "2024-08-07T19:44:10.465Z",
+        "link": "https://maps.google.com/?cid=15683830653915088287",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lat": 40.71099689999999,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fic1dd36ca1510c.jpeg?alt=media&token=6b55dd76-69f2-4bf8-a4e8-10e9b5f335ca"
+        ],
+        "description": "AI-driven alerts and recommendations, actionable insights, billing automations, and more to save time, mitigate denials, and drive speed-to-cash. Purpose-built for healthcare.",
+        "t": "Adonis",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sticker": "emoji/1f4bc",
+        "address": "Three World Trade Center, 175 Greenwich St 50th Floor, New York, NY 10007, USA",
+        "ne": {
+            "lat": 40.71241293029149,
+            "lon": -74.0106645697085
+        },
+        "display": "profile",
+        "sw": {
+            "lat": 40.70971496970849,
+            "lon": -74.0133625302915
+        },
+        "Button1": "https://www.adonis.io/careers"
+    },
+    "4W5bY4RG73JlxmkwDTcD": {
+        "Button1": "https://jobs.polymer.co/posh",
+        "description": "Scale your brand with experiences.",
+        "ne": {
+            "lon": -73.99815526970849,
+            "lat": 40.7223761802915
+        },
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "display": "profile",
+        "address": "36 Crosby St, New York, NY 10013",
+        "sticker": "emoji/1f3e2",
+        "t": "POSH",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJ3XY1cIlZwokRsJwp_LK3yeA",
+        "sw": {
+            "lon": -74.0008532302915,
+            "lat": 40.7196782197085
+        },
+        "lat": 40.7210727,
+        "lon": -73.9995975,
+        "Button2": "https://www.posh.vip",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Ficf82c4f3629bd.png?alt=media&token=30953068-bf30-4a87-83f7-fbacc973bcbb"
+        ],
+        "dateCreated": "2024-07-21T03:17:18.890Z"
+    },
+    "4v0etDAU5B59yhZUVm0z": {
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJ8-JRXoxZwokRGPiQ9Ek0L84",
+        "dateCreated": "2024-07-21T03:17:23.245Z",
+        "Button1": "",
+        "ne": {
+            "lon": -73.9958967,
+            "lat": 40.7283442
+        },
+        "display": "profile",
+        "sw": {
+            "lat": 40.7189454,
+            "lon": -74.0054619
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "t": "Verse",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi0b25e06bd3419.jpg?alt=media&token=37387b9b-f4df-4c74-aa42-2effe44dda8c"
+        ],
+        "sticker": "emoji/1f3e2",
+        "lat": 40.7245908,
+        "description": "Make visual blogs as espressive as you are",
+        "address": "Soho, NY",
+        "Button2": "https://www.verse.surf",
+        "lon": -74.00191740000001,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2"
+    },
+    "4yTdDO3gGyEsIJO8PKLW": {
+        "t": "Air",
+        "description": "Manage your creative assets and creative process in one place.",
+        "lat": 40.7022967,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi8a2a6e2cf3813.png?alt=media&token=b0046a02-be41-41a8-9d07-f960c9caae54"
+        ],
+        "sticker": "emoji/1f3db",
+        "sw": {
+            "lat": 40.7009477197085,
+            "lon": -73.98419178029151
+        },
+        "address": "194-238 Front St, Brooklyn, NY 11201",
+        "Button2": "https://www.air.inc",
+        "dateCreated": "2024-07-21T03:17:20.008Z",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "display": "profile",
+        "Button1": "https://apply.workable.com/air/",
+        "ne": {
+            "lon": -73.9814938197085,
+            "lat": 40.7036456802915
+        },
+        "lon": -73.9828428,
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJs2ZhPeFbwokRDWH5rQnXXA0",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2"
+    },
+    "5KcFYX0H2VaSFFcTWb8A": {
+        "display": "profile",
+        "t": "Mighty",
+        "lat": 40.7531841,
+        "lon": -73.9874368,
+        "dateCreated": "2024-07-21T03:17:39.291Z",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJnRjKm6tZwokRge1J396OZig",
+        "Button2": "https://www.growwithmighty.com",
+        "description": "Acquire more power users at a fraction of the cost.",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "Button1": "",
+        "address": "Manhattan, NY",
+        "sticker": "emoji/1f3e2",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi1dc254355b48f.png?alt=media&token=9d34ce95-7a40-40d3-9dc9-64fd378705d4"
+        ],
+        "sw": {
+            "lat": 40.7517727697085,
+            "lon": -73.9887112302915
+        },
+        "ne": {
+            "lon": -73.9860132697085,
+            "lat": 40.7544707302915
+        }
+    },
+    "5oOg8dSFkcABBbPFXsU9": {
+        "sticker": "emoji/1f3e0",
+        "ne": {
+            "lat": 40.67030673029149,
+            "lon": -73.99114606970849
+        },
+        "lat": 40.66906799999999,
+        "display": "profile",
+        "Button2": "https://outropy.ai/",
+        "t": "Outropy",
+        "dateCreated": "2024-08-07T18:21:17.241Z",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "link": "https://maps.google.com/?q=157+13th+St,+Brooklyn,+NY+11215,+USA&ftid=0x89c25afaee6dae4d:0x23efe1e6a4adfdcd",
+        "lon": -73.992402,
+        "description": "Build production-ready AI agents and features using cutting-edge models and techniques via a simple developer-friendly API. No AI expertise required.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "157 13th St, Brooklyn, NY 11215, USA",
+        "sw": {
+            "lat": 40.66760876970849,
+            "lon": -73.9938440302915
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi9bf485f36fbf1.jpeg?alt=media&token=cb85b872-f95e-4467-b3c1-8ab6f7195298"
+        ]
+    },
+    "6487HxkOi8b9IXMSECXJ": {
+        "dateCreated": "2024-07-21T03:16:46.873Z",
+        "sw": {
+            "lon": -73.9845341802915,
+            "lat": 40.7458625197085
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lat": 40.7471509,
+        "Button2": "https://www.joinwarp.com",
+        "lon": -73.98304379999999,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fiad458f134bb64.png?alt=media&token=2d1a327c-e0e1-47a2-bd9a-67eba1c7481b"
+        ],
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "display": "profile",
+        "description": "Payroll and compliance for startups.",
+        "Button1": "",
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "ne": {
+            "lat": 40.7485604802915,
+            "lon": -73.9818362197085
+        },
+        "t": "Warp",
+        "address": "169 Madison Ave, #2298, New York City, NY 10016",
+        "link": "https://www.google.com/maps/place/?q=place_id:Ei4xNjkgTWFkaXNvbiBBdmUgIzIyOTgsIE5ldyBZb3JrLCBOWSAxMDAxNiwgVVNBIiAaHgoWChQKEgmtJhcoqFnCiRGA-9OXRi2t0xIEMjI5OA"
+    },
+    "6P3tEO1zwA5vO8rfddRr": {
+        "link": "https://maps.google.com/?q=22+W+27th+St,+New+York,+NY+10001,+USA&ftid=0x89c259a5c369f857:0x2b1b27835b369345",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "address": "22 W 27th St, New York, NY 10001, USA",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "dateCreated": "2024-08-12T16:49:01.775Z",
+        "sw": {
+            "lon": -73.99095593029149,
+            "lat": 40.74338341970851
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi919c9084bfc8b.jpeg?alt=media&token=4c1e34f0-691b-4dd1-b98e-495b2083265f"
+        ],
+        "Button2": "https://www.numeric.io/",
+        "Button1": "https://numeric.notion.site/Careers-at-Numeric-96c038cca2124fbb8d85cfe092c0f77c",
+        "sticker": "emoji/1f3e0",
+        "ne": {
+            "lat": 40.7460813802915,
+            "lon": -73.98825796970849
+        },
+        "display": "profile",
+        "t": "Numeric",
+        "lon": -73.9896746,
+        "lat": 40.7446405,
+        "description": "We are a financial close management platform. We raised a round from Founders Fund and Menlo recently and are hiring across the board."
+    },
+    "6h5t9MNpuH4ZKKtptW82": {
+        "t": "July",
+        "sw": {
+            "lon": -74.0027742802915,
+            "lat": 40.71823141970849
+        },
+        "lat": 40.7195400087341,
+        "dateCreated": "2024-07-21T03:16:45.574Z",
+        "ne": {
+            "lat": 40.72092938029149,
+            "lon": -74.00007631970848
+        },
+        "lon": -74.00161001563663,
+        "description": "All-in-one platform for managers and agencies to run their businesses.",
+        "display": "profile",
+        "Button2": "https://www.withjuly.com",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "Button1": "",
+        "sticker": "emoji/1f3db",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "r": 3.8528745596772955,
+        "address": "424 Broadway, New York New York, 10013",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJkerUPIpZwokR7ZhXK8_fyCo",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi2a409b9c4540f.png?alt=media&token=c2ada9d3-a0ff-4d59-81cd-807f5a8b0b79"
+        ]
+    },
+    "76p8rvZH2uR6MYwpUqOI": {
+        "Button2": "https://www.versemedical.com",
+        "description": "Software platform for in-home healthcare.",
+        "lat": 40.74618,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "158 W 27th St Floor 10, New York, NY 10001",
+        "dateCreated": "2024-07-21T03:17:45.376Z",
+        "display": "profile",
+        "sw": {
+            "lon": -73.99461628029151,
+            "lat": 40.74492566970849
+        },
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJI2OfmxBZwokRT5Ya3O571uU",
+        "t": "Verse Medical",
+        "ne": {
+            "lon": -73.99191831970849,
+            "lat": 40.74762363029149
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lon": -73.993336,
+        "Button1": "https://jobs.lever.co/verse-medical",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi294c7f4ee4888.png?alt=media&token=5afd46a6-f673-4d27-8061-ec01d0d638f8"
+        ],
+        "sticker": "emoji/1f3e2"
+    },
+    "77Nh2EpRSaD7qUgzHJh5": {
+        "dateCreated": "2024-07-21T03:17:27.941Z",
+        "lat": 40.7274061,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lon": -74.00605,
+        "link": "",
+        "description": "Invest in the best venture-backed startups together.",
+        "Button1": "https://wellfound.com/company/pin1",
+        "hideT": false,
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi810bcac1acca4.jpeg?alt=media&token=e030f596-3e29-4d2d-aff5-255978449b6f"
+        ],
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sw": {
+            "lon": -74.0072364802915,
+            "lat": 40.7260807697085
+        },
+        "sticker": "tEPunT4wbwxOljnDqdNZ",
+        "address": "175 Varick Street; New York, NY 10014",
+        "t": "PIN",
+        "ne": {
+            "lon": -74.00453851970848,
+            "lat": 40.72877873029149
+        },
+        "Button2": "https://www.getpin.xyz"
+    },
+    "80uaabvW9dGOxgbqbI7p": {
+        "link": "https://maps.google.com/?q=20+W+22nd+St,+New+York,+NY+10010,+USA&ftid=0x89c259a3810c8673:0xa3644d0b83329867",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "20 W 22nd St, New York, NY 10010, USA",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "t": "Basis",
+        "sw": {
+            "lat": 40.74006171970851,
+            "lon": -73.9927841302915
+        },
+        "lon": -73.9914628,
+        "display": "profile",
+        "description": "AI platform for Accounting Firms",
+        "Button2": "https://www.getbasis.ai/",
+        "dateCreated": "2024-08-12T17:02:31.383Z",
+        "ne": {
+            "lon": -73.99008616970848,
+            "lat": 40.74275968029151
+        },
+        "sticker": "emoji/1f3e0",
+        "lat": 40.7413727,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fica14378416b13.jpeg?alt=media&token=2325a5a6-a5df-499a-bf5d-57a51bd910cc"
+        ]
+    },
+    "93gXU8qSOrWW7hlVTkvj": {
+        "t": "Vantage",
+        "sticker": "emoji/1f3e0",
+        "address": "176 Grand St, New York, NY 10013, USA",
+        "link": "https://maps.google.com/?q=176+Grand+St,+New+York,+NY+10013,+USA&ftid=0x89c25988532a325b:0xc97833355b0d15e",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sw": {
+            "lat": 40.71820646970849,
+            "lon": -73.9991405802915
+        },
+        "Button1": "",
+        "display": "profile",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lon": -73.9977727,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi3a34bd842087.jpeg?alt=media&token=4040f208-8ac3-4f48-b17b-28b8a35d394a"
+        ],
+        "dateCreated": "2024-08-08T14:49:45.541Z",
+        "ne": {
+            "lat": 40.72090443029149,
+            "lon": -73.99644261970849
+        },
+        "description": "Vantage is a cloud cost observability platform with more than a dozen native integrations, including AWS, Azure, GCP, Kubernetes, Datadog, Snowflake, Databricks and more. ",
+        "Button2": "https://console.vantage.sh/signup",
+        "lat": 40.71958809999999
+    },
+    "99suMKfn6tVXemB0TUpU": {
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fif03dee2e60f82.jpeg?alt=media&token=3d191936-b611-47ae-9d9c-643d233b7732"
+        ],
+        "dateCreated": "2024-08-07T19:40:21.668Z",
+        "Button2": "https://askchapter.org",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sw": {
+            "lon": -74.0023128802915,
+            "lat": 40.7263419197085
+        },
+        "ne": {
+            "lon": -73.99961491970848,
+            "lat": 40.7290398802915
+        },
+        "description": "Technology-driven Medicare advisor improving how seniors choose health coverage",
+        "lon": -74.0008623,
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "lat": 40.7277906,
+        "address": "116 W Houston St, New York, NY 10012, USA",
+        "link": "https://maps.google.com/?q=116+W+Houston+St,+New+York,+NY+10012,+USA&ftid=0x89c2598dfeed9525:0xffe4abf2b85c2d6d",
+        "display": "profile",
+        "t": "Chapter"
+    },
+    "9EaZpZitnDNyBRbEmNsE": {
+        "address": "524 Broadway, New York, NY 10012, USA",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lat": 40.72279789999999,
+        "sw": {
+            "lon": -74.0002255302915,
+            "lat": 40.72148656970849
+        },
+        "lon": -73.99879899999999,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "display": "profile",
+        "sticker": "emoji/1f3e0",
+        "description": "At Trunk Tools, we are tackling the massive $13 trillion+ construction industry. We’re an exceptional team of serial entrepreneurs, brought together by our shared mission: automating construction",
+        "ne": {
+            "lat": 40.72418453029149,
+            "lon": -73.9975275697085
+        },
+        "t": "Trunk Tools",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fibe9992502d58f.jpeg?alt=media&token=967ba797-a67e-41a3-9fb6-7d5a79579fc5"
+        ],
+        "Button2": "trunk.tools",
+        "Button1": "https://trunktools.com/careers/ ",
+        "link": "https://maps.google.com/?q=524+Broadway,+New+York,+NY+10012,+USA&ftid=0x89c2598a05a5d657:0x9d6b6dadfd468821",
+        "dateCreated": "2024-08-08T02:55:05.586Z"
+    },
+    "9XrmxmGnNLp4hLHCKtaI": {
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi2567be224f5b.png?alt=media&token=a4a0ace9-0cef-4776-a665-858aa2b62e21"
+        ],
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJKTzZiaFZwokRqdfKKZ8JAAM",
+        "t": "SmartPass",
+        "ne": {
+            "lat": 40.73907528029151,
+            "lon": -73.98698966970849
+        },
+        "lat": 40.73744595632675,
+        "Button2": "https://www.smartpass.app",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "r": -3.3498383708936266,
+        "sw": {
+            "lat": 40.73637731970851,
+            "lon": -73.9896876302915
+        },
+        "lon": -73.98863915298364,
+        "description": "The smart solution to hall passes.",
+        "address": "228 Park Ave S #92675. New York, NY 10003-1502.",
+        "dateCreated": "2024-07-21T03:17:07.267Z",
+        "Button1": "https://smartpass.notion.site/Careers-at-SmartPass-088f2d19b65747769938d842e2b79205",
+        "sticker": "emoji/1f3db",
+        "display": "profile"
+    },
+    "CJEO0H7CJyKr98d2fzuR": {
+        "t": "Kay.ai",
+        "sticker": "emoji/1f3de",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lon": -73.967851,
+        "Button2": "https://www.kay.ai/",
+        "sw": {
+            "lat": 40.7111898,
+            "lon": -73.96914839999998
+        },
+        "display": "profile",
+        "lat": 40.7148803,
+        "link": "https://maps.google.com/?cid=5218165484961928214",
+        "description": "AI agents for your repetitive back office workflows. Fine-tuned for financial tasks. Built for Enterprise.",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi3fc82d3deff55.png?alt=media&token=db51a025-e2f1-4fb1-aede-ae464a254842"
+        ],
+        "dateCreated": "2024-08-07T20:55:05.957Z",
+        "address": "15 River St, Brooklyn, NY 11249, USA",
+        "ne": {
+            "lat": 40.7180326,
+            "lon": -73.96585879999999
+        }
+    },
+    "CgHTeOwMAgSJKNAR9K7L": {
+        "lat": 40.75667809999999,
+        "t": "Atlas",
+        "display": "profile",
+        "address": "446 w 38th street",
+        "ne": {
+            "lon": -73.99527621970849,
+            "lat": 40.7579524302915
+        },
+        "Button2": "https://www.atlas.org",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fie562f43efdebb.png?alt=media&token=1b1727c8-3ae7-45dd-8ca7-6f5c05c0da55"
+        ],
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJm6rXzrJZwokRPFY-3e6B2wI",
+        "description": "Supercharge your GPA.",
+        "dateCreated": "2024-07-21T03:16:51.766Z",
+        "lon": -73.9965697,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sticker": "emoji/1f3e2",
+        "sw": {
+            "lat": 40.7552544697085,
+            "lon": -73.9979741802915
+        },
+        "Button1": ""
+    },
+    "CjqEjEsh752CjAviVBqu": {
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi2998a24a77c66.jpeg?alt=media&token=5dc21f9d-1c64-4a1b-a8b5-44669695083a"
+        ],
+        "address": "Centre St & Broome St, New York, NY 10013, USA",
+        "t": "CrowdPass",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sw": {
+            "lat": 40.7194828197085,
+            "lon": -73.9989960802915
+        },
+        "dateCreated": "2024-08-08T14:58:54.167Z",
+        "lon": -73.9976471,
+        "Button2": "https://www.crowdpass.co/",
+        "link": "https://maps.google.com/?q=Centre+Street+%26+Broome+Street&ftid=0x89c25988e2a374d9:0x89179936e102d637",
+        "sticker": "emoji/1f6e3",
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lat": 40.7208318,
+        "ne": {
+            "lat": 40.7221807802915,
+            "lon": -73.99629811970848
+        },
+        "description": "CrowdPass is the Future of Event Management Software."
+    },
+    "CsWDYGicJlAtjhxhofIk": {
+        "address": "Manhattan, NY",
+        "lon": -73.9931988,
+        "lat": 40.7531568,
+        "Button1": "",
+        "t": "Phia",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi6a5243991198a.png?alt=media&token=282cda83-bc2d-4115-a69f-3ee62d5913a8"
+        ],
+        "sticker": "emoji/1f3e2",
+        "description": "Future of fashion.",
+        "dateCreated": "2024-07-21T03:17:13.046Z",
+        "Button2": "https://www.phia.com",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJtYiXvq1ZwokRezeJdsezmoI",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "ne": {
+            "lat": 40.7544291802915,
+            "lon": -73.99184601970849
+        },
+        "display": "profile",
+        "sw": {
+            "lat": 40.7517312197085,
+            "lon": -73.9945439802915
+        }
+    },
+    "DY4Oq5z7hFliJHj6sLqh": {
+        "lat": 40.751331,
+        "description": "De-risk your venture",
+        "address": "Manhattan, NY",
+        "Button1": "",
+        "ne": {
+            "lon": -73.97180691970848,
+            "lat": 40.7525836302915
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "Button2": "https://usesparx.com/",
+        "sticker": "ljwPTVbi8LQSsB4lgYg9",
+        "lon": -73.97308459999999,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi3670b4e51fac2.png?alt=media&token=c42e22c6-5f3e-4766-ad9b-be90851ee621"
+        ],
+        "dateCreated": "2024-07-21T03:17:33.254Z",
+        "display": "profile",
+        "t": "Sparx",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sw": {
+            "lon": -73.97450488029149,
+            "lat": 40.7498856697085
+        },
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJnaSA5LBZwokR6GOEJFoNlyU"
+    },
+    "Dq2ukjlt7TSokCzRxJMx": {
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "dateCreated": "2024-07-21T03:17:47.663Z",
+        "ne": {
+            "lon": -73.99205071970849,
+            "lat": 40.7443775302915
+        },
+        "address": "Manhattan, NY",
+        "display": "profile",
+        "link": "https://www.honeydewcare.com",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fic73cb71e90517.jpg?alt=media&token=2ade04de-dded-49ea-9451-93054e9a1d95"
+        ],
+        "Button1": "",
+        "sw": {
+            "lon": -73.9947486802915,
+            "lat": 40.7416795697085
+        },
+        "sticker": "emoji/1f3e2",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "description": "Skincare that actually works, personalized for you.",
+        "t": "Honeydew",
+        "lat": 40.7429296,
+        "lon": -73.9934727
+    },
+    "Er0PItTRuf1Kgxv60Uyn": {
+        "sw": {
+            "lon": -73.9567837302915,
+            "lat": 40.7162758197085
+        },
+        "dateCreated": "2024-07-21T03:17:10.589Z",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJCSF8lBZEwokRhngABHRcdoI",
+        "lat": 40.7176234,
+        "Button2": "https://www.spacebar.fm",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lon": -73.95541759999999,
+        "r": 362.8173275032001,
+        "Button1": "",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi0c973ab0dce11.png?alt=media&token=c5fe26d6-0032-4cbd-821f-c6ecc190d380"
+        ],
+        "t": "Spacebar",
+        "ne": {
+            "lat": 40.7189737802915,
+            "lon": -73.9540857697085
+        },
+        "sticker": "emoji/1f3db",
+        "address": "199 north 8th street in brooklyn",
+        "display": "profile",
+        "description": "A conversational memory app."
+    },
+    "FWTsaK2McI1Kby5vP5lH": {
+        "t": "Hightouch",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lon": -73.9918484,
+        "Button1": "https://hightouch.com/careers",
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi3dbfd7c363acf.jpeg?alt=media&token=0b4de3b1-9f0f-4e58-a3a8-9fa5c6597688"
+        ],
+        "lat": 40.7455314,
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "address": "112 W 27th St, New York, NY 10001, USA",
+        "dateCreated": "2024-08-08T02:28:55.813Z",
+        "link": "https://maps.google.com/?q=112+W+27th+St,+New+York,+NY+10001,+USA&ftid=0x89c259a576000d87:0x718b269404fa0938",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sw": {
+            "lat": 40.7442946697085,
+            "lon": -73.99314823029151
+        },
+        "Button2": "https://hightouch.com/",
+        "description": "Get your customer data in all of your tools — fast.",
+        "ne": {
+            "lon": -73.99045026970849,
+            "lat": 40.7469926302915
+        }
+    },
+    "GHeJ34FcPLiwGueaQiJu": {
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button1": "https://kiki.club/hiring",
+        "t": "Kiki NYC",
+        "Button2": "https://www.kiki.club",
+        "lon": -73.9918591,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "address": "130 Division St, New York, NY 10002, USA",
+        "sticker": "zW4IMtnfST6RSjuOZRsN",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi66ebbe337eaa6.png?alt=media&token=5e602d56-b686-4e8d-a190-af69e19aab43"
+        ],
+        "ne": {
+            "lon": -73.9905023197085,
+            "lat": 40.7158496302915
+        },
+        "dateCreated": "2024-07-21T03:17:01.860Z",
+        "sw": {
+            "lon": -73.9932002802915,
+            "lat": 40.7131516697085
+        },
+        "lat": 40.7145497,
+        "display": "profile",
+        "description": "NYC invite-only subletting club.",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJD-1a9ChawokRnTSi_Et62x4"
+    },
+    "GKdHicJWYvjy7hN5b95h": {
+        "sticker": "nOMbDQhrSv3kosAKd0jh",
+        "lat": 40.7246523,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi868b99fbd917f.png?alt=media&token=950a406a-90e5-428b-b62c-c245b1cd910c"
+        ],
+        "Button2": "https://www.brex.com",
+        "dateCreated": "2024-07-21T03:17:03.739Z",
+        "description": "The AI-powered spend platform.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button1": "https://www.brex.com/careers",
+        "ne": {
+            "lat": 40.7260356302915,
+            "lon": -73.99593656970849
+        },
+        "t": "Brex",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJg9JFD49ZwokRjglwa6oGbUI",
+        "sw": {
+            "lat": 40.7233376697085,
+            "lon": -73.9986345302915
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "display": "profile",
+        "address": "584 Broadway (at E Houston St)\nNew York, NY 10012",
+        "lon": -73.9972098
+    },
+    "GvCHGzKSDXp6CWXXiRlP": {
+        "address": "470 Park Ave S, New York, NY 10016, USA",
+        "dateCreated": "2024-08-07T19:49:08.561Z",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lat": 40.7456757,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fid57ad4f7553e.jpeg?alt=media&token=941151ff-cab4-47b8-8a81-33a33d83917f"
+        ],
+        "sw": {
+            "lat": 40.7442219197085,
+            "lon": -73.98399688029151
+        },
+        "lon": -73.9826914,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "display": "profile",
+        "t": "Gecko",
+        "Button1": "https://www.geckorobotics.com/careers",
+        "ne": {
+            "lat": 40.7469198802915,
+            "lon": -73.98129891970851
+        },
+        "Button2": "https://www.geckorobotics.com/",
+        "description": "Gecko transforms how the world builds, operates, and maintains its most critical infrastructure for a more reliable and sustainable future for all. ",
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "link": "https://maps.google.com/?q=470+Park+Ave+S,+New+York,+NY+10016,+USA&ftid=0x89c25907f91d25f9:0x730d483ecdfbbfad"
+    },
+    "HJpuv7pvxUJMWaHfB27i": {
+        "sw": {
+            "lat": 40.7216495697085,
+            "lon": -74.00017708029151
+        },
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "dateCreated": "2024-08-08T14:47:09.118Z",
+        "Button2": "https://www.trainwithkickoff.com/",
+        "lat": 40.723215862560664,
+        "sticker": "emoji/1f3ec",
+        "lon": -73.99885210600053,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "ne": {
+            "lon": -73.99747911970849,
+            "lat": 40.7243475302915
+        },
+        "t": "Kickoff",
+        "display": "profile",
+        "Button1": "https://jobs.lever.co/Kickoff",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi3ef07087b6b64.jpeg?alt=media&token=8f237dd1-9f69-4891-a45f-0993e3630174"
+        ],
+        "address": "Broadway &, Spring St, New York, NY 10012, USA",
+        "link": "https://maps.google.com/?cid=13805320636221419515",
+        "r": 8.74620480625573,
+        "description": "We're looking for folks who are excited to build the best exercise and nutrition tech in the world. Open roles in BizOps, Growth, and Full Stack Software Engineering! "
+    },
+    "Hx9hLOV1lXlO14WCvydC": {
+        "lat": 40.7409275,
+        "sw": {
+            "lat": 40.7394873697085,
+            "lon": -73.9984002802915
+        },
+        "Button2": "https://www.gynger.io",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJVVWZ8rxZwokRCTJKSC5plAQ",
+        "address": "157 W 18th Street, 5th Floor, New York, NY 10011",
+        "sticker": "emoji/1f3e2",
+        "dateCreated": "2024-07-21T03:17:35.179Z",
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi45936f2a17904.png?alt=media&token=bf0dad08-aa3d-40ae-84ff-4454ee6dabed"
+        ],
+        "lon": -73.996983,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "Button1": "https://jobs.lever.co/gynger",
+        "description": "The first AI-powered payments platform with embedded financing.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "ne": {
+            "lat": 40.7421853302915,
+            "lon": -73.9957023197085
+        },
+        "t": "Gynger"
+    },
+    "IWECLzgNKiFafZogWXcC": {
+        "dateCreated": "2024-07-21T03:17:02.860Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button1": "https://www.joinswsh.com/careers",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJW2pKVaJZwokR1NyxT_kGsOY",
+        "description": "A social app for your friends, not followers.",
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi80a84b8b7274e.png?alt=media&token=9bb2f71f-3e57-419c-aec7-a37721e0a7f7"
+        ],
+        "ne": {
+            "lon": -73.9833605,
+            "lat": 40.7448022
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sticker": "emoji/1f3db",
+        "t": "swsh",
+        "address": "Flatiron District, NYC",
+        "lat": 40.740083,
+        "lon": -73.9903489,
+        "sw": {
+            "lat": 40.7383561,
+            "lon": -73.9941752
+        },
+        "Button2": "https://www.joinswsh.com"
+    },
+    "Iw4dx326cHurVnCI8Pfl": {
+        "lat": 40.708196,
+        "Button2": "https://www.withmoment.com/",
+        "Button1": "https://job-boards.greenhouse.io/momentmarkets/jobs/4022338007",
+        "t": "Moment",
+        "display": "profile",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "ne": {
+            "lat": 40.7094165302915,
+            "lon": -74.01206111970849
+        },
+        "sticker": "emoji/1f3e0",
+        "address": "101 Greenwich St, New York, NY 10006, USA",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fia816dd4da4057.jpeg?alt=media&token=4000e352-1349-4de7-93a3-fbbb484b8a93"
+        ],
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "dateCreated": "2024-08-07T20:52:28.588Z",
+        "sw": {
+            "lon": -74.0147590802915,
+            "lat": 40.7067185697085
+        },
+        "lon": -74.013346,
+        "description": "Fixed income infrastrucuture for modern firms",
+        "link": "https://maps.google.com/?q=101+Greenwich+St,+New+York,+NY+10006,+USA&ftid=0x89c25a10c4474da3:0xfa6b876895319247"
+    },
+    "IySrsamakBG29FNfhT22": {
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "r": -13.041831655776779,
+        "Button1": "https://jobs.ashbyhq.com/partiful",
+        "sticker": "emoji/1f3db",
+        "lon": -73.98218279999999,
+        "dateCreated": "2024-07-21T03:17:17.348Z",
+        "t": "Partiful",
+        "ne": {
+            "lon": -73.98085206970849,
+            "lat": 40.6940946802915
+        },
+        "Button2": "https://www.partiful.com",
+        "sw": {
+            "lon": -73.9835500302915,
+            "lat": 40.6913967197085
+        },
+        "lat": 40.6928195,
+        "address": " 147 Prince Street, Brooklyn.",
+        "display": "profile",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi9aebb24226f9c.png?alt=media&token=dcdce1b0-0f67-4847-92d2-964082f401e4"
+        ],
+        "description": "The easiest way to plan social events.",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJ_yxD2rRbwokRieR6lxWrFMw"
+    },
+    "J49imThUXAFlXtaU8bKR": {
+        "display": "profile",
+        "lat": 40.7034876,
+        "ne": {
+            "lat": 40.7047397302915,
+            "lon": -73.9902700197085
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fie19943596bc55.jpeg?alt=media&token=ec9c729c-bddd-4648-91a0-c81efc49630c"
+        ],
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sw": {
+            "lat": 40.7020417697085,
+            "lon": -73.99296798029151
+        },
+        "sticker": "emoji/1f3e0",
+        "link": "https://maps.google.com/?q=55+Water+St,+Brooklyn,+NY+11201,+USA&ftid=0x89c25a311f7492f7:0x8d249e796c27f2b3",
+        "dateCreated": "2024-08-07T18:49:29.988Z",
+        "Button2": "https://www.useparallel.com/",
+        "t": "Parallel",
+        "description": "Match & message with top startups.",
+        "address": "55 Water St, Brooklyn, NY 11201, USA",
+        "Button1": "https://www.useparallel.com/particle/careers",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lon": -73.9916178
+    },
+    "K5cvlHXk8VAGcMtQbmoh": {
+        "lon": -73.98790830217332,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lat": 40.703800697494586,
+        "dateCreated": "2024-08-07T20:58:07.497Z",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fia1d4dc9194c1a.jpeg?alt=media&token=c1fbdae9-5fdd-46fc-a762-b32478cc0c7d"
+        ],
+        "Button1": "https://openbb.co/company/careers",
+        "t": "OpenBB",
+        "Button2": "https://openbb.co/",
+        "display": "profile",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "p": null,
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "description": "Investment research made easy with AI"
+    },
+    "KjLDo8jVoL4gQpNYyo4h": {
+        "lat": 40.7350302,
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJaZ_g65pZwokRRecwVPZF5pk",
+        "dateCreated": "2024-07-21T03:16:59.670Z",
+        "Button1": "",
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "r": -3.2587599478141343,
+        "address": "33 Irving Pl, New York, NY 10003",
+        "sticker": "emoji/1f3db",
+        "sw": {
+            "lat": 40.7336529197085,
+            "lon": -73.9894781302915
+        },
+        "description": "Create human-like AI voices in seconds.",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi928d274591ce3.png?alt=media&token=31510adb-6635-41ce-92fd-29f8f1b81f23"
+        ],
+        "t": "Deeptune",
+        "Button2": "https://www.deeptune.com",
+        "lon": -73.98819879999999,
+        "ne": {
+            "lat": 40.7363508802915,
+            "lon": -73.98678016970848
+        }
+    },
+    "LE8joiU9dfUpLNx9m4nz": {
+        "display": "profile",
+        "sw": {
+            "lon": -73.9941316302915,
+            "lat": 40.73736186970849
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "t": "Gainful",
+        "description": "Performance nutrition that unlocks your full potential.",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi16ebab1dd8022.png?alt=media&token=d0290323-6987-4e7a-a9be-a9b5a08d65ff"
+        ],
+        "lon": -73.99279969999999,
+        "sticker": "imwkNFNvx13TFAsmLWU6",
+        "Button1": "",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "ne": {
+            "lon": -73.99143366970848,
+            "lat": 40.74005983029149
+        },
+        "address": "6 West 18th Street, Suite10F, New York.",
+        "Button2": "https://www.gainful.com",
+        "dateCreated": "2024-07-21T03:17:29.469Z",
+        "link": "https://www.google.com/maps/place/?q=place_id:Eik2IFcgMTh0aCBTdCAjMTBiLCBOZXcgWW9yaywgTlkgMTAwMTEsIFVTQSIfGh0KFgoUChIJVQv_rKNZwokRupu5cnL0wpkSAzEwYg",
+        "lat": 40.7387046
+    },
+    "Mu7WEq5sAjX38pNPW1Ps": {
+        "dateCreated": "2024-08-07T20:53:44.717Z",
+        "sw": {
+            "lon": -73.9856844302915,
+            "lat": 40.6897536697085
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lon": -73.98428369999999,
+        "t": "Propel",
+        "link": "https://maps.google.com/?q=235+Duffield+St,+Brooklyn,+NY+11201,+USA&ftid=0x89c25a4b5f9ff2d7:0x4a4c5afea317b400",
+        "Button2": "https://www.joinpropel.com/",
+        "Button1": "https://job-boards.greenhouse.io/propel",
+        "ne": {
+            "lon": -73.9829864697085,
+            "lat": 40.6924516302915
+        },
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi9de6b381ecddb.jpeg?alt=media&token=35507151-cc16-4454-934d-dac54dfad97b"
+        ],
+        "address": "235 Duffield St, Brooklyn, NY 11201, USA",
+        "description": "We're a mobile app used by millions of Americans to manage their food stamp benefits and money",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lat": 40.6911009,
+        "sticker": "emoji/1f3e0"
+    },
+    "NAzD22r4yRppxRnQxRK0": {
+        "description": "Daily app that helps you track & understand how your hormones impact your life.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "228 Park Ave S, New York",
+        "sw": {
+            "lat": 40.73637731970851,
+            "lon": -73.9896876302915
+        },
+        "display": "profile",
+        "Button1": "https://aavia.io/pages/career",
+        "lat": 40.7377307,
+        "lon": -73.9884187,
+        "sticker": "emoji/1f3e2",
+        "dateCreated": "2024-07-21T03:17:15.389Z",
+        "Button2": "https://www.aavia.io",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJKTzZiaFZwokRqdfKKZ8JAAM",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "ne": {
+            "lon": -73.98698966970849,
+            "lat": 40.73907528029151
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi4f2910aa3535c.jpg?alt=media&token=c3967b6a-fc39-4565-a033-76f4c6225751"
+        ],
+        "t": "Aavia"
+    },
+    "Oxt5EZjuZESh9xKf5p4v": {
+        "Button1": "https://valon.com/careers/",
+        "link": "https://maps.google.com/?q=Union+Square,+New+York,+NY+10003,+USA&ftid=0x89c259989e14aa8b:0xcd00afc9db20caa4",
+        "sw": {
+            "lat": 40.73399203756415,
+            "lon": -73.99364095386419
+        },
+        "t": "Valon",
+        "ne": {
+            "lon": -73.98697608620077,
+            "lat": 40.73851052244407
+        },
+        "description": "Support at all stages of homeownership",
+        "lat": 40.7358633,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fiaa05e4c37c2f7.jpeg?alt=media&token=855db0ee-84eb-4cef-b4a4-febaa5372a73"
+        ],
+        "lon": -73.9910835,
+        "Button2": "https://valon.com/",
+        "sticker": "emoji/1f3d8",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "display": "profile",
+        "address": "Union Square, New York, NY 10003, USA",
+        "dateCreated": "2024-08-08T02:31:05.507Z",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu"
+    },
+    "P9VX90knTzx1e41lWBPv": {
+        "ne": {
+            "lat": 40.7513076802915,
+            "lon": -73.9858433197085
+        },
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJl0EDaalZwokROOWq0eudXtc",
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "t": "Tabs",
+        "lat": 40.7498649,
+        "dateCreated": "2024-07-21T03:17:26.715Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sw": {
+            "lon": -73.9885412802915,
+            "lat": 40.7486097197085
+        },
+        "lon": -73.9872367,
+        "Button2": "https://www.tabs.inc",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fie5b329159c7c2.png?alt=media&token=da54b77e-ad1a-442d-9e8a-28b8861039db"
+        ],
+        "address": "1328 Broadway, New York, NY 10001",
+        "description": "B2B billing, built for flexibility.",
+        "sticker": "emoji/1f3e2",
+        "Button1": "https://jobs.ashbyhq.com/Tabs"
+    },
+    "PiZcWikHkP4ub25NqPzk": {
+        "Button2": "https://www.clay.com",
+        "sw": {
+            "lat": 40.7371342197085,
+            "lon": -73.9935467302915
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fia952a9bfcf07c.png?alt=media&token=73ba1c5d-31a2-49c6-b222-5b1d533de45d"
+        ],
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJiUVO8KJZwokRyQFk0V8StyE",
+        "lat": 40.7385356,
+        "display": "profile",
+        "sticker": "7vj4r34PuVXTWshAz307",
+        "dateCreated": "2024-07-21T03:17:36.663Z",
+        "hideT": false,
+        "lon": -73.9922313,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "t": "Clay",
+        "description": "Scale personalized outreach with better data enrichment.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "ne": {
+            "lon": -73.99084876970849,
+            "lat": 40.7398321802915
+        },
+        "Button1": "https://www.clay.com/careers",
+        "address": "126 5th Ave, New York, NY 10011"
+    },
+    "Q2ma8mPec7JNuiOEGUoj": {
+        "ne": {
+            "lon": -73.98393621970848,
+            "lat": 40.7453189302915
+        },
+        "dateCreated": "2024-07-21T03:16:58.484Z",
+        "description": "The first credit card powered by employers.",
+        "Button1": "",
+        "address": "335 Madison Avenue, Suite 7B, NYC 10016",
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi545cd7056c95a.svg?alt=media&token=97d0c1e5-b05c-45af-8018-3e459b187e39"
+        ],
+        "Button2": "https://www.hypercard.com",
+        "sticker": "emoji/1f3db",
+        "lon": -73.9852222,
+        "sw": {
+            "lon": -73.9866341802915,
+            "lat": 40.7426209697085
+        },
+        "link": "https://www.google.com/maps/place/?q=place_id:EiwzMzUgTWFkaXNvbiBBdmUgIzdiLCBOZXcgWW9yaywgTlkgMTAwMTcsIFVTQSIeGhwKFgoUChIJNZpgt6dZwokRiNCZ0RvU6rISAjdi",
+        "t": "Hypercard",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lat": 40.7440668
+    },
+    "RuFYhgo2uvbr7vLjmMEV": {
+        "Button2": "https://securityscorecard.com/",
+        "ne": {
+            "lon": -73.9814524197085,
+            "lat": 40.7574651302915
+        },
+        "sw": {
+            "lon": -73.98415038029151,
+            "lat": 40.7547671697085
+        },
+        "sticker": "emoji/1f4cd",
+        "lat": 40.7561965,
+        "description": "SecurityScorecard is the global leader in cybersecurity ratings, response, and resilience, with more than 12 million companies continuously rated.",
+        "link": "https://maps.google.com/?cid=11955752259727919481",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "address": "1140 6th Ave Floor 19, New York, NY 10036, USA",
+        "dateCreated": "2024-08-12T16:41:27.715Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "display": "profile",
+        "lon": -73.98277639999999,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi7e50286fa082b.jpeg?alt=media&token=f3084c78-fec1-4bc8-959b-0a79e411337d"
+        ],
+        "t": "Security Scorecard"
+    },
+    "SvNCOLG3h20o59yojSlT": {
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "address": "Flatiron District, New York, NY, USA",
+        "lon": -73.9903489,
+        "Button2": "https://www.rutter.com/",
+        "lat": 40.740083,
+        "link": "https://maps.google.com/?q=Flatiron+District,+New+York,+NY,+USA&ftid=0x89c259a2554a6a5b:0xe6b006f94fb1dcd4",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sticker": "emoji/1f3d8",
+        "ne": {
+            "lon": -73.98336046501147,
+            "lat": 40.74480219711161
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi67236494e28fe.jpeg?alt=media&token=06825124-b270-470d-8a62-0e7db051468f"
+        ],
+        "description": "The Unified API for B2B financial products",
+        "t": "Rutter",
+        "display": "profile",
+        "sw": {
+            "lat": 40.73835605970475,
+            "lon": -73.99417520212727
+        },
+        "dateCreated": "2024-08-08T02:33:09.650Z"
+    },
+    "WZCDYhQzIoJMAG5Sp4y3": {
+        "t": "222",
+        "dateCreated": "2024-07-21T03:17:04.646Z",
+        "description": "Accelerating chance social encounters.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "428 Broadway, New York, NY 10013",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJL1tyI4pZwokRXTrh2Yam6Cc",
+        "Button1": "https://serendipityproject.notion.site/accelerating-chance-social-encounters-66d597f821c8425facd11be5815a64d7",
+        "ne": {
+            "lat": 40.72098443029149,
+            "lon": -73.99990911970849
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sw": {
+            "lon": -74.00260708029151,
+            "lat": 40.7182864697085
+        },
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi037061ec98ab1.png?alt=media&token=bec0a12e-e8c4-45e6-8de2-4a1516aa19f6"
+        ],
+        "sticker": "emoji/1f3db",
+        "r": 6.008807846755684,
+        "Button2": "https://www.222.place",
+        "lat": 40.719656,
+        "lon": -74.0012296
+    },
+    "XEKAJyL0w8Wf3ukRMItz": {
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi02b3f303d2fec.jpeg?alt=media&token=8fa15a99-1dfe-4bca-80cc-2a2a41ff569b"
+        ],
+        "Button2": "https://arch.co/",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lat": 40.7371329,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "description": "Created to solve administrative pain from managing investment operations, Arch leverages software and industry leading insights to power private investment operations. ",
+        "t": "Arch",
+        "address": "225 Park Ave S 11th floor, New York, NY 10003, USA",
+        "link": "https://maps.google.com/?q=225+Park+Ave+S+11th+floor,+New+York,+NY+10003,+USA&ftid=0x89c258fd9198c993:0x62aaa70c59e9271",
+        "dateCreated": "2024-08-08T15:02:53.850Z",
+        "sw": {
+            "lat": 40.7358771697085,
+            "lon": -73.9895220802915
+        },
+        "ne": {
+            "lon": -73.98682411970849,
+            "lat": 40.7385751302915
+        },
+        "Button1": "https://jobs.ashbyhq.com/arch.co",
+        "lon": -73.9879502
+    },
+    "XcFVuhZfI8bibK0oVURY": {
+        "sw": {
+            "lon": -74.0043088802915,
+            "lat": 40.7220021197085
+        },
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "link": "https://maps.google.com/?q=West+Broadway+%26+Broome+Street&ftid=0x89c2598b87fb1f95:0x41818192aeeb9ae8",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi559991a0b4e79.jpeg?alt=media&token=11c2ed1e-73f0-4bfb-9c12-fbb7d8e05997"
+        ],
+        "Button2": "getmorphic.com",
+        "address": "W Broadway & Broome St, New York, NY 10012, USA",
+        "ne": {
+            "lat": 40.7247000802915,
+            "lon": -74.00161091970848
+        },
+        "lon": -74.0029599,
+        "description": "Professionally designed websites in 15 seconds – No design skills needed!",
+        "dateCreated": "2024-08-07T19:46:00.230Z",
+        "sticker": "emoji/1f6e3",
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lat": 40.7233511,
+        "t": "Morphic"
+    },
+    "YraFGgNritapp9AOVpID": {
+        "t": "Breezi",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "description": "Your notes app, but with friends.",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJ__8P4KRZwokRQBB8Mzg9hfs",
+        "sticker": "8lx71NuA1GfFvWQuqbzy",
+        "display": "profile",
+        "address": "Manhattan, NY",
+        "lat": 40.7369025,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "hideT": false,
+        "Button2": "https://www.getbreezi.com",
+        "Button1": "",
+        "sw": {
+            "lat": 40.7355080697085,
+            "lon": -73.99870113029151
+        },
+        "dateCreated": "2024-07-21T03:16:55.255Z",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi30844341d3048.png?alt=media&token=43a54dd2-5443-4354-80fd-b18b8d5b1314"
+        ],
+        "lon": -73.9974628,
+        "ne": {
+            "lat": 40.7382060302915,
+            "lon": -73.99600316970849
+        }
+    },
+    "ZFvJh7ThD5Ru1nuk6zmL": {
+        "ne": {
+            "lat": 40.7222344302915,
+            "lon": -74.00156651970852
+        },
+        "sw": {
+            "lat": 40.7195364697085,
+            "lon": -74.00426448029152
+        },
+        "Button2": "https://www.throne.com",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fibbef1ead3cbb7.svg?alt=media&token=51a5c61f-bd6d-456c-92ba-69f652f0d15a"
+        ],
+        "address": "11 Greene St, New York, NY 10013",
+        "lon": -74.0029612,
+        "t": "Throne",
+        "description": "The wishlist for creators.",
+        "Button1": "",
+        "display": "profile",
+        "dateCreated": "2024-07-21T03:16:57.648Z",
+        "r": -16.218473311544027,
+        "lat": 40.7209076,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJ1bo7VYpZwokRjvxceklNf3U",
+        "sticker": "emoji/1f3db"
+    },
+    "ZNFz46Q8pQrYCSZfRyTD": {
+        "sw": {
+            "lon": -73.96984499999999,
+            "lat": 40.6979329
+        },
+        "Button1": "https://www.ycombinator.com/companies/fern/jobs",
+        "dateCreated": "2024-07-21T03:17:49.667Z",
+        "description": "Input OpenAI. Output SDKs and Docs.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button2": "https://www.buildwithfern.com",
+        "lon": -73.9570696,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "t": "Fern",
+        "address": "Williamsburg, NY",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJQSrBBv1bwokRbNfFHCnyeYI",
+        "ne": {
+            "lat": 40.7251773,
+            "lon": -73.9369427
+        },
+        "sticker": "emoji/1f37b",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fid4d4cbd722e39.png?alt=media&token=ec15d56a-b747-4d37-80a8-52ada3d636c2"
+        ],
+        "display": "profile",
+        "lat": 40.7081156
+    },
+    "b0HtAEHShGDxt1Tk1bFW": {
+        "address": "6 W 83rd St, New York, NY 10024, USA",
+        "sw": {
+            "lat": 40.78214181970849,
+            "lon": -73.97269758029151
+        },
+        "description": "We help players capture gaming moments and share their moments with friends.",
+        "lon": -73.9714065,
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "dateCreated": "2024-08-12T16:45:56.645Z",
+        "lat": 40.7834121,
+        "link": "https://maps.google.com/?q=6+W+83rd+St,+New+York,+NY+10024,+USA&ftid=0x89c25885537bf097:0x5406f8c3d45909d6",
+        "Button2": "https://medal.tv/",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "t": "Medal",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "ne": {
+            "lon": -73.9699996197085,
+            "lat": 40.78483978029149
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi8925f6df17d51.jpeg?alt=media&token=39457ab6-a172-46c3-8f95-bd87e8d2f1c0"
+        ],
+        "display": "profile"
+    },
+    "bf7cCg5cwfSrJqN97Lfm": {
+        "dateCreated": "2024-08-07T19:42:28.255Z",
+        "lat": 40.7226027,
+        "t": "Bandana",
+        "lon": -73.9560474,
+        "sticker": "emoji/1f3e0",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "105 N 13th St, Brooklyn, NY 11249, USA",
+        "sw": {
+            "lat": 40.7211712197085,
+            "lon": -73.9574870802915
+        },
+        "Button1": "https://www.linkedin.com/jobs/search/?currentJobId=3994071400&f_C=90568281&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION&originToLandingJobPostings=3994071400",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fia19cc2208cf41.jpeg?alt=media&token=2a88956c-28ce-4c30-a9fc-526064531fd9"
+        ],
+        "link": "https://maps.google.com/?q=105+N+13th+St,+Brooklyn,+NY+11249,+USA&ftid=0x89c2594323c6795d:0xca7930287f26d845",
+        "Button2": "https://bandana.com/",
+        "description": "We empower workers and give them the tools and resources they need to take control of their work and their lives.",
+        "ne": {
+            "lat": 40.7238691802915,
+            "lon": -73.9547891197085
+        },
+        "display": "profile"
+    },
+    "bucjJkKptDQuDj6qzxEA": {
+        "Button2": "https://www.vesto.com",
+        "sticker": "emoji/1f3e2",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "dateCreated": "2024-07-21T03:16:56.713Z",
+        "t": "Vesto",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJB2i2vKNZwokRlvnApDMiZ_o",
+        "Button1": "",
+        "address": "156 5th Ave Ste 1218, New York NY 10016 USA",
+        "lat": 40.7399443,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "ne": {
+            "lon": -73.98976926970849,
+            "lat": 40.7412074302915
+        },
+        "lon": -73.9910549,
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi577433da1197c.png?alt=media&token=1a63535e-72e1-4e30-a96d-c6bd0c2d10ff"
+        ],
+        "description": "All of your company's financial accounts in one view",
+        "sw": {
+            "lat": 40.7385094697085,
+            "lon": -73.9924672302915
+        }
+    },
+    "bvONGv1igEz1VffLXRt9": {
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJrSYXKKhZwokRgPvTl0YtrdM",
+        "Button2": "https://www.novig.us",
+        "description": "First prediction market for sports.",
+        "lat": 40.7471509,
+        "lon": -73.98304379999999,
+        "sticker": "emoji/1f3db",
+        "dateCreated": "2024-07-21T03:17:32.417Z",
+        "t": "Novig",
+        "r": 371.28344050893725,
+        "sw": {
+            "lon": -73.9845341802915,
+            "lat": 40.7458625197085
+        },
+        "Button1": "https://boards.greenhouse.io/novig",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "169 Madison Avenue, New York",
+        "ne": {
+            "lat": 40.7485604802915,
+            "lon": -73.9818362197085
+        },
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi2ffbac22e7d46.png?alt=media&token=a64e5a29-628c-4b07-af9e-f352edb97dd0"
+        ],
+        "parent": "Pd82Tp8aq5EfxTP3yJhu"
+    },
+    "e10kvJDsKM2U58J5luSK": {
+        "address": "185 Wythe Ave, Brooklyn, NY 11249, USA",
+        "lat": 40.718067,
+        "link": "https://maps.google.com/?q=185+Wythe+Ave,+Brooklyn,+NY+11249,+USA&ftid=0x89c25967255955ef:0xa215403f88eed0d2",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "ne": {
+            "lat": 40.71944638029149,
+            "lon": -73.9605101697085
+        },
+        "t": "Coblocks",
+        "sticker": "emoji/1f3e0",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fie1c86a397a37f.jpeg?alt=media&token=a99bb5df-93d1-4e84-87d5-3ee1c036105d"
+        ],
+        "Button2": "https://coblocks.ai",
+        "lon": -73.9618107,
+        "dateCreated": "2024-08-12T17:50:06.852Z",
+        "Button1": "https://coblocks.notion.site/a246bd4f8a9c4c10acf43aa65f86ad48?v=8c0dc060370746ff97700c981c949216",
+        "sw": {
+            "lon": -73.9632081302915,
+            "lat": 40.7167484197085
+        },
+        "description": "Data engineering for startups",
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu"
+    },
+    "f4NDQgaySorXsgrYnPSp": {
+        "t": "Saturn",
+        "display": "profile",
+        "sticker": "emoji/1f3e2",
+        "Button1": "https://www.joinsaturn.com/careers",
+        "address": "1 Liberty St, New York, NY 10006, USA",
+        "dateCreated": "2024-08-07T19:41:10.930Z",
+        "sw": {
+            "lat": 40.7084044197085,
+            "lon": -74.01219663029151
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fiabab8b98b57a4.jpeg?alt=media&token=71cafa75-e909-427d-b503-52806ae1a029"
+        ],
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "ne": {
+            "lat": 40.7111023802915,
+            "lon": -74.00949866970849
+        },
+        "Button2": "https://www.joinsaturn.com/",
+        "description": "The calendar for high school and college.",
+        "link": "https://maps.google.com/?cid=15569349594310454838",
+        "lat": 40.7097216,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lon": -74.01080619999999
+    },
+    "fQJMRWPhzO4HkX08qVWc": {
+        "description": "Sports news and video reaction app where athletes and creators react to sports news, fantasy, and sportsbook matchups.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "p": null,
+        "lat": 40.71809679692808,
+        "display": "profile",
+        "t": "Vylo",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "Button2": "https://www.vylo.com/",
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "dateCreated": "2024-08-08T02:53:51.437Z",
+        "lon": -73.95965013276086,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi78cdf6c10c889.jpeg?alt=media&token=236f14fe-7ee3-46e2-a291-36e114808957"
+        ]
+    },
+    "frVThyJ0Xw97MBospsXM": {
+        "lat": 40.74751765616287,
+        "p": null,
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "dateCreated": "2024-08-12T16:44:03.347Z",
+        "description": "Pave Pro empowers independent RIAs to build and manage individually personalized portfolios for each of their clients. ",
+        "lon": -73.98298426954965,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi37ae28d0e5a96.jpeg?alt=media&token=fc39d678-a8f3-4583-b73d-074516b0fb07"
+        ],
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "t": "Pave Finance",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button2": "https://www.pavepro.ai/"
+    },
+    "iQCEGQZyFubuKDdQaByl": {
+        "description": "Assistive technology for 9-1-1.",
+        "display": "profile",
+        "lat": 40.75723201358045,
+        "sw": {
+            "lat": 40.7560412197085,
+            "lon": -73.9729374302915
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJZ8VFtPxYwokRmMZWbM8Sb8E",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "575 Lexington Ave., Floor 14, New York, NY 10022",
+        "Button1": "https://www.prepared911.com/about/careers",
+        "ne": {
+            "lon": -73.97023946970849,
+            "lat": 40.7587391802915
+        },
+        "dateCreated": "2024-07-21T03:17:34.221Z",
+        "lon": -73.97165313699222,
+        "t": "Prepared",
+        "r": -5.468182501396008,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi14cfd81e6b3a3.png?alt=media&token=0b0158a0-3995-4103-b1d4-76b7f903329c"
+        ],
+        "Button2": "https://www.prepared911.com",
+        "sticker": "emoji/1f3db"
+    },
+    "joL3VYeE3GH9cwIzwpJT": {
+        "t": "Candle",
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "Button2": "https://candle.fi/",
+        "description": "Automate your money.",
+        "lon": -73.9933331,
+        "dateCreated": "2024-07-24T02:21:03.801Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJ-XYF3aJZwokRxlHXrW2krow",
+        "address": "18 West 18 Street · New York, NY 10011",
+        "sw": {
+            "lon": -73.99477508029152,
+            "lat": 40.7374758697085
+        },
+        "Button1": "",
+        "lat": 40.7390007,
+        "ne": {
+            "lat": 40.7401738302915,
+            "lon": -73.99207711970851
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi504a71c9e0db1.png?alt=media&token=7a3121aa-3b92-461f-b08a-bbcd3f77889f"
+        ]
+    },
+    "lkz2CCKOOpNxsvJ2I1ld": {
+        "dateCreated": "2024-07-21T03:17:46.376Z",
+        "sticker": "u1zjhma8r5UKfKDdMikL",
+        "t": "Codédex",
+        "display": "profile",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "address": "155 Water Street 4-3, Brooklyn",
+        "lat": 40.703311,
+        "sw": {
+            "lon": -73.98917588029151,
+            "lat": 40.7019541697085
+        },
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button1": "",
+        "description": "The most fun way to learn how to code.",
+        "lon": -73.987793,
+        "link": "https://www.google.com/maps/place/?q=place_id:EikxNTUgV2F0ZXIgU3QgNCAzLCBCcm9va2x5biwgTlkgMTEyMDEsIFVTQSIfGh0KFgoUChIJWz7vzjNawokR90ahl8WUTlMSAzQgMw",
+        "ne": {
+            "lat": 40.7046521302915,
+            "lon": -73.9864779197085
+        },
+        "Button2": "https://www.codedex.io",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fidc021d25f3b9d.jpg?alt=media&token=ec116dc0-5993-4cf9-b6b1-6fbfb92bc601"
+        ]
+    },
+    "m8ISiYFKDCwCTyBl5gvk": {
+        "lon": -74.00106889999999,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "address": "138 Spring St, New York, NY 10012, USA",
+        "description": "A construction payroll platform and back office management system designed for same-day pay.",
+        "ne": {
+            "lat": 40.72536558029149,
+            "lon": -73.99979941970848
+        },
+        "sw": {
+            "lon": -74.0024973802915,
+            "lat": 40.7226676197085
+        },
+        "Button1": "https://www.buildtrayd.com/careers",
+        "Button2": "https://www.buildtrayd.com/",
+        "dateCreated": "2024-08-07T18:28:43.022Z",
+        "display": "profile",
+        "t": "Trayd",
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "link": "https://maps.google.com/?q=138+Spring+St,+New+York,+NY+10012,+USA&ftid=0x89c2598c1be42b3d:0xfd1d4119493ab785",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fibcda458256a3d.jpeg?alt=media&token=488c37c1-87d0-4de6-8f88-2641f33210b9"
+        ],
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lat": 40.7239777
+    },
+    "nkgqYXyFrFcdeejLaof0": {
+        "t": "Coda",
+        "Button2": "https://coda.io/",
+        "lon": -73.9887462,
+        "link": "https://maps.google.com/?q=1140+Broadway,+New+York,+NY+10001,+USA&ftid=0x89c259a679220bd3:0x9774cfdcf0213a4c",
+        "lat": 40.7439141,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button1": "https://coda.io/about/jobs",
+        "sticker": "XHvQQfHnzHzAKg64IEQM",
+        "sw": {
+            "lat": 40.7425599697085,
+            "lon": -73.9902352802915
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi485b7a2b25553.jpeg?alt=media&token=7efe7bc6-1915-49c8-8249-45fc355db7ad"
+        ],
+        "dateCreated": "2024-08-07T18:16:46.061Z",
+        "ne": {
+            "lat": 40.7452579302915,
+            "lon": -73.9875373197085
+        },
+        "description": "Your all-in-one collaborative workspace.Coda brings teams and tools together for a more organized work day.",
+        "address": "1140 Broadway, New York, NY 10001, USA",
+        "display": "profile"
+    },
+    "noegeYJmlRhX2oLWv2dy": {
+        "Button2": "https://popl.co/",
+        "description": "The #1 Digital Business Card for Lead Capture",
+        "Button1": "https://www.linkedin.com/jobs/search/?currentJobId=3963778613&f_C=34719682&geoId=92000000&origin=COMPANY_PAGE_JOBS_CLUSTER_EXPANSION&originToLandingJobPostings=3963778613",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fif383304a1f217.jpeg?alt=media&token=566156be-7858-494d-b6bc-7b6f3e76c608"
+        ],
+        "sticker": "emoji/1f3d8",
+        "display": "profile",
+        "dateCreated": "2024-08-07T21:07:20.009Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "address": "Dumbo, Brooklyn, NY 11201, USA",
+        "lat": 40.7033164,
+        "ne": {
+            "lat": 40.70556686547754,
+            "lon": -73.98450846798318
+        },
+        "t": "Popl",
+        "link": "https://maps.google.com/?q=Dumbo,+Brooklyn,+NY+11201,+USA&ftid=0x89c25a316f3eb0fb:0xceb1d92c1cafc9c3",
+        "lon": -73.9881451,
+        "sw": {
+            "lon": -73.99454284441106,
+            "lat": 40.70144335851904
+        }
+    },
+    "o0ovxzN5Z1Z4MY1bPTtd": {
+        "lon": -73.98935999999999,
+        "sw": {
+            "lat": 40.7380474197085,
+            "lon": -73.99087198029149
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi766443974f453.jpeg?alt=media&token=7c6a4c07-42ad-403f-be4c-5b0aeea22136"
+        ],
+        "lat": 40.7393324,
+        "display": "profile",
+        "description": "One API to add hundreds of integrations to your product",
+        "dateCreated": "2024-08-09T18:29:42.570Z",
+        "address": "902 Broadway, New York, NY 10010, USA",
+        "sticker": "emoji/1f4cd",
+        "Button2": "merge.dev",
+        "link": "https://maps.google.com/?cid=1381589427497092162",
+        "t": "Merge",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "ne": {
+            "lon": -73.98817401970848,
+            "lat": 40.7407453802915
+        },
+        "Button1": "https://www.merge.dev/careers"
+    },
+    "pByVSQIu2CirlEyomgps": {
+        "Button1": "https://www.linkedin.com/company/smoreus/jobs/",
+        "description": "Discover something more of NYC.",
+        "display": "profile",
+        "dateCreated": "2024-07-21T03:17:08.625Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "t": "S'more",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJl2mpDg1ZwokRM0kX3lzVTsU",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi4d2fadb5f27dc.png?alt=media&token=ddc885de-6777-4b53-a9d3-344fa2a4278a"
+        ],
+        "address": "575 Lexington Ave 14th floor, New York, NY 10022",
+        "sticker": "khdpWMnXFoLONEbEB68D",
+        "ne": {
+            "lon": -73.97023946970849,
+            "lat": 40.7587391802915
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "Button2": "https://www.smore.city",
+        "lat": 40.75754762697659,
+        "lon": -73.97135525492057,
+        "sw": {
+            "lat": 40.7560412197085,
+            "lon": -73.9729374302915
+        },
+        "r": -1.3369722275127918
+    },
+    "qUj2geLunMsRAnHdm7DX": {
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi1a2d0a3c464e3.png?alt=media&token=0a0e1e54-a002-4caa-92c3-c14d8aec5910"
+        ],
+        "sticker": "emoji/1f3db",
+        "ne": {
+            "lat": 40.72617338029149,
+            "lon": -73.9961088697085
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "display": "profile",
+        "sw": {
+            "lon": -73.99880683029151,
+            "lat": 40.72347541970849
+        },
+        "dateCreated": "2024-07-21T03:16:50.640Z",
+        "lat": 40.72531693871147,
+        "link": "https://www.mynucleus.com",
+        "t": "Nucleus\nGenomics",
+        "address": "585 Broadway, New York New York 10013",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "description": "The all-in-one DNA test.",
+        "r": -364.07831624101783,
+        "Button1": "",
+        "lon": -73.99727675405809
+    },
+    "rMZwJ0G5d9q6ga2Dz32x": {
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sw": {
+            "lon": -74.0003050802915,
+            "lat": 40.7435243197085
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "t": "Evvy",
+        "description": "Pioneering precision care for vaginal health.",
+        "dateCreated": "2024-07-21T03:17:16.403Z",
+        "sticker": "emoji/1f37b",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fibe2a25a749cc2.png?alt=media&token=49119aae-dca1-4315-b834-e1b296642cb1"
+        ],
+        "display": "profile",
+        "Button2": "https://www.evvy.com",
+        "lat": 40.7449215,
+        "link": "https://www.google.com/maps/place/?q=place_id:EioyNDUgOHRoIEF2ZSAjMTA2NCwgTmV3IFlvcmssIE5ZIDEwMDExLCBVU0EiIBoeChYKFAoSCXsccbW7WcKJERhMLxyXOnb2EgQxMDY0",
+        "address": "245 8th Ave. #1064. New York, NY 10011, US.",
+        "lon": -73.999073,
+        "Button1": "https://www.evvy.com/careers",
+        "ne": {
+            "lon": -73.99760711970849,
+            "lat": 40.7462222802915
+        }
+    },
+    "rdugnOgXAZ7J7bZv3Bek": {
+        "lon": -74.00517769999999,
+        "address": "180 Varick St Floor 6, New York, NY 10014, USA",
+        "sticker": "emoji/1f4cd",
+        "ne": {
+            "lon": -74.00385926970849,
+            "lat": 40.7286089302915
+        },
+        "link": "https://maps.google.com/?cid=8124441341643204124",
+        "Button2": "http://www.synonym.bio/",
+        "lat": 40.72739839999999,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fia35a0daff1c4.jpeg?alt=media&token=b67d528b-b111-4081-bdb6-6fafd9719cde"
+        ],
+        "t": "Synonym",
+        "display": "profile",
+        "dateCreated": "2024-08-12T17:00:36.083Z",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sw": {
+            "lat": 40.7259109697085,
+            "lon": -74.00655723029149
+        },
+        "description": "Synonym is a company that builds and scales infrastructure enabling the commercialization and manufacture of bioproducts—accelerating the world’s transition to better, more sustainable ways of making the items the world needs."
+    },
+    "tqctezLGhZ5miW4edsky": {
+        "Button2": "https://www.constrafor.com/",
+        "lat": 40.75527229999999,
+        "lon": -73.9995718,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fif975828515a6b.jpeg?alt=media&token=0ba0c522-78eb-4652-b464-0c4e32825c5c"
+        ],
+        "dateCreated": "2024-08-12T16:59:13.585Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "description": "As a SaaS and fintech innovator purpose-built for construction, Constrafor is setting new standards of productivity and cost-efficiency for the way GCs and subcontractors manage essential back-office tasks and financial transactions.",
+        "sticker": "emoji/1f4cd",
+        "ne": {
+            "lat": 40.7567692802915,
+            "lon": -73.99852676970848
+        },
+        "sw": {
+            "lon": -74.0012247302915,
+            "lat": 40.7540713197085
+        },
+        "address": "66 Hudson Blvd E, New York, NY 10001, USA",
+        "t": "Constrafor",
+        "display": "profile",
+        "link": "https://maps.google.com/?cid=17773576360142536447"
+    },
+    "tyduRdWPDuUgkYcRAmUg": {
+        "sticker": "emoji/1f3db",
+        "display": "profile",
+        "t": "Somethings",
+        "dateCreated": "2024-07-21T03:16:48.689Z",
+        "Button2": "https://www.somethings.com",
+        "address": "424 Broadway, New York New York, 10013",
+        "Button1": "",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "lat": 40.7196624476542,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sw": {
+            "lon": -74.0027742802915,
+            "lat": 40.71823141970849
+        },
+        "lon": -74.00145841147902,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi15ef41bbe8e2a.png?alt=media&token=b858874e-6a7c-4b7e-92d2-8a4c3cf680dc"
+        ],
+        "r": 0.7198281002348906,
+        "ne": {
+            "lon": -74.00007631970848,
+            "lat": 40.72092938029149
+        },
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJkerUPIpZwokR7ZhXK8_fyCo",
+        "description": "Find a mentor. Feel your best."
+    },
+    "vIxjRZOU7xjfk6dlJ29B": {
+        "lon": -74.0096557,
+        "dateCreated": "2024-07-21T03:17:37.575Z",
+        "ne": {
+            "lon": -74.0081774197085,
+            "lat": 40.7068428802915
+        },
+        "address": " 20 Exchange Place, NY 10005",
+        "Button2": "https://www.joinground.com",
+        "sticker": "SthCT9JSmS9SgCpGyfNW",
+        "Button1": "https://join-ground.notion.site/Content-Marketer-89bcd99e031145d69429c7fce0b7bc1c",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJYX0WihZawokRzSNbi47c5M4",
+        "description": "Let AI uncover untapped revenue, and grow profitably.",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "t": "Ground",
+        "display": "profile",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi5413e3c022667.png?alt=media&token=e29c6a88-2316-468f-b100-5ecbdb14ee18"
+        ],
+        "sw": {
+            "lat": 40.7041449197085,
+            "lon": -74.01087538029151
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "lat": 40.7055037
+    },
+    "wDlSk9aXCAihuyuTK8bf": {
+        "description": "B2B marketplace for construction materials",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fif0880588ca9e3.jpeg?alt=media&token=bbcb2ef5-9dc7-4443-857c-55172d400540"
+        ],
+        "lon": -74.0030512,
+        "Button2": "https://www.buildstock.com/",
+        "address": "376 Broadway, New York, NY 10013, USA",
+        "lat": 40.7178112,
+        "ne": {
+            "lat": 40.71919218029149,
+            "lon": -74.00176801970849
+        },
+        "sticker": "emoji/1f3e0",
+        "dateCreated": "2024-08-12T16:48:03.769Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "t": "Buildstock",
+        "sw": {
+            "lat": 40.71649421970849,
+            "lon": -74.0044659802915
+        },
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "display": "profile",
+        "link": "https://maps.google.com/?q=376+Broadway,+New+York,+NY+10013,+USA&ftid=0x89c25bd99990c801:0x6f0bb675a4247db1"
+    },
+    "wKB2tQGdxU2PDb7mWXVS": {
+        "ne": {
+            "lat": 40.72356663029149,
+            "lon": -73.95567001970849
+        },
+        "display": "profile",
+        "lon": -73.9568729,
+        "sticker": "emoji/1f3e0",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fic99b5321cabb.jpeg?alt=media&token=5f947e4b-e1ae-46fd-b00c-925b12831288"
+        ],
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "description": "TimeSentry provides all the basic features and benefits of existing time tracking and billing software while adding a meta-layer of AI to autopopulate timesheets; so your firm can spend less time billing and more time billing.",
+        "Button2": "https://timesentry.ai/",
+        "sw": {
+            "lat": 40.72086866970849,
+            "lon": -73.9583679802915
+        },
+        "lat": 40.72235269999999,
+        "link": "https://maps.google.com/?q=109+N+12th+St,+Brooklyn,+NY+11249,+USA&ftid=0x89c25942d7492047:0x147c45c9671adda7",
+        "dateCreated": "2024-08-12T17:14:33.763Z",
+        "address": "109 N 12th St, Brooklyn, NY 11249, USA",
+        "t": "TimeSentry"
+    },
+    "wSYXgGG4Bu9isywUweb2": {
+        "display": "profile",
+        "dateCreated": "2024-08-07T18:23:15.534Z",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "address": "20 Jay St, Brooklyn, NY 11201, USA",
+        "description": "Great Voice AI for eComm/Retail & more - no more horrible phone support robots!",
+        "lat": 40.70402970000001,
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi52248fb4d3489.jpeg?alt=media&token=fd898323-3e69-4dcd-af81-89c709679486"
+        ],
+        "Button2": "https://flipcx.com/",
+        "ne": {
+            "lat": 40.7054829302915,
+            "lon": -73.9853267697085
+        },
+        "Button1": "https://wellfound.com/company/flipcx",
+        "link": "https://maps.google.com/?q=20+Jay+St,+Brooklyn,+NY+11201,+USA&ftid=0x89c25a324d8b7913:0x87d43ec2a5986cf9",
+        "t": "Flip",
+        "sticker": "emoji/1f3e0",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "sw": {
+            "lat": 40.7027849697085,
+            "lon": -73.9880247302915
+        },
+        "lon": -73.9867893
+    },
+    "wbQ9Svct6UE6GoRn8zoR": {
+        "dateCreated": "2024-07-21T03:17:42.489Z",
+        "sw": {
+            "lat": 40.7238044697085,
+            "lon": -73.99337113029151
+        },
+        "ne": {
+            "lat": 40.7265024302915,
+            "lon": -73.9906731697085
+        },
+        "t": "Mesh Analytics",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "display": "profile",
+        "description": "AI-powered revenue analytics for B2B marketing and sales teams.",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi8f5abbedd74f2.png?alt=media&token=326f77b9-1529-49a4-acc0-e08aa190d7f6"
+        ],
+        "lat": 40.7251041,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "Button1": "",
+        "sticker": "emoji/1f3e2",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJMd094oRZwokRhszWIooeKoI",
+        "address": "Manhattan, NY",
+        "Button2": "https://www.withmesh.com",
+        "lon": -73.9918836
+    },
+    "yWAwqCyFcfAFethXHFel": {
+        "description": "Your phone calls, handled beautifully. Thoughtly helps businesses build and deploy human-like AI voice agents in just 17 minutes. Welcome to the future of calling.",
+        "link": "https://maps.google.com/?q=41+E+11th+St,+New+York,+NY+10003,+USA&ftid=0x89c25999bd9a370b:0x36193a368e584be7",
+        "Button2": "https://thought.ly/",
+        "address": "41 E 11th St, New York, NY 10003, USA",
+        "ne": {
+            "lat": 40.73452643029151,
+            "lon": -73.9914413697085
+        },
+        "lat": 40.73327440000001,
+        "Button1": "https://jobs.ashbyhq.com/thoughtly",
+        "sticker": "emoji/1f3e0",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "display": "profile",
+        "lon": -73.9928068,
+        "dateCreated": "2024-08-08T02:40:16.051Z",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi625d1136b7f3f.jpeg?alt=media&token=a79e4774-2acf-4ca5-b007-303379a96413"
+        ],
+        "t": "Thoughtly",
+        "sw": {
+            "lat": 40.73182846970851,
+            "lon": -73.9941393302915
+        }
+    },
+    "ysS1HCuc62nkeD7JLtyY": {
+        "dateCreated": "2024-07-21T03:17:40.820Z",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "description": "Education benefits for a modern workforce.",
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJaeKJRWNbwokRI6ghTxkh81w",
+        "display": "profile",
+        "lon": -74.00899079999999,
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "sw": {
+            "lat": 40.7176792697085,
+            "lon": -74.0102209802915
+        },
+        "ne": {
+            "lon": -74.00752301970849,
+            "lat": 40.7203772302915
+        },
+        "t": "Unsaddl",
+        "Button1": "",
+        "Button2": "https://www.unsaddl.com",
+        "sticker": "emoji/1f3e2",
+        "address": "99 Hudson Street, 5th Floor New York, NY 10013",
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi8532657c0d9c7.png?alt=media&token=69663bdb-0181-4e63-b4fc-e9e040206f8e"
+        ],
+        "lat": 40.71906999999999
+    },
+    "zFzgtwDbnhqtVyBvNFEv": {
+        "Button2": "https://www.tryplayground.com",
+        "sticker": "emoji/1f6dd",
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "ne": {
+            "lat": 40.72092938029149,
+            "lon": -74.00007631970848
+        },
+        "dateCreated": "2024-07-21T03:16:49.581Z",
+        "display": "profile",
+        "lat": 40.71941535524269,
+        "link": "https://www.google.com/maps/place/?q=place_id:ChIJkerUPIpZwokR7ZhXK8_fyCo",
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2",
+        "description": "Child care management software that makes your families and teachers happier.",
+        "Button1": "https://wellfound.com/company/playground-9",
+        "t": "Playground",
+        "address": "424 Broadway, New York New York, 10013",
+        "sw": {
+            "lat": 40.71823141970849,
+            "lon": -74.0027742802915
+        },
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Fi4f6713c5d1ec5.png?alt=media&token=4a02bec0-a44e-47cb-931b-39688ba0bd79"
+        ],
+        "lon": -74.00170305108409,
+        "r": -14.014200397222378
+    },
+    "zt1NQSleMRwzC6nWwap6": {
+        "coverPhoto": [
+            "https://firebasestorage.googleapis.com/v0/b/pampam-a9a11.appspot.com/o/covers%2Fpampams%2FPd82Tp8aq5EfxTP3yJhu%2Ficb9f0748084a3.jpeg?alt=media&token=3e76572a-81ea-4dbc-b803-0b6fdc5e724a"
+        ],
+        "link": "https://maps.google.com/?q=43+Madison+Ave,+New+York,+NY+10010,+USA&ftid=0x89c259a6fa8c7da1:0xbf6a6b64fdf63563",
+        "display": "profile",
+        "address": "43 Madison Ave, New York, NY 10010, USA",
+        "Button2": "https://www.didero.ai/blog/introducing-didero-ai-procurement",
+        "sw": {
+            "lat": 40.74122716970849,
+            "lon": -73.9879733302915
+        },
+        "t": "Didero",
+        "dateCreated": "2024-08-08T14:54:23.349Z",
+        "lon": -73.986527,
+        "sticker": "emoji/1f3e0",
+        "lat": 40.7425358,
+        "parent": "Pd82Tp8aq5EfxTP3yJhu",
+        "description": "The AI agent powering superhuman\nprocurement teams.",
+        "ne": {
+            "lat": 40.74392513029149,
+            "lon": -73.98527536970849
+        },
+        "owner": "33keIOgn6GgNEvtLC0f6Wqt01VK2"
+    }
+}
