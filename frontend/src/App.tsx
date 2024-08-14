@@ -1,115 +1,127 @@
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-} from "@clerk/clerk-react";
-import { Calendar, DayComponent } from "./components/calendar";
+import { useState } from "react";
+import DayComponent from "./components/DayComponent";
 
-interface Ingredient {
-  name: string;
-  quantity: string;
-}
+export type DayOfTheWeek =
+  | "Monday"
+  | "Tuesday"
+  | "Wednesday"
+  | "Thursday"
+  | "Friday"
+  | "Saturday"
+  | "Sunday";
 
-interface Recipe {
-  name: string;
-  ingredients: Ingredient[];
-}
-
-interface Meal {
+export interface Meal {
+  mealId: string;
+  mealName: "Breakfast" | "Lunch" | "Dinner" | "Snack" | "Special";
   recipes: Recipe[];
 }
 
-interface Day {
-  meals: Meal[];
+export interface Recipe {
+  name: string;
+  URL?: string;
+  instructions: string[];
+  notes: string;
+  RecipeIngredients: RecipeIngredient[];
 }
 
-interface Week {
-  days: Day[];
+export interface Ingredient {
+  name: string;
+  category: Category;
+  notes: string;
 }
 
-const newWeek: Week = {
-  days: [
-    {
-      meals: [
-        {
-          recipes: [
-            {
-              name: "Cheeseburger",
-              ingredients: [{ name: "Cheese", quantity: "100g" }],
-            },
-            {
-              name: "Fries",
-              ingredients: [{ name: "Potatoes", quantity: "100g" }],
-            },
-            {
-              name: "Salad",
-              ingredients: [{ name: "Lettuce", quantity: "100g" }],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      meals: [
-        {
-          recipes: [
-            {
-              name: "Cheeseburger",
-              ingredients: [{ name: "Cheese", quantity: "100g" }],
-            },
-            {
-              name: "Fries",
-              ingredients: [{ name: "Potatoes", quantity: "100g" }],
-            },
-            {
-              name: "Salad",
-              ingredients: [{ name: "Lettuce", quantity: "100g" }],
-            },
-          ],
-        },
-      ],
-    },
-  ],
-};
+//Calculated from the ingredient
+export interface RecipeIngredient {
+  ingredient: Ingredient;
+  notes: string;
+  amount: number;
+}
 
-const newDay: Day = {
-  meals: [
+export type Category =
+  | "Fruit"
+  | "Vegetable"
+  | "Meat"
+  | "Dairy"
+  | "Grain"
+  | "Spice"
+  | "Herb"
+  | "Fats and Oils";
+
+export interface Day {
+  dayOfTheWeek: DayOfTheWeek;
+  Meals: Meal[];
+}
+
+const sampleDay: Day = {
+  dayOfTheWeek: "Monday",
+  Meals: [
     {
+      mealId: "1",
+      mealName: "Breakfast",
       recipes: [
         {
-          name: "Pizza",
-          ingredients: [{ name: "Cheese", quantity: "100g" }],
+          name: "Scrambles",
+          RecipeIngredients: [
+            {
+              ingredient: { name: "Eggs", category: "Dairy", notes: "" },
+              amount: 2,
+              notes: "",
+            },
+            {
+              ingredient: { name: "Milk", category: "Dairy", notes: "" },
+              amount: 1,
+              notes: "",
+            },
+          ],
+          instructions: ["Scramble the eggs", "Add milk", "Serve"],
+          notes: "This is a scrambles recipe",
+          URL: "https://www.google.com",
         },
+      ],
+    },
+    {
+      mealId: "2",
+      mealName: "Lunch",
+      recipes: [
         {
-          name: "Sushi",
-          ingredients: [{ name: "Rice", quantity: "100g" }],
+          name: "Pancakes",
+          RecipeIngredients: [
+            {
+              ingredient: { name: "Flour", category: "Grain", notes: "" },
+              amount: 2,
+              notes: "",
+            },
+          ],
+          instructions: ["Mix the flour", "Add milk", "Serve"],
+          notes: "This is a pancakes recipe",
+          URL: "https://www.google.com",
         },
+      ],
+    },
+    {
+      mealId: "3",
+      mealName: "Dinner",
+      recipes: [
         {
-          name: "Pie",
-          ingredients: [{ name: "Butter", quantity: "100g" }],
+          name: "Steak",
+          RecipeIngredients: [
+            {
+              ingredient: { name: "Steak", category: "Meat", notes: "" },
+              amount: 2,
+              notes: "",
+            },
+          ],
+          instructions: ["Cook the steak", "Serve"],
+          notes: "This is a steak recipe",
+          URL: "https://www.google.com",
         },
       ],
     },
   ],
 };
+const App = () => {
+  const [selectedDay, setSelectedDay] = useState(sampleDay);
+  return <DayComponent day={selectedDay} />;
+};
 
-export default function App() {
-  return (
-    <>
-      <header>
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
-      </header>
-      <div>
-        <h1>Home</h1>
-        <Calendar week={newWeek} />
-        <DayComponent day={newDay} />
-      </div>
-    </>
-  );
-}
+export default App;
