@@ -1,3 +1,14 @@
+
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
+import React from "react";
+
+import Front from "../src/components/pages/Front";
+
 import { useState } from "react";
 import DayComponent from "./components/DayComponent";
 
@@ -22,6 +33,7 @@ export interface Recipe {
   instructions: string[];
   notes: string;
   RecipeIngredients: RecipeIngredient[];
+
 }
 
 export interface Ingredient {
@@ -121,7 +133,28 @@ const sampleDay: Day = {
 };
 const App = () => {
   const [selectedDay, setSelectedDay] = useState(sampleDay);
-  return <DayComponent day={selectedDay} />;
+  return 
+  
+  ( <>
+      <div className="bg-sky-500 w-full min-h-screen">
+        <header className="text-white">
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </header>
+        <div>
+          <Front />
+        </div>
+      </div>
+      
+      <div>
+        <DayComponent day={selectedDay} />;
+      </div>
+    </>)
+  
 };
 
 export default App;
