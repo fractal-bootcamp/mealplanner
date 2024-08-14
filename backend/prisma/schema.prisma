@@ -13,19 +13,61 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum FoodCategory {
+  PRODUCE
+  MEAT
+  FISH
+  INTERNATIONAL
+  DAIRY
+  BAKING
+  FROZEN
+  BEVERAGES
+  SNACKS
+}
+
 // models
 
 // user
 model User {
   // metadata
-  id                  String                @id @default(cuid())
-  createdAt           DateTime              @default(now())
-  updatedAt           DateTime              @default(now()) @updatedAt
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
   // fields
-  email               String                @unique
-  name                String?
-  clerkId             String                @unique
-
+  email     String   @unique
+  name      String?
+  clerkId   String   @unique
+  recipes   Recipe[]
+  meals     Meal[]
 
   @@map("user")
+}
+
+model Recipe {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+
+  // fields
+  name         String
+  url          String?
+  instructions String[]
+  notes        String
+  servings     Int
+  ingredients  Json
+  meals        Meal[]
+  user         User     @relation(fields: [userId], references: [id])
+  userId       String
+}
+
+model Meal {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+
+  // fields
+  name    String
+  user    User     @relation(fields: [userId], references: [id])
+  userId  String
+  recipes Recipe[]
 }

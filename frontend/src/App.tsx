@@ -133,9 +133,8 @@ const sampleDay: Day = {
 };
 const App = () => {
   const [selectedDay, setSelectedDay] = useState(sampleDay);
-  return 
-  
-  ( <>
+  return ( 
+    <>
       <div className="bg-sky-500 w-full min-h-screen">
         <header className="text-white">
           <SignedOut>
@@ -146,15 +145,15 @@ const App = () => {
           </SignedIn>
         </header>
         <div>
-          <Front />
+          <Front /> 
         </div>
       </div>
       
       <div>
-        <DayComponent day={selectedDay} />;
+        <DayComponent day={selectedDay} /> Test
       </div>
-    </>)
-  
+    </>
+  );
 };
 
 export default App;
