@@ -49,15 +49,21 @@ model Recipe {
   updatedAt DateTime @default(now()) @updatedAt
 
   // fields
-  name         String
-  url          String?
-  instructions String[]
-  notes        String
-  servings     Int
-  ingredients  Json
-  meals        Meal[]
-  user         User     @relation(fields: [userId], references: [id])
-  userId       String
+  name              String
+  url               String?
+  instructions      String[]
+  notes             String
+  servings          Int
+  meals             Meal[]
+  user              User               @relation(fields: [userId], references: [id])
+  userId            String
+  recipeIngredients RecipeIngredient[]
+}
+
+model Ingredient {
+  id                String             @id @default(cuid())
+  name              String
+  recipeIngredients RecipeIngredient[]
 }
 
 model Meal {
@@ -70,4 +76,14 @@ model Meal {
   user    User     @relation(fields: [userId], references: [id])
   userId  String
   recipes Recipe[]
+}
+
+//table relating recipes to ingredients with an associated quantity
+model RecipeIngredient {
+  id           String     @id @default(cuid())
+  recipe       Recipe     @relation(fields: [recipeId], references: [id])
+  recipeId     String
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+  ingredientId String
+  quantity     Float
 }

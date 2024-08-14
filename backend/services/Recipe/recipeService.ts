@@ -1,5 +1,7 @@
+import * as DBTypes from '@prisma/client'
+
 import prisma from '../../client'
-import { RecipeService } from './interface'
+import { Recipe, RecipeService } from './interface'
 
 export const recipeService: RecipeService = {
   getByUserId: async (userId: string) => {
@@ -15,9 +17,25 @@ export const recipeService: RecipeService = {
         instructions: true,
         notes: true,
         servings: true,
-        ingredients: true,
+        recipeIngredients: {
+          select: {
+            ingredient: {
+              select: {
+                name: true,
+              },
+            },
+            quantity: true,
+          },
+        },
       },
     })
+    const formattedRecipes: Recipe[] = recipes.map((recipe) => ({
+      ...recipe,
+      recipeIngredients: recipe.recipeIngredients.map((recipeIngredient) => ({
+        ...recipeIngredient,
+        ingredient: recipeIngredient.ingredient.name,
+      })),
+    }))
     return recipes
   },
 }

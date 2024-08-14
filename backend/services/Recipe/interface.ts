@@ -1,15 +1,15 @@
 export interface RecipeIngredient {
-  name: string
+  ingredient: string
   quantity: number
 }
 
 export interface Recipe {
   name: string
-  url?: string
+  url: string | null
   instructions: string[]
   notes: string
   servings: number
-  ingredients: RecipeIngredient[]
+  recipeIngredients: RecipeIngredient[]
 }
 
 export interface RecipeService {
