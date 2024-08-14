@@ -79,7 +79,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        gothic: ['UnifrakturCook', 'serif'], // Add your Gothic font here
+        gothic: ['UnifrakturCook', 'serif'],
+        supermercado: ['Supermercado One', 'sans-serif'],
       },
     },
   },
