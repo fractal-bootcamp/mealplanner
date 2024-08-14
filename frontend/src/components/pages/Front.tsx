@@ -16,7 +16,7 @@ const Front = () => {
   };
 
   return (
-    <div className="fixed bg-sky-500 w-full h-screen flex flex-col">
+    <div className="fixed bg-sky-500 w-full h-screen flex flex-col overflow-y-auto">
       {/* Fixed Navbar */}
       <div className="fixed top-0 left-0 right-0 bg-sky-700 text-white p-4 flex justify-around">
         <button
