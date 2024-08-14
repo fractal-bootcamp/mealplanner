@@ -95,9 +95,10 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; /* Ensure content can flow vertically */
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden; /* Hide horizontal overflow if needed */
 }
 
 h1 {
