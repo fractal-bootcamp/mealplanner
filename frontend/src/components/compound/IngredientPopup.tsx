@@ -74,6 +74,7 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
   ) => {
     recognizeUnit(e.target.value);
   };
+
   const handleSubmit = () => {
     if (ingredientInput.trim() !== "" && amountInput.trim() !== "") {
       const updatedIngredient: RecipeIngredient = {
@@ -130,7 +131,7 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
             <option value="tbsp">tbsp</option>
             <option value="tsp">tsp</option>
             <option value="oz">oz</option>
-            <option value="g">g</option>
+            <option value="g">grms</option>
             <option value="lb">lb</option>
             <option value="ml">ml</option>
             <option value="l">l</option>

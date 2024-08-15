@@ -1,37 +1,78 @@
+// THIS IS THE MAIN COMPONENT FOR RECIPE CREATOR
+// its outputs should be:
+
+// **** RECIPE ****
+// type Recipe = {
+//     name: string;
+//     instructions: string[];
+//     notes: string;
+//     RecipeIngredients: RecipeIngredient[];
+//   };
+
+//   type RecipeIngredient = {
+//     ingredient: {
+//       // Details about the ingredient (e.g., name, type)
+//     };
+//     amount: number;
+//     unit: string;
+//   };
+
+// **** SHOPPING LIST ****
+// type ShoppingList = {
+//     ingredients: Ingredient[];
+//   };
+
+//   type Ingredient = {
+//     // Details about the ingredient (e.g., name, amount, unit)
+//   };
+
 import React, { useState } from "react";
+
+// interfaces and types
 import {
   Recipe,
   RecipeIngredient,
   ShoppingList,
   Category,
 } from "../../../../shared/interfaces";
+
+// API service
 import recipeService from "../../../API/recipeService";
 
+// Popups
 import IngredientPopup from "../compound/IngredientPopup";
 import StepPopup from "../compound/StepPopup";
 
 const RecipeCreator: React.FC = () => {
+  //the title and notes are handled in the same app
   const [title, setTitle] = useState<string>("Add Title");
   const [isEditing, setIsEditing] = useState<boolean>(false);
   const [inputValue, setInputValue] = useState<string>("");
   const [notes, setNotes] = useState<string>("");
 
+  // ingredients and steps are handled by popups
   const [ingredients, setIngredients] = useState<RecipeIngredient[]>([]);
   const [steps, setSteps] = useState<string[]>([]);
   const [showIngredientPopup, setShowIngredientPopup] =
     useState<boolean>(false);
   const [showStepPopup, setShowStepPopup] = useState<boolean>(false);
 
+  // states for handling editions/updating
   const [isEditingIngredients, setIsEditingIngredients] =
     useState<boolean>(false);
   const [isEditingSteps, setIsEditingSteps] = useState<boolean>(false);
 
   const [ingredientToEdit, setIngredientToEdit] =
     useState<RecipeIngredient | null>(null);
-  const [stepToEdit, setStepToEdit] = useState<number | null>(null);
+  const [stepToEdit, setStepToEdit] = useState<{
+    index: number;
+    step: string;
+  } | null>(null);
 
+  // function from API service
   const { addRecipe } = recipeService;
 
+  // TITLE
   const handleSaveClick = (): void => {
     setTitle(inputValue);
     setIsEditing(false);
@@ -47,6 +88,7 @@ const RecipeCreator: React.FC = () => {
     setInputValue(e.target.value);
   };
 
+  // INGREDIENTS
   const handleAddIngredient = (ingredient: RecipeIngredient) => {
     setIngredients([...ingredients, ingredient]);
     console.log("ingredient", ingredient);
@@ -75,6 +117,7 @@ const RecipeCreator: React.FC = () => {
     setShowIngredientPopup(false);
   };
 
+  // STEPS
   const handleAddStep = (step: string) => {
     setSteps((prevSteps) => {
       const updatedSteps = [...prevSteps, step];
@@ -90,18 +133,17 @@ const RecipeCreator: React.FC = () => {
   };
 
   const handleEditStep = (index: number) => {
-    console.log("Editing step:", steps[index]);
-    setStepToEdit(steps[index]);
+    setStepToEdit({ index, step: steps[index] });
     setShowStepPopup(true);
   };
 
-  const handleUpdateStep = (updatedStep: string) => {
-    console.log("Updating step:", updatedStep);
-    setSteps(steps.map((step) => (step === stepToEdit ? updatedStep : step)));
+  const handleUpdateStep = (index: number, updatedStep: string) => {
+    setSteps(steps.map((step, i) => (i === index ? updatedStep : step)));
     setStepToEdit(null);
     setShowStepPopup(false);
   };
 
+  // RECIPE
   const handleSaveRecipe = (): void => {
     const recipe: Recipe = {
       name: title,
@@ -109,6 +151,8 @@ const RecipeCreator: React.FC = () => {
       notes: notes,
       RecipeIngredients: ingredients,
     };
+
+    // SHOPPING LIST
 
     const shoppingList: ShoppingList = {
       ingredients: ingredients.map((ri) => ri.ingredient),
@@ -123,6 +167,7 @@ const RecipeCreator: React.FC = () => {
     setShowStepPopup(false);
   };
 
+  // RESET FORM
   const resetForm = () => {
     setTitle("Add Title");
     setIsEditing(false);
@@ -132,6 +177,7 @@ const RecipeCreator: React.FC = () => {
     setSteps([]);
   };
 
+  // POPUPBUTTON AFTER THE RECIPE IS DONE, IT GIVES YOU THESE THREE OPTIONS
   const handlePopupButtonClick = (action: string) => {
     switch (action) {
       case "seeRecipe":
@@ -147,8 +193,10 @@ const RecipeCreator: React.FC = () => {
         break;
     }
   };
+
   return (
     <>
+      {/* TITLE */}
       <div className="p-4 min-h-screen flex flex-col">
         <div className="flex-grow mb-4">
           <div className="mb-4">
@@ -179,6 +227,7 @@ const RecipeCreator: React.FC = () => {
             )}
           </div>
 
+          {/* INGREDIENTS */}
           <div className="mb-4">
             <h2 className="text-lg font-bold">Ingredients</h2>
             <button
@@ -234,6 +283,7 @@ const RecipeCreator: React.FC = () => {
             </ul>
           </div>
 
+          {/* STEPS  */}
           <div className="mb-4">
             <h2 className="text-lg font-bold">Steps</h2>
             <button
@@ -250,19 +300,6 @@ const RecipeCreator: React.FC = () => {
                 >
                   <span>{step}</span>
                   <div className="flex items-center space-x-2">
-                    {stepToEdit === index && (
-                      <button
-                        onClick={() =>
-                          handleUpdateStep({
-                            ...step,
-                            content: "Updated Content", // replace with actual edit logic
-                          })
-                        }
-                        className="text-blue-500"
-                      >
-                        Update
-                      </button>
-                    )}
                     <button
                       onClick={() => handleEditStep(index)}
                       className="text-blue-500"
@@ -282,6 +319,7 @@ const RecipeCreator: React.FC = () => {
           </div>
         </div>
 
+        {/* NOTES  */}
         <div className="flex flex-col flex-grow mb-16">
           <div className="mb-4 flex-grow">
             <h2 className="text-lg font-bold">Notes</h2>
@@ -299,6 +337,8 @@ const RecipeCreator: React.FC = () => {
           </button>
         </div>
 
+        {/* // POPUPS */}
+        {/* // INGREDIENT POPUP */}
         {showIngredientPopup && (
           <IngredientPopup
             onClose={() => {
@@ -311,6 +351,7 @@ const RecipeCreator: React.FC = () => {
           />
         )}
 
+        {/* // STEP POPUP */}
         {showStepPopup && (
           <StepPopup
             onClose={() => {
@@ -318,7 +359,7 @@ const RecipeCreator: React.FC = () => {
               setStepToEdit(null);
             }}
             onAddStep={handleAddStep}
-            onEditStep={handleEditStep}
+            onEditStep={handleUpdateStep}
             stepToEdit={stepToEdit}
           />
         )}
