@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 
 interface StepPopupProps {
   onClose: () => void;
-  onAddStep: (step) => void;
-  onEditStep: (step) => void;
-  stepToEdit: string | null;
+  onAddStep: (step: string) => void;
+  onEditStep: (index: number, step: string) => void;
+  stepToEdit: { index: number; step: string } | null;
 }
 
 const StepPopup: React.FC<StepPopupProps> = ({
@@ -13,33 +13,24 @@ const StepPopup: React.FC<StepPopupProps> = ({
   onEditStep,
   stepToEdit,
 }) => {
-  console.log("StepPopup rendered with stepToEdit:", stepToEdit);
-
-  const [stepInput, setStepInput] = useState<string>(
-    stepToEdit?.stepToEdit || ""
-  );
-
-  const [step, setStep] = useState<string>(stepToEdit?.stepToEdit || "");
+  const [stepInput, setStepInput] = useState<string>("");
 
   useEffect(() => {
-    console.log("useEffect triggered with stepToEdit:", stepToEdit);
     if (stepToEdit) {
-      console.log("Updating state with stepToEdit");
-      setStepInput(stepToEdit);
+      setStepInput(stepToEdit.step);
     } else {
-      console.log("Resetting state (no steptToEdit)");
       setStepInput("");
     }
   }, [stepToEdit]);
 
-  const handleAddStep = () => {
+  const handleSubmit = () => {
     if (stepInput.trim() !== "") {
-      const newStep = {
-        stepInput,
-      };
-      onAddStep(newStep.stepInput);
-      console.log("New step added", newStep.stepInput);
-      setStepInput("");
+      if (stepToEdit) {
+        onEditStep(stepToEdit.index, stepInput);
+      } else {
+        onAddStep(stepInput);
+      }
+      onClose();
     }
   };
 
@@ -56,7 +47,7 @@ const StepPopup: React.FC<StepPopupProps> = ({
           className="border border-gray-300 p-2 rounded text-black w-full mb-2"
         />
         <button
-          onClick={handleAddStep}
+          onClick={handleSubmit}
           className="bg-green-500 text-white p-2 rounded mt-2 w-full"
         >
           {stepToEdit ? "Update Step" : "Add Step"}
