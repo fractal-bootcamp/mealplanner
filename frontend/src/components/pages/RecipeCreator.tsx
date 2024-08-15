@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   Recipe,
-  Step,
   RecipeIngredient,
   ShoppingList,
   Category,
@@ -18,7 +17,7 @@ const RecipeCreator: React.FC = () => {
   const [notes, setNotes] = useState<string>("");
 
   const [ingredients, setIngredients] = useState<RecipeIngredient[]>([]);
-  const [steps, setSteps] = useState<Step[]>([]);
+  const [steps, setSteps] = useState<string[]>([]);
   const [showIngredientPopup, setShowIngredientPopup] =
     useState<boolean>(false);
   const [showStepPopup, setShowStepPopup] = useState<boolean>(false);
@@ -27,7 +26,8 @@ const RecipeCreator: React.FC = () => {
     useState<boolean>(false);
   const [isEditingSteps, setIsEditingSteps] = useState<boolean>(false);
 
-  const [ingredientToEdit, setIngredientToEdit] = useState<number | null>(null);
+  const [ingredientToEdit, setIngredientToEdit] =
+    useState<RecipeIngredient | null>(null);
   const [stepToEdit, setStepToEdit] = useState<number | null>(null);
 
   const { addRecipe } = recipeService;
@@ -38,6 +38,7 @@ const RecipeCreator: React.FC = () => {
   };
 
   const handleEditClick = (): void => {
+    console.log("Clicked");
     setInputValue(title);
     setIsEditing(true);
   };
@@ -48,6 +49,8 @@ const RecipeCreator: React.FC = () => {
 
   const handleAddIngredient = (ingredient: RecipeIngredient) => {
     setIngredients([...ingredients, ingredient]);
+    console.log("ingredient", ingredient);
+    console.log("ingredients", ingredients, ingredient);
     setShowIngredientPopup(false);
   };
 
@@ -56,21 +59,29 @@ const RecipeCreator: React.FC = () => {
   };
 
   const handleEditIngredient = (index: number) => {
-    setIngredientToEdit(index);
+    console.log("Editing ingredient:", ingredients[index]);
+    setIngredientToEdit(ingredients[index]);
+    setShowIngredientPopup(true);
   };
 
   const handleUpdateIngredient = (updatedIngredient: RecipeIngredient) => {
-    if (ingredientToEdit !== null) {
-      const updatedIngredients = ingredients.map((ingredient, i) =>
-        i === ingredientToEdit ? updatedIngredient : ingredient
-      );
-      setIngredients(updatedIngredients);
-      setIngredientToEdit(null);
-    }
+    console.log("Updating ingredient:", updatedIngredient);
+    setIngredients(
+      ingredients.map((ingredient) =>
+        ingredient === ingredientToEdit ? updatedIngredient : ingredient
+      )
+    );
+    setIngredientToEdit(null);
+    setShowIngredientPopup(false);
   };
 
-  const handleAddStep = (step: Step) => {
-    setSteps([...steps, step]);
+  const handleAddStep = (step: string) => {
+    setSteps((prevSteps) => {
+      const updatedSteps = [...prevSteps, step];
+      console.log("New step added", step);
+      console.log("All the steps now:", updatedSteps);
+      return updatedSteps;
+    });
     setShowStepPopup(false);
   };
 
@@ -79,17 +90,16 @@ const RecipeCreator: React.FC = () => {
   };
 
   const handleEditStep = (index: number) => {
-    setStepToEdit(index);
+    console.log("Editing step:", steps[index]);
+    setStepToEdit(steps[index]);
+    setShowStepPopup(true);
   };
 
-  const handleUpdateStep = (updatedStep: Step) => {
-    if (stepToEdit !== null) {
-      const updatedSteps = steps.map((step, i) =>
-        i === stepToEdit ? updatedStep : step
-      );
-      setSteps(updatedSteps);
-      setStepToEdit(null);
-    }
+  const handleUpdateStep = (updatedStep: string) => {
+    console.log("Updating step:", updatedStep);
+    setSteps(steps.map((step) => (step === stepToEdit ? updatedStep : step)));
+    setStepToEdit(null);
+    setShowStepPopup(false);
   };
 
   const handleSaveRecipe = (): void => {
@@ -137,75 +147,62 @@ const RecipeCreator: React.FC = () => {
         break;
     }
   };
-
   return (
-    <div className="p-4 min-h-screen flex flex-col">
-      <div className="flex-grow mb-4">
-        <div className="mb-4">
-          {isEditing ? (
-            <input
-              type="text"
-              value={inputValue}
-              onChange={handleInputChange}
-              className="border border-gray-300 p-2 rounded text-black w-full"
-            />
-          ) : (
-            <h1 className="text-xl font-bold">{title}</h1>
-          )}
-          {isEditing ? (
-            <button
-              onClick={handleSaveClick}
-              className="bg-blue-500 text-white p-2 rounded ml-2"
-            >
-              Save
-            </button>
-          ) : (
-            <button
-              onClick={handleEditClick}
-              className="bg-yellow-500 text-white p-2 rounded ml-2"
-            >
-              Edit
-            </button>
-          )}
-        </div>
-
-        <div className="mb-4">
-          <h2 className="text-lg font-bold">Ingredients</h2>
-          <button
-            onClick={() => setShowIngredientPopup(true)}
-            className="bg-green-500 text-white p-2 rounded mt-2"
-          >
-            Add Ingredient
-          </button>
-          <ul className="list-disc pl-5 mt-2">
-            {ingredients.map((ingredient, index) => (
-              <li
-                key={index}
-                className="flex justify-between items-center mb-2"
+    <>
+      <div className="p-4 min-h-screen flex flex-col">
+        <div className="flex-grow mb-4">
+          <div className="mb-4">
+            {isEditing ? (
+              <input
+                type="text"
+                value={inputValue}
+                onChange={handleInputChange}
+                className="border border-gray-300 p-2 rounded text-black w-full"
+              />
+            ) : (
+              <h1 className="text-xl font-bold">{title}</h1>
+            )}
+            {isEditing ? (
+              <button
+                onClick={handleSaveClick}
+                className="bg-blue-500 text-white p-2 rounded ml-2"
               >
-                <span>
-                  {ingredient.ingredient.name} - {ingredient.amount}{" "}
-                  {ingredient.unit}
-                </span>
-                <div className="flex items-center space-x-2">
-                  {ingredientToEdit === index && (
-                    <button
-                      onClick={() =>
-                        handleUpdateIngredient({
-                          ...ingredient,
-                          amount: "Updated Amount", // replace with actual edit logic
-                        })
-                      }
-                      className="text-blue-500"
-                    >
-                      Update
-                    </button>
-                  )}
+                Save
+              </button>
+            ) : (
+              <button
+                onClick={handleEditClick}
+                className="bg-yellow-500 text-white p-2 rounded ml-2"
+              >
+                Edit
+              </button>
+            )}
+          </div>
+
+          <div className="mb-4">
+            <h2 className="text-lg font-bold">Ingredients</h2>
+            <button
+              onClick={() => setShowIngredientPopup(true)}
+              className="bg-green-500 text-white p-2 rounded mt-2"
+            >
+              Add Ingredient
+            </button>
+            <ul className="list-disc pl-5 mt-2">
+              {ingredients.map((ingredient, index) => (
+                <li
+                  key={index}
+                  className="flex justify-between items-center mb-2"
+                >
+                  <span>
+                    {ingredient.ingredient.name} - {ingredient.amount}{" "}
+                    {ingredient.unit}
+                  </span>
+
                   <button
                     onClick={() => handleEditIngredient(index)}
-                    className="text-blue-500"
+                    className="bg-green-500 text-white p-2 rounded mt-2"
                   >
-                    Edit
+                    Edit Ingredient
                   </button>
                   <button
                     onClick={() => handleRemoveIngredient(index)}
@@ -213,92 +210,120 @@ const RecipeCreator: React.FC = () => {
                   >
                     Remove
                   </button>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
 
-        <div className="mb-4">
-          <h2 className="text-lg font-bold">Steps</h2>
-          <button
-            onClick={() => setShowStepPopup(true)}
-            className="bg-blue-500 text-white p-2 rounded mt-2"
-          >
-            Add Step
-          </button>
-          <ol className="list-decimal pl-5 mt-2">
-            {steps.map((step, index) => (
-              <li
-                key={index}
-                className="mb-2 flex justify-between items-center"
-              >
-                <span>{step.content}</span>
-                <div className="flex items-center space-x-2">
-                  {stepToEdit === index && (
+                  <div className="flex items-center space-x-2">
+                    {ingredientToEdit === index && (
+                      <>
+                        <button
+                          onClick={() => handleEditIngredient(index)}
+                          className="bg-yellow-500 text-white p-2 rounded mt-2"
+                        >
+                          Edit Ingredient
+                        </button>
+                        <button
+                          onClick={() => handleRemoveIngredient(index)}
+                          className="text-red-500"
+                        >
+                          Remove
+                        </button>
+                      </>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mb-4">
+            <h2 className="text-lg font-bold">Steps</h2>
+            <button
+              onClick={() => setShowStepPopup(true)}
+              className="bg-blue-500 text-white p-2 rounded mt-2"
+            >
+              Add Step
+            </button>
+            <ol className="list-decimal pl-5 mt-2">
+              {steps.map((step, index) => (
+                <li
+                  key={index}
+                  className="mb-2 flex justify-between items-center"
+                >
+                  <span>{step}</span>
+                  <div className="flex items-center space-x-2">
+                    {stepToEdit === index && (
+                      <button
+                        onClick={() =>
+                          handleUpdateStep({
+                            ...step,
+                            content: "Updated Content", // replace with actual edit logic
+                          })
+                        }
+                        className="text-blue-500"
+                      >
+                        Update
+                      </button>
+                    )}
                     <button
-                      onClick={() =>
-                        handleUpdateStep({
-                          ...step,
-                          content: "Updated Content", // replace with actual edit logic
-                        })
-                      }
+                      onClick={() => handleEditStep(index)}
                       className="text-blue-500"
                     >
-                      Update
+                      Edit
                     </button>
-                  )}
-                  <button
-                    onClick={() => handleEditStep(index)}
-                    className="text-blue-500"
-                  >
-                    Edit
-                  </button>
-                  <button
-                    onClick={() => handleRemoveStep(index)}
-                    className="text-red-500"
-                  >
-                    Remove
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ol>
+                    <button
+                      onClick={() => handleRemoveStep(index)}
+                      className="text-red-500"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col flex-grow mb-16">
-        <div className="mb-4 flex-grow">
-          <h2 className="text-lg font-bold">Notes</h2>
-          <textarea
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-            className="border border-gray-300 p-2 rounded text-black w-full h-40 overflow-auto"
+        <div className="flex flex-col flex-grow mb-16">
+          <div className="mb-4 flex-grow">
+            <h2 className="text-lg font-bold">Notes</h2>
+            <textarea
+              value={notes}
+              onChange={(e) => setNotes(e.target.value)}
+              className="border border-gray-300 p-2 rounded text-black w-full h-40 overflow-auto"
+            />
+          </div>
+          <button
+            onClick={handleSaveRecipe}
+            className="bg-green-500 text-white p-2 rounded mt-2"
+          >
+            Save Recipe
+          </button>
+        </div>
+
+        {showIngredientPopup && (
+          <IngredientPopup
+            onClose={() => {
+              setShowIngredientPopup(false);
+              setIngredientToEdit(null);
+            }}
+            onAddIngredient={handleAddIngredient}
+            onEditIngredient={handleUpdateIngredient}
+            ingredientToEdit={ingredientToEdit}
           />
-        </div>
-        <button
-          onClick={handleSaveRecipe}
-          className="bg-green-500 text-white p-2 rounded mt-2"
-        >
-          Save Recipe
-        </button>
+        )}
+
+        {showStepPopup && (
+          <StepPopup
+            onClose={() => {
+              setShowStepPopup(false);
+              setStepToEdit(null);
+            }}
+            onAddStep={handleAddStep}
+            onEditStep={handleEditStep}
+            stepToEdit={stepToEdit}
+          />
+        )}
       </div>
-
-      {showIngredientPopup && (
-        <IngredientPopup
-          onClose={() => setShowIngredientPopup(false)}
-          onAddIngredient={handleAddIngredient}
-        />
-      )}
-
-      {showStepPopup && (
-        <StepPopup
-          onClose={() => setShowStepPopup(false)}
-          onAddStep={handleAddStep}
-        />
-      )}
-    </div>
+    </>
   );
 };
-
 export default RecipeCreator;
