@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum FoodCategory {
+enum CATEGORY {
   PRODUCE
   MEAT
   FISH
@@ -23,6 +23,32 @@ enum FoodCategory {
   FROZEN
   BEVERAGES
   SNACKS
+  CANNED_GOODS
+  CONDIMENTS
+  PASTA_AND_RICE
+  BREAD_AND_BAKERY
+  BREAKFAST_AND_CEREAL
+  SOUPS_AND_BROTHS
+  SPICES_AND_SEASONINGS
+  SAUCES_AND_MARINADES
+  HEALTH_AND_WELLNESS
+  HOUSEHOLD_SUPPLIES
+  PERSONAL_CARE
+  MISC
+}
+
+enum UNIT {
+  GRAMS
+  KILOGRAMS
+  OUNCES
+  POUNDS
+  TONS
+  CUPS
+  PINTS
+  FLUID_OUNCES
+  FLUID_DRAMS
+  TABLESPOONS
+  TEASPOONS
 }
 
 // models
@@ -55,14 +81,19 @@ model Recipe {
   notes             String
   servings          Int
   meals             Meal[]
-  user              User               @relation(fields: [userId], references: [id])
+  user              User               @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId            String
   recipeIngredients RecipeIngredient[]
+
+  @@unique(name: "recipeId", fields: [userId, name])
 }
 
 model Ingredient {
   id                String             @id @default(cuid())
-  name              String
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @default(now()) @updatedAt
+  name              String             @unique
+  category          CATEGORY
   recipeIngredients RecipeIngredient[]
 }
 
@@ -73,17 +104,23 @@ model Meal {
 
   // fields
   name    String
-  user    User     @relation(fields: [userId], references: [id])
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId  String
   recipes Recipe[]
+
+  @@unique(name: "mealId", fields: [userId, name])
 }
 
 //table relating recipes to ingredients with an associated quantity
 model RecipeIngredient {
   id           String     @id @default(cuid())
-  recipe       Recipe     @relation(fields: [recipeId], references: [id])
+  recipe       Recipe     @relation(fields: [recipeId], references: [id], onDelete: Cascade)
   recipeId     String
-  ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
   ingredientId String
   quantity     Float
+  unit         UNIT
+  ordinal      Int
+
+  @@unique(name: "recipeIngredientId", fields: [recipeId, ingredientId])
 }
