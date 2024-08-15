@@ -34,18 +34,18 @@ import {
   RecipeIngredient,
   ShoppingList,
   Category,
-} from "../../../../shared/interfaces";
+} from "../../../../../shared/interfaces";
 
 // API service
-import recipeService from "../../../API/recipeService";
+import recipeService from "../../../../API/recipeService";
 
 // Popups
-import IngredientPopup from "../compound/IngredientPopup";
-import StepPopup from "../compound/StepPopup";
+import IngredientPopup from "../IngredientPopup";
+import StepPopup from "../StepPopup";
 
 const RecipeCreator: React.FC = () => {
   //the title and notes are handled in the same app
-  const [title, setTitle] = useState<string>("Add Title");
+  const [title, setTitle] = useState<string>("add title");
   const [isEditing, setIsEditing] = useState<boolean>(false);
   const [inputValue, setInputValue] = useState<string>("");
   const [notes, setNotes] = useState<string>("");
@@ -169,7 +169,7 @@ const RecipeCreator: React.FC = () => {
 
   // RESET FORM
   const resetForm = () => {
-    setTitle("Add Title");
+    setTitle("add title");
     setIsEditing(false);
     setInputValue("");
     setNotes("");
@@ -197,7 +197,7 @@ const RecipeCreator: React.FC = () => {
   return (
     <>
       {/* TITLE */}
-      <div className="p-4 min-h-screen flex flex-col">
+      <div className="p-4 min-h-screen flex flex-col bg-sky-400">
         <div className="flex-grow mb-4">
           <div className="mb-4">
             {isEditing ? (
@@ -208,33 +208,37 @@ const RecipeCreator: React.FC = () => {
                 className="border border-gray-300 p-2 rounded text-black w-full"
               />
             ) : (
-              <h1 className="text-xl font-bold">{title}</h1>
+              <h1 className="text-lg text-sky-900 font-bold py-4 font-mono">
+                {title}
+              </h1>
             )}
             {isEditing ? (
               <button
                 onClick={handleSaveClick}
                 className="bg-blue-500 text-white p-2 rounded ml-2"
               >
-                Save
+                save
               </button>
             ) : (
               <button
                 onClick={handleEditClick}
-                className="bg-yellow-500 text-white p-2 rounded ml-2"
+                className="py-2 font-mono font-semibold text-md rounded-full bg-yellow-500 text-white w-24 border-8 "
               >
-                Edit
+                edit
               </button>
             )}
           </div>
 
           {/* INGREDIENTS */}
           <div className="mb-4">
-            <h2 className="text-lg font-bold">Ingredients</h2>
+            <h2 className="text-lg text-sky-900 font-bold py-4 font-mono">
+              ingredients
+            </h2>
             <button
               onClick={() => setShowIngredientPopup(true)}
-              className="bg-green-500 text-white p-2 rounded mt-2"
+              className="bg-green-600 font-mono font-semibold text-white p-2 rounded-full mt-2 border-8 px-4 py-2"
             >
-              Add Ingredient
+              add ingredient
             </button>
             <ul className="list-disc pl-5 mt-2">
               {ingredients.map((ingredient, index) => (
@@ -246,20 +250,20 @@ const RecipeCreator: React.FC = () => {
                     {ingredient.ingredient.name} - {ingredient.amount}{" "}
                     {ingredient.unit}
                   </span>
-
-                  <button
-                    onClick={() => handleEditIngredient(index)}
-                    className="bg-green-500 text-white p-2 rounded mt-2"
-                  >
-                    Edit Ingredient
-                  </button>
-                  <button
-                    onClick={() => handleRemoveIngredient(index)}
-                    className="text-red-500"
-                  >
-                    Remove
-                  </button>
-
+                  <div className="space-x-1">
+                    <button
+                      onClick={() => handleEditIngredient(index)}
+                      className="bg-fuchsia-400 font-mono rounded-full py-2 mt-2"
+                    >
+                      edit
+                    </button>
+                    <button
+                      onClick={() => handleRemoveIngredient(index)}
+                      className="text-fuchsia-400 font-mono rounded-full py-2 px-4 mt-2"
+                    >
+                      remove
+                    </button>
+                  </div>
                   <div className="flex items-center space-x-2">
                     {ingredientToEdit === index && (
                       <>
@@ -267,13 +271,13 @@ const RecipeCreator: React.FC = () => {
                           onClick={() => handleEditIngredient(index)}
                           className="bg-yellow-500 text-white p-2 rounded mt-2"
                         >
-                          Edit Ingredient
+                          edit ingredient
                         </button>
                         <button
                           onClick={() => handleRemoveIngredient(index)}
                           className="text-red-500"
                         >
-                          Remove
+                          remove
                         </button>
                       </>
                     )}
@@ -284,33 +288,35 @@ const RecipeCreator: React.FC = () => {
           </div>
 
           {/* STEPS  */}
-          <div className="mb-4">
-            <h2 className="text-lg font-bold">Steps</h2>
+          <div className="mb-0">
+            <h2 className="text-lg text-sky-900 font-bold py-2 font-mono">
+              steps
+            </h2>
             <button
               onClick={() => setShowStepPopup(true)}
-              className="bg-blue-500 text-white p-2 rounded mt-2"
+              className="bg-blue-600 font-mono font-semibold text-white p-2 rounded-full mt-2 border-8 px-4 py-2"
             >
-              Add Step
+              add step
             </button>
             <ol className="list-decimal pl-5 mt-2">
               {steps.map((step, index) => (
                 <li
                   key={index}
-                  className="mb-2 flex justify-between items-center"
+                  className="mb-0.5 flex justify-between items-center"
                 >
-                  <span>{step}</span>
+                  <span className="font-mono text-md"> ◗ {step}</span>
                   <div className="flex items-center space-x-2">
                     <button
                       onClick={() => handleEditStep(index)}
-                      className="text-blue-500"
+                      className="bg-fuchsia-400 font-mono rounded-full py-2 mt-2"
                     >
-                      Edit
+                      edit
                     </button>
                     <button
                       onClick={() => handleRemoveStep(index)}
-                      className="text-red-500"
+                      className="text-fuchsia-400 font-mono rounded-full py-2 px-4 mt-2"
                     >
-                      Remove
+                      remove
                     </button>
                   </div>
                 </li>
@@ -320,20 +326,22 @@ const RecipeCreator: React.FC = () => {
         </div>
 
         {/* NOTES  */}
-        <div className="flex flex-col flex-grow mb-16">
-          <div className="mb-4 flex-grow">
-            <h2 className="text-lg font-bold">Notes</h2>
+        <div className="flex flex-col flex-grow mb-20">
+          <div className=" flex-grow">
+            <h2 className="text-lg text-sky-900 font-bold py-4 font-mono">
+              notes
+            </h2>
             <textarea
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
-              className="border border-gray-300 p-2 rounded text-black w-full h-40 overflow-auto"
+              className="bg-sky-300 border-1 border-gray-300 rounded-xl text-black w-full h-40 overflow-auto"
             />
           </div>
           <button
             onClick={handleSaveRecipe}
-            className="bg-green-500 text-white p-2 rounded mt-2"
+            className="bg-fuchsia-500 font-mono font-semibold text-white rounded-full mt-0 border-8 px-4 py-2 mb-0"
           >
-            Save Recipe
+            save recipe!
           </button>
         </div>
 

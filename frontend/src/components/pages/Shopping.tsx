@@ -45,10 +45,7 @@ const Shopping = ({ lists }: ShoppingListProps) => {
   };
 
   return (
-    <div className="fixed bg-sky-500 flex flex-col min-h-screen p-4 w-full max-w-screen-lg mx-auto">
-      {/* Header */}
-      <h2 className="text-2xl font-bold text-center mb-4">Shopping</h2>
-
+    <div className="fixed bg-sky-400 flex flex-col min-h-screen p-4 w-full max-w-screen-lg mx-auto">
       {/* Buttons and icons section */}
       <div className="p-4 flex flex-col items-center space-y-4">
         {/* Icon */}
@@ -56,7 +53,7 @@ const Shopping = ({ lists }: ShoppingListProps) => {
           <img
             src={getIconSrc()}
             alt="Current View Icon"
-            className="w-20 h-20 p-2 rounded-full border-1 border-fuchsia-300 object-cover"
+            className="w-32 h-32 p-2 rounded-full border-1 border-fuchsia-300 object-cover"
           />
         </div>
 
