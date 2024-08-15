@@ -1,29 +1,45 @@
-import React, { useState } from "react";
-import { Step } from "../../../../shared/interfaces";
+import React, { useState, useEffect } from "react";
 
 interface StepPopupProps {
   onClose: () => void;
-  onAddStep: (step: Step) => void;
+  onAddStep: (step: string) => void;
+  onEditStep: (index: number, step: string) => void;
+  stepToEdit: { index: number; step: string } | null;
 }
 
-const StepPopup: React.FC<StepPopupProps> = ({ onClose, onAddStep }) => {
+const StepPopup: React.FC<StepPopupProps> = ({
+  onClose,
+  onAddStep,
+  onEditStep,
+  stepToEdit,
+}) => {
   const [stepInput, setStepInput] = useState<string>("");
 
-  const handleAddStep = () => {
-    if (stepInput.trim() !== "") {
-      const newStep: Step = {
-        content: stepInput,
-        ingredients: [],
-      };
-      onAddStep(newStep);
+  useEffect(() => {
+    if (stepToEdit) {
+      setStepInput(stepToEdit.step);
+    } else {
       setStepInput("");
+    }
+  }, [stepToEdit]);
+
+  const handleSubmit = () => {
+    if (stepInput.trim() !== "") {
+      if (stepToEdit) {
+        onEditStep(stepToEdit.index, stepInput);
+      } else {
+        onAddStep(stepInput);
+      }
+      onClose();
     }
   };
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
       <div className="bg-white p-4 rounded-lg shadow-lg">
-        <h3 className="text-lg mb-2">Add Step</h3>
+        <h3 className="text-lg mb-2">
+          {stepToEdit ? "Edit Step" : "Add Step"}
+        </h3>
         <textarea
           placeholder="Describe the step"
           value={stepInput}
@@ -31,10 +47,10 @@ const StepPopup: React.FC<StepPopupProps> = ({ onClose, onAddStep }) => {
           className="border border-gray-300 p-2 rounded text-black w-full mb-2"
         />
         <button
-          onClick={handleAddStep}
+          onClick={handleSubmit}
           className="bg-green-500 text-white p-2 rounded mt-2 w-full"
         >
-          Add Step
+          {stepToEdit ? "Update Step" : "Add Step"}
         </button>
         <button
           onClick={onClose}

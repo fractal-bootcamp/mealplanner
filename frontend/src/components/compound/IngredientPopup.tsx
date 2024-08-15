@@ -1,19 +1,59 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { RecipeIngredient, Category } from "../../../../shared/interfaces";
 
 interface IngredientPopupProps {
   onClose: () => void;
   onAddIngredient: (ingredient: RecipeIngredient) => void;
+  onEditIngredient: (ingredient: RecipeIngredient) => void;
+  ingredientToEdit: RecipeIngredient | null;
 }
 
 const IngredientPopup: React.FC<IngredientPopupProps> = ({
   onClose,
   onAddIngredient,
+  onEditIngredient,
+  ingredientToEdit,
 }) => {
-  const [ingredientInput, setIngredientInput] = useState<string>("");
-  const [amountInput, setAmountInput] = useState<string>("");
-  const [unitInput, setUnitInput] = useState<string>("unit");
-  const [categoryInput, setCategoryInput] = useState<Category["name"]>("Fruit");
+  console.log(
+    "IngredientPopup rendered with ingredientToEdit:",
+    ingredientToEdit
+  );
+
+  const [ingredientInput, setIngredientInput] = useState<string>(
+    ingredientToEdit?.ingredient.name || ""
+  );
+  const [amountInput, setAmountInput] = useState<string>(
+    ingredientToEdit?.amount.toString() || ""
+  );
+  const [unitInput, setUnitInput] = useState<string>(
+    ingredientToEdit?.unit || "unit"
+  );
+  const [categoryInput, setCategoryInput] = useState<Category["name"]>(
+    ingredientToEdit?.ingredient.category?.name || "Fruit"
+  );
+
+  const [name, setName] = useState(ingredientToEdit?.ingredient.name || "");
+  const [amount, setAmount] = useState(
+    ingredientToEdit?.amount.toString() || ""
+  );
+  const [unit, setUnit] = useState(ingredientToEdit?.unit || "");
+
+  useEffect(() => {
+    console.log("useEffect triggered with ingredientToEdit:", ingredientToEdit);
+    if (ingredientToEdit) {
+      console.log("Updating state with ingredientToEdit");
+      setIngredientInput(ingredientToEdit.ingredient.name);
+      setAmountInput(ingredientToEdit.amount.toString());
+      setUnitInput(ingredientToEdit.unit);
+      setCategoryInput(ingredientToEdit.ingredient.category?.name || "Fruit");
+    } else {
+      console.log("Resetting state (no ingredientToEdit)");
+      setIngredientInput("");
+      setAmountInput("");
+      setUnitInput("unit");
+      setCategoryInput("Fruit");
+    }
+  }, [ingredientToEdit]);
 
   const recognizeUnit = (input: string) => {
     const unitRegex = /^([\d./]+)\s*([a-zA-Z]+|)(.*)$/;
@@ -35,9 +75,9 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
     recognizeUnit(e.target.value);
   };
 
-  const handleAddIngredient = () => {
+  const handleSubmit = () => {
     if (ingredientInput.trim() !== "" && amountInput.trim() !== "") {
-      const newIngredient: RecipeIngredient = {
+      const updatedIngredient: RecipeIngredient = {
         ingredient: {
           name: ingredientInput,
           category: { name: categoryInput, description: "" },
@@ -48,25 +88,27 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
         amount: parseFloat(amountInput),
         unit: unitInput,
       };
-      onAddIngredient(newIngredient);
-      setIngredientInput("");
-      setAmountInput("");
-      setUnitInput("unit");
-    }
-  };
 
-  const handleEditIngredient = (ingredientToEdit) => {
-    if (ingredientToEdit) {
+      console.log("Submitting ingredient:", updatedIngredient);
+      if (ingredientToEdit) {
+        onEditIngredient(updatedIngredient);
+      } else {
+        onAddIngredient(updatedIngredient);
+      }
+
+      onClose();
     }
   };
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
       <div className="bg-white p-4 rounded-lg shadow-lg">
-        <h3 className="text-lg mb-2">Add Ingredient</h3>
+        <h3 className="text-lg mb-2">
+          {ingredientToEdit ? "Edit Ingredient" : "Add Ingredient"}
+        </h3>
         <input
           type="text"
-          placeholder="Enter amount, unit, and ingredient (e.g., 2 cups flour)"
+          placeholder="Enter a name"
           value={ingredientInput}
           onChange={handleIngredientInputChange}
           className="border border-gray-300 p-2 rounded text-black w-full mb-2"
@@ -89,7 +131,7 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
             <option value="tbsp">tbsp</option>
             <option value="tsp">tsp</option>
             <option value="oz">oz</option>
-            <option value="g">g</option>
+            <option value="g">grms</option>
             <option value="lb">lb</option>
             <option value="ml">ml</option>
             <option value="l">l</option>
@@ -103,10 +145,10 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
           />
         </div>
         <button
-          onClick={handleAddIngredient}
+          onClick={handleSubmit}
           className="bg-green-500 text-white p-2 rounded mt-2 w-full"
         >
-          Add Ingredient
+          {ingredientToEdit ? "Update Ingredient" : "Add Ingredient"}
         </button>
         <button
           onClick={onClose}
