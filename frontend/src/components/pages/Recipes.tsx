@@ -24,7 +24,7 @@ const Recipes = () => {
   };
 
   return (
-    <div className=" overflow-y-auto bg-sky-400 flex flex-col min-h-screen w-full max-w-screen-lg mx-auto px-3">
+    <div className=" pt-8 overflow-y-auto bg-sky-400 flex flex-col min-h-screen w-full max-w-screen-lg mx-auto px-3">
       {/* Logo and buttons section */}
       <div className="p-4 flex flex-row items-center justify-between">
         {/* "Your recipes" button */}

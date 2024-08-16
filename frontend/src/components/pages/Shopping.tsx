@@ -47,7 +47,7 @@ const Shopping: React.FC<ShoppingProps> = ({ lists }) => {
   };
 
   return (
-    <div className="fixed bg-sky-400 flex flex-col min-h-screen p-4 w-full max-w-screen-lg mx-auto">
+    <div className="fixed bg-sky-400 flex flex-col min-h-screen w-full max-w-screen-lg mx-auto ">
       {/* Centered container */}
       <div className="flex flex-col items-center justify-center h-full relative">
         {/* Button Container */}
@@ -58,12 +58,12 @@ const Shopping: React.FC<ShoppingProps> = ({ lists }) => {
           </div>
 
           {/* Middle row of buttons */}
-          <div className="flex space-x-4 mb-4">
+          <div className="flex pt-0 space-x-4 mb-4">
             <button
-              className="py-4 font-mono font-semibold text-md bg-blue-500 text-white rounded-full border-8 w-28 border-b-blue-900 border-l-blue-950"
+              className="py-4 font-mono font-semibold text-md bg-blue-500 text-white rounded-full border-8 w-28 border-b-blue-800 border-l-blue-950"
               onClick={() => handleOnView("lists")}
             >
-              All Lists
+              all lists
             </button>
 
             {/* Centered Icon */}
@@ -71,15 +71,15 @@ const Shopping: React.FC<ShoppingProps> = ({ lists }) => {
               <img
                 src={getIconSrc()}
                 alt="Current View Icon"
-                className="w-32 h-32 p-2 rounded-full border-1 border-fuchsia-300 object-cover"
+                className="w-28 h-28 p-2 rounded-full border-1 border-fuchsia-300 object-cover"
               />
             </div>
 
             <button
-              className="py-4 font-mono font-semibold text-sm bg-fuchsia-400 text-white rounded-full border-8 w-28 border-b-fuchsia-900 border-l-fuchsia-950"
+              className="py-4 font-mono font-semibold text-sm bg-fuchsia-400 text-white rounded-full border-8 w-28 border-b-fuchsia-700 border-l-fuchsia-950"
               onClick={() => handleOnView("create unified list")}
             >
-              Create Shopping List
+              create shopping list
             </button>
           </div>
 
