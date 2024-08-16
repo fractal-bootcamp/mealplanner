@@ -68,6 +68,13 @@ const UNITS = [
   'TEASPOONS',
 ] as const
 
+export type User = {
+  id: string
+  name: string | null
+  email: string
+  clerkId: string
+}
+
 export type Unit = (typeof UNITS)[number]
 export const UNIT_DETAILS: Record<Unit, string> = {
   GRAMS: 'grams',
@@ -91,6 +98,10 @@ export type RecipeIngredient = {
 export type Ingredient = {
   name: string
   category: Category
+}
+export type Meal = {
+  name: string
+  recipes: Recipe[]
 }
 export type Recipe = {
   name: string
@@ -122,4 +133,20 @@ export type IngredientService = {
   addMany(ingredients: Ingredient[]): Promise<Ingredient[]>
   update(oldName: string, newDetails: Ingredient): Promise<Ingredient>
   upsert(ingredient: Ingredient): Promise<Ingredient>
+}
+
+export type UserService = {
+  getAll(): Promise<User[]>
+  getById(userId: string): Promise<User>
+  getByClerkId(clerkId: string): Promise<User>
+  add(user: User): Promise<User>
+  update(user: User): Promise<User>
+  delete(userId: string): Promise<User>
+}
+
+export type MealService = {
+  getAllByUserId(userId: string): Promise<Meal[]>
+  add(userId: string, meal: Meal): Promise<Meal>
+  update(userId: string, meal: Meal): Promise<Meal>
+  delete(userId: string, mealName: string): Promise<Meal>
 }
