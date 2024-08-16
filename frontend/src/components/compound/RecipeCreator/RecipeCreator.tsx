@@ -198,8 +198,8 @@ const RecipeCreator: React.FC = () => {
     <>
       {/* TITLE */}
       <div className="p-4 min-h-screen flex flex-col bg-sky-400">
-        <div className="flex-grow mb-4">
-          <div className="mb-4">
+        <div className="">
+          <div className="mb-2">
             {isEditing ? (
               <input
                 type="text"
@@ -230,13 +230,13 @@ const RecipeCreator: React.FC = () => {
           </div>
 
           {/* INGREDIENTS */}
-          <div className="mb-4">
+          <div className="mb-2">
             <h2 className="text-lg text-sky-900 font-bold py-4 font-mono">
               ingredients
             </h2>
             <button
               onClick={() => setShowIngredientPopup(true)}
-              className="bg-green-600 font-mono font-semibold text-white p-2 rounded-full mt-2 border-8 px-4 py-2"
+              className="bg-green-600 font-mono font-semibold text-white p-2 rounded-full mt-1 border-8 px-4 py-2"
             >
               add ingredient
             </button>
@@ -288,7 +288,7 @@ const RecipeCreator: React.FC = () => {
           </div>
 
           {/* STEPS  */}
-          <div className="mb-0">
+          <div className="mb-2">
             <h2 className="text-lg text-sky-900 font-bold py-2 font-mono">
               steps
             </h2>
@@ -326,8 +326,8 @@ const RecipeCreator: React.FC = () => {
         </div>
 
         {/* NOTES  */}
-        <div className="flex flex-col flex-grow mb-20">
-          <div className=" flex-grow">
+        <div className="flex flex-col flex-grow mb-4">
+          <div className="">
             <h2 className="text-lg text-sky-900 font-bold py-4 font-mono">
               notes
             </h2>
@@ -339,7 +339,7 @@ const RecipeCreator: React.FC = () => {
           </div>
           <button
             onClick={handleSaveRecipe}
-            className="bg-fuchsia-500 font-mono font-semibold text-white rounded-full mt-0 border-8 px-4 py-2 mb-0"
+            className="bg-fuchsia-500 font-mono font-semibold text-white rounded-full mt-2 border-8 px-4 py-2"
           >
             save recipe!
           </button>

@@ -19,7 +19,7 @@ const Front = () => {
   return (
     <div className="fixed bg-sky-400 w-full h-screen flex flex-col overflow-y-auto">
       {/* Fixed Navbar */}
-      <div className="fixed top-0 left-0 right-0 bg-sky-600 text-white p-4 flex justify-around">
+      <div className="fixed top-0 left-0 right-0 bg-sky-600 text-white p-4 flex justify-center">
         <button
           className="bg-green-500 border-8 border-b-green-900 border-l-green-950  font-mono font-semibold text-lg px-4 py-2"
           onClick={() => handleViewChange("recipes")}
