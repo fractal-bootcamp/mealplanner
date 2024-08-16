@@ -9,6 +9,7 @@ const MealCalendar: React.FC = ({ cart, setCart }) => {
 
   const handleDateClick = (date: Date) => {
     setSelectedDate(date);
+    console.log(date);
   };
 
   return (
@@ -20,6 +21,7 @@ const MealCalendar: React.FC = ({ cart, setCart }) => {
           onClose={() => setSelectedDate(null)}
           cart={cart}
           setCart={setCart}
+          date={selectedDate}
         />
       ) : (
         <Calendar
@@ -35,17 +37,24 @@ const MealCalendar: React.FC = ({ cart, setCart }) => {
 interface DayViewProps {
   day: Day;
   onClose: () => void;
+  date: Date;
 }
 
-const DayView: React.FC<DayViewProps> = ({ day, onClose, cart, setCart }) => (
+const DayView: React.FC<DayViewProps> = ({
+  day,
+  onClose,
+  cart,
+  setCart,
+  date,
+}) => (
   <div className="relative">
-    <button
-      onClick={onClose}
-      className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-    >
-      ✕
-    </button>
-    <DayComponent day={day} cart={cart} setCart={setCart} />
+    <DayComponent
+      day={day}
+      cart={cart}
+      setCart={setCart}
+      date={date}
+      onClose={onClose}
+    />
   </div>
 );
 
