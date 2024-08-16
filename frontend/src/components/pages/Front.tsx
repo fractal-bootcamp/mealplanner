@@ -4,11 +4,17 @@ import MealCalendar from "./MealCalendar";
 import Shopping from "./Shopping";
 import frontImageMedieval from "../../assets/manna.jpg";
 import frontImageKawaii from "../../assets/frontIcon.png";
+import { RecipeIngredient } from "../types/mealTypes";
+
+type Cart = {
+  recipeIngredients: RecipeIngredient[];
+};
 
 const Front = () => {
   // Initialize with no view (image and title visible by default)
   const [view, setView] = useState<null | string>(null);
   const [selectedDay, setSelectedDay] = useState<Day | null>(null);
+  const [cart, setCart] = useState<Cart>({ recipeIngredients: [] });
 
   // Event handler to change the view
   const handleViewChange = (newView: string) => {
@@ -65,7 +71,7 @@ const Front = () => {
           </>
         )}
         {view === "recipes" && <RecipeCreator />}
-        {view === "calendar" && <MealCalendar />}
+        {view === "calendar" && <MealCalendar cart={cart} setCart={setCart} />}
         {view === "shopping" && <Shopping />}
       </div>
     </div>
