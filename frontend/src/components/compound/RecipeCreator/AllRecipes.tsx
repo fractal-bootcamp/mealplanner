@@ -655,7 +655,7 @@ const AllRecipes = () => {
             <RecipeComponent recipe={displayRecipe} />
             <button
               onClick={closePopup}
-              className="mt-4 bg-red-500 text-white font-mono px-4 py-2 rounded"
+              className="mt-4 bg-red-500 text-white font-bold font-mono px-4 py-2 rounded"
             >
               Close
             </button>
