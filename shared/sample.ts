@@ -15,19 +15,22 @@ export interface Ingredient {
 
 export type Category = 'Fruit' | 'Vegetable' | 'Meat' | 'Fish' | 'Dairy' | 'Grain' | 'Spice' | 'Herb' | 'Fats and Oils' | 'Eggs' | 'Flour' | 'Sugar' | 'Liquid' | 'Other';
 
-export interface RecipeIngredient {
-    ingredient: Ingredient;
-    notes: string; // Notes specific to the recipe
-    amount: number;
-    unit: string;
-}
 
 export interface Recipes {
     recipes: Recipe[];
 }
 
+
+export interface RecipeIngredient {
+    ingredient: Ingredient;
+    notes?: string; // Notes specific to the recipe
+    amount: number;
+    unit: string;
+}
+
+
 export interface ShoppingList {
-    ingredients: Ingredient[];
+    ingredients: RecipeIngredient[];
 }
 
 export type ShoppingListProps = {
@@ -272,3 +275,89 @@ const shoppingList: ShoppingList = {
         // Additional ingredients can be added here
     ]
 };
+
+
+
+const shoppingList1: ShoppingList = {
+    ingredients: [
+        { ingredient: { name: "Pancetta", category: 'Meat' }, notes: "Fry until crispy", amount: 150, unit: "grams" },
+        { ingredient: { name: "Spaghetti", category: 'Grain' }, notes: "Cook according to package instructions", amount: 200, unit: "grams" },
+        { ingredient: { name: "Parmesan cheese", category: 'Dairy' }, notes: "Grated", amount: 100, unit: "grams" },
+        { ingredient: { name: "Chicken breast", category: 'Meat' }, notes: "Cut into pieces", amount: 500, unit: "grams" },
+        { ingredient: { name: "Onion", category: 'Vegetable' }, notes: "Sauté until translucent", amount: 1, unit: "" },
+        { ingredient: { name: "Garlic", category: 'Vegetable' }, notes: "Minced", amount: 3, unit: "cloves" }
+    ]
+};
+
+const shoppingList2: ShoppingList = {
+    ingredients: [
+        { ingredient: { name: "Beef strips", category: 'Meat' }, notes: "Tender cuts like sirloin work best", amount: 500, unit: "grams" },
+        { ingredient: { name: "Mushrooms", category: 'Vegetable' }, notes: "Sliced", amount: 200, unit: "grams" },
+        { ingredient: { name: "Sour cream", category: 'Dairy' }, notes: "Full-fat for creamier texture", amount: 200, unit: "ml" },
+        { ingredient: { name: "Cucumbers", category: 'Vegetable' }, notes: "Diced", amount: 1, unit: "" },
+        { ingredient: { name: "Feta cheese", category: 'Dairy' }, notes: "Crumbled", amount: 100, unit: "grams" },
+        { ingredient: { name: "Olive oil", category: 'Fats and Oils' }, notes: "Extra virgin", amount: 3, unit: "tablespoons" }
+    ]
+};
+
+const shoppingList3: ShoppingList = {
+    ingredients: [
+        { ingredient: { name: "Bell peppers", category: 'Vegetable' }, notes: "Chopped", amount: 2, unit: "" },
+        { ingredient: { name: "Soy sauce", category: 'Liquid' }, notes: "Low sodium preferred", amount: 3, unit: "tablespoons" },
+        { ingredient: { name: "Rice", category: 'Grain' }, notes: "Cook according to package instructions", amount: 200, unit: "grams" },
+        { ingredient: { name: "Pie crust", category: 'Grain' }, notes: "Store-bought or homemade", amount: 1, unit: "" },
+        { ingredient: { name: "Bacon", category: 'Meat' }, notes: "Cooked and crumbled", amount: 150, unit: "grams" },
+        { ingredient: { name: "Heavy cream", category: 'Dairy' }, notes: "Full-fat", amount: 250, unit: "ml" }
+    ]
+};
+
+const shoppingList4: ShoppingList = {
+    ingredients: [
+        { ingredient: { name: "Ground beef", category: 'Meat' }, notes: "Cooked with seasoning", amount: 500, unit: "grams" },
+        { ingredient: { name: "Taco shells", category: 'Grain' }, notes: "Warm before filling", amount: 8, unit: "shells" },
+        { ingredient: { name: "Cheddar cheese", category: 'Dairy' }, notes: "Shredded", amount: 100, unit: "grams" },
+        { ingredient: { name: "Flour", category: 'Flour' }, notes: "All-purpose", amount: 200, unit: "grams" },
+        { ingredient: { name: "Sugar", category: 'Sugar' }, notes: "Granulated", amount: 2, unit: "tablespoons" },
+        { ingredient: { name: "Chocolate chips", category: 'Other' }, notes: "Semi-sweet", amount: 150, unit: "grams" }
+    ]
+};
+
+
+
+export const listOfShoppingLists = {
+    list1: [
+        { ingredient: { name: "Pancetta", category: 'Meat' }, notes: "Fry until crispy", amount: 150, unit: "grams" },
+        { ingredient: { name: "Spaghetti", category: 'Grain' }, notes: "Cook according to package instructions", amount: 200, unit: "grams" },
+        { ingredient: { name: "Parmesan cheese", category: 'Dairy' }, notes: "Grated", amount: 100, unit: "grams" },
+        { ingredient: { name: "Chicken breast", category: 'Meat' }, notes: "Cut into pieces", amount: 500, unit: "grams" },
+        { ingredient: { name: "Onion", category: 'Vegetable' }, notes: "Sauté until translucent", amount: 1, unit: "" },
+        { ingredient: { name: "Garlic", category: 'Vegetable' }, notes: "Minced", amount: 3, unit: "cloves" }
+    ],
+    list2:
+        [
+            { ingredient: { name: "Beef strips", category: 'Meat' }, notes: "Tender cuts like sirloin work best", amount: 500, unit: "grams" },
+            { ingredient: { name: "Mushrooms", category: 'Vegetable' }, notes: "Sliced", amount: 200, unit: "grams" },
+            { ingredient: { name: "Sour cream", category: 'Dairy' }, notes: "Full-fat for creamier texture", amount: 200, unit: "ml" },
+            { ingredient: { name: "Cucumbers", category: 'Vegetable' }, notes: "Diced", amount: 1, unit: "" },
+            { ingredient: { name: "Feta cheese", category: 'Dairy' }, notes: "Crumbled", amount: 100, unit: "grams" },
+            { ingredient: { name: "Olive oil", category: 'Fats and Oils' }, notes: "Extra virgin", amount: 3, unit: "tablespoons" }
+        ],
+    list3: [
+        { ingredient: { name: "Bell peppers", category: 'Vegetable' }, notes: "Chopped", amount: 2, unit: "" },
+        { ingredient: { name: "Soy sauce", category: 'Liquid' }, notes: "Low sodium preferred", amount: 3, unit: "tablespoons" },
+        { ingredient: { name: "Rice", category: 'Grain' }, notes: "Cook according to package instructions", amount: 200, unit: "grams" },
+        { ingredient: { name: "Pie crust", category: 'Grain' }, notes: "Store-bought or homemade", amount: 1, unit: "" },
+        { ingredient: { name: "Bacon", category: 'Meat' }, notes: "Cooked and crumbled", amount: 150, unit: "grams" },
+        { ingredient: { name: "Heavy cream", category: 'Dairy' }, notes: "Full-fat", amount: 250, unit: "ml" }
+    ],
+    list4: [
+        { ingredient: { name: "Ground beef", category: 'Meat' }, notes: "Cooked with seasoning", amount: 500, unit: "grams" },
+        { ingredient: { name: "Taco shells", category: 'Grain' }, notes: "Warm before filling", amount: 8, unit: "shells" },
+        { ingredient: { name: "Cheddar cheese", category: 'Dairy' }, notes: "Shredded", amount: 100, unit: "grams" },
+        { ingredient: { name: "Flour", category: 'Flour' }, notes: "All-purpose", amount: 200, unit: "grams" },
+        { ingredient: { name: "Sugar", category: 'Sugar' }, notes: "Granulated", amount: 2, unit: "tablespoons" },
+        { ingredient: { name: "Chocolate chips", category: 'Other' }, notes: "Semi-sweet", amount: 150, unit: "grams" }
+    ]
+
+
+}

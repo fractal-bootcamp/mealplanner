@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { recipes } from "../../../../../shared/sample";
+import RecipeComponent from "../RecipeComponent";
 // This component does a simple get All request to see all the recipes on an unordered list
 
 // const AllRecipesProps: Recipe[] = {
@@ -601,36 +602,70 @@ const colorPalette = [
   "bg-purple-300",
   "bg-teal-300",
 ];
-
 const AllRecipes = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
+  const [showRecipePopup, setShowRecipePopup] = useState<boolean>(false);
+  const [displayRecipe, setDisplayRecipe] = useState<Recipe | null>(null);
+  const [popupColorClass, setPopupColorClass] = useState<string>(""); // New state for popup color class
 
   useEffect(() => {
     setRecipes(recipeList);
   }, []);
 
-  const handleRecipe = {};
+  const handleRecipe = (recipe: Recipe, colorClass: string) => {
+    console.log("clicked!");
+    setShowRecipePopup(true);
+    setDisplayRecipe(recipe);
+    setPopupColorClass(colorClass); // Set the color class for the popup
+  };
+
+  const closePopup = () => {
+    setShowRecipePopup(false);
+    setDisplayRecipe(null);
+    setPopupColorClass(""); // Clear the color class
+  };
+
   return (
-    <div>
-      <ul>
-        {recipes.map((recipe, index) => {
-          // Determine color based on index
-          const colorClass = colorPalette[index % colorPalette.length];
-          return (
-            <li key={index} className="p-1">
-              <button
-                className={`${colorClass} font-mono text-yellow-950 w-full text-left px-2 py-1 rounded`}
-                onClick={handleRecipe}
-              >
-                {recipe.name}
-              </button>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <>
+      <div>
+        <ul>
+          {recipes.map((recipe, index) => {
+            const colorClass = colorPalette[index % colorPalette.length];
+            return (
+              <li key={index} className="p-1">
+                <button
+                  className={`${colorClass} font-mono text-yellow-950 w-full text-left px-2 py-1 rounded`}
+                  onClick={() => handleRecipe(recipe, colorClass)} // Pass the colorClass to handleRecipe
+                >
+                  {recipe.name}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      {showRecipePopup && displayRecipe && (
+        <div
+          className={`fixed font-mono inset-0 bg-purple-900 bg-opacity-50 flex items-center justify-center`}
+        >
+          <div
+            className={`${popupColorClass} bg-white p-4 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto`} // Use popupColorClass
+          >
+            <RecipeComponent recipe={displayRecipe} />
+            <button
+              onClick={closePopup}
+              className="mt-4 bg-red-500 text-white font-bold font-mono px-4 py-2 rounded"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
+
 export default AllRecipes;
 
 // option all together in rows
