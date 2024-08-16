@@ -12,7 +12,7 @@ const Recipes = () => {
     switch (view) {
       case "lists":
         return seeRecipes;
-      case "create recipe": // Changed from "create a recipe" to match handleOnView
+      case "create recipe":
         return createNewRecipe;
       default:
         return cookingBowl;
@@ -24,37 +24,39 @@ const Recipes = () => {
   };
 
   return (
-    <div className="fixed bg-sky-400 flex flex-col min-h-screen p-4 w-full max-w-screen-lg mx-auto">
-      {/* Buttons and icons section */}
-      <div className="p-4 flex flex-col items-center space-y-4">
+    <div className=" overflow-y-auto bg-sky-400 flex flex-col min-h-screen w-full max-w-screen-lg mx-auto px-3">
+      {/* Logo and buttons section */}
+      <div className="p-4 flex flex-row items-center justify-between">
+        {/* "Your recipes" button */}
+        <button
+          className="py-2 px-4 font-mono text-justify-center font-semibold text-md bg-blue-500 h-24 w-28 text-white rounded-3xl border-8 border-b-blue-800 border-l-blue-950"
+          onClick={() => handleOnView("lists")}
+        >
+          your recipes
+        </button>
+
         {/* Icon */}
-        <div className="flex items-center justify-center mb-4 rounded-full border-8 border-fuchsia-300">
+        <div className="flex items-center justify-center rounded-full border-8 border-fuchsia-300">
           <img
             src={getIconSrc()}
             alt="Current View Icon"
-            className="w-32 h-32 p-2 rounded-full border-1 border-fuchsia-300 object-cover"
+            className="w-28 h-28 p-2 rounded-full border-1 border-fuchsia-300 object-cover"
           />
         </div>
 
-        {/* Buttons */}
+        {/* "New" button */}
         <button
-          className="py-4 font-mono font-semibold text-xl bg-blue-500 text-white rounded mb-2 w-72 border-8 border-b-blue-900 border-l-blue-950"
-          onClick={() => handleOnView("lists")}
+          className="py-2 px-4 font-mono font-semibold text-md bg-fuchsia-400  h-24 w-28 text-white rounded-3xl border-8 border-b-fuchsia-700 border-l-fuchsia-950"
+          onClick={() => handleOnView("create recipe")}
         >
-          see your recipes
-        </button>
-        <button
-          className="py-4 font-mono font-semibold text-lg bg-fuchsia-400 text-white rounded mb-2 w-72 border-8 border-b-fuchsia-900 border-l-fuchsia-950"
-          onClick={() => handleOnView("create a recipe")}
-        >
-          create a new recipe
+          new recipe
         </button>
       </div>
 
       {/* Conditional rendering based on view */}
-      <div className="flex-grow mt-4">
+      <div className="flex-grow px-3">
         {view === "lists" && <AllRecipes />}
-        {view === "create recipe" && <h3>recipe creator</h3>}
+        {view === "create recipe" && <RecipeCreator />}
       </div>
     </div>
   );
