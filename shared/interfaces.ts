@@ -30,3 +30,7 @@ export interface Recipes {
 export interface ShoppingList {
     ingredients: Ingredient[];
 }
+
+export interface ShoppingLists {
+    lists: ShoppingList[];
+}

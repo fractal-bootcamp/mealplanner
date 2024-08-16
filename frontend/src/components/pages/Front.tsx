@@ -1,14 +1,21 @@
 import React, { useState } from "react";
-import RecipeCreator from "./RecipeCreator";
+import Recipes from "./Recipes";
 import MealCalendar from "./MealCalendar";
 import Shopping from "./Shopping";
 import frontImageMedieval from "../../assets/manna.jpg";
 import frontImageKawaii from "../../assets/frontIcon.png";
 import { RecipeIngredient } from "../types/mealTypes";
 
+
+
+// import frontImage from "../../assets/manna.jpg";
+// import frontImageKawaii from "../../assets/frontIcon.png";
+import frontImage from "../../assets/frontImage.png";
+
 type Cart = {
   recipeIngredients: RecipeIngredient[];
 };
+
 
 const Front = () => {
   // Initialize with no view (image and title visible by default)
@@ -23,26 +30,26 @@ const Front = () => {
   };
 
   return (
-    <div className="fixed bg-sky-500 w-full h-screen flex flex-col overflow-y-auto">
+    <div className="fixed bg-sky-400 w-full h-screen flex flex-col overflow-y-auto">
       {/* Fixed Navbar */}
-      <div className="fixed top-0 left-0 right-0 bg-sky-700 text-white p-4 flex justify-around">
+      <div className="fixed top-0 left-0 right-0 bg-sky-600 text-white p-4 flex justify-center">
         <button
-          className="bg-green-500 border-4 border-b-slate-900 border-l-slate-900 px-4 py-2"
+          className="bg-green-500 border-8 border-b-green-900 border-l-green-950  font-mono font-semibold text-lg px-4 py-2"
           onClick={() => handleViewChange("recipes")}
         >
-          Recipes
+          recipes
         </button>
         <button
-          className="bg-green-500 border-4 border-b-slate-900 border-l-slate-900 px-4 py-2"
+          className="bg-green-500 border-8 border-b-green-900 border-l-green-950 px-4  font-mono font-semibold text-lg py-2"
           onClick={() => handleViewChange("calendar")}
         >
-          Calendar
+          calendar
         </button>
         <button
-          className="bg-green-500 border-4 border-b-slate-900 border-l-slate-900 px-4 py-2"
+          className="bg-green-500 border-8 border-b-green-900 border-l-green-950 px-4 py-2  font-mono font-semibold text-lg"
           onClick={() => handleViewChange("shopping")}
         >
-          Shopping
+          shopping
         </button>
       </div>
 
@@ -56,7 +63,7 @@ const Front = () => {
                 <div className="text-6xl text-center border-8 rounded-full  border-fuchsia-300 ">
                   {" "}
                   <img
-                    src={frontImageKawaii}
+                    src={frontImage}
                     alt="A group of kawaii elements of traditional japanese everyday food"
                     className="w-60 h-60 rounded-full border-8 border-fuchsia-300 object-cover"
                   />
@@ -72,6 +79,7 @@ const Front = () => {
         )}
         {view === "recipes" && <RecipeCreator />}
         {view === "calendar" && <MealCalendar cart={cart} setCart={setCart} />}
+
         {view === "shopping" && <Shopping />}
       </div>
     </div>
