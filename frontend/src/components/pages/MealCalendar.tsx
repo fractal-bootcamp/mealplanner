@@ -4,7 +4,7 @@ import "react-calendar/dist/Calendar.css";
 import DayComponent from "./DayComponent";
 import { Day, sampleDay } from "../types/mealTypes";
 
-const MealCalendar: React.FC = () => {
+const MealCalendar: React.FC = ({ cart, setCart }) => {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
 
   const handleDateClick = (date: Date) => {
@@ -15,9 +15,18 @@ const MealCalendar: React.FC = () => {
     <div className="flex flex-col min-h-screen p-4 w-full">
       <h2 className="text-2xl font-bold mb-4">Meal Calendar</h2>
       {selectedDate ? (
-        <DayView day={sampleDay} onClose={() => setSelectedDate(null)} />
+        <DayView
+          day={sampleDay}
+          onClose={() => setSelectedDate(null)}
+          cart={cart}
+          setCart={setCart}
+        />
       ) : (
-        <Calendar onChange={handleDateClick} value={selectedDate} />
+        <Calendar
+          onChange={handleDateClick}
+          value={selectedDate}
+          className="w-full h-3/4"
+        />
       )}
     </div>
   );
@@ -28,7 +37,7 @@ interface DayViewProps {
   onClose: () => void;
 }
 
-const DayView: React.FC<DayViewProps> = ({ day, onClose }) => (
+const DayView: React.FC<DayViewProps> = ({ day, onClose, cart, setCart }) => (
   <div className="relative">
     <button
       onClick={onClose}
@@ -36,8 +45,13 @@ const DayView: React.FC<DayViewProps> = ({ day, onClose }) => (
     >
       ✕
     </button>
-    <DayComponent day={day} />
+    <DayComponent day={day} cart={cart} setCart={setCart} />
   </div>
 );
 
 export default MealCalendar;
+
+// TODO: Calculate all ingredients for either a recipe, meal, or day
+// Week, Day, Meal, Recipe, Individual ingredial
+
+// const ingredientTotal = Ingredient: []

@@ -51,7 +51,15 @@ export interface Day {
   Meals: Meal[];
 }
 
-const DayComponent = ({ day }: { day: Day }) => {
+const DayComponent = ({
+  day,
+  cart,
+  setCart,
+}: {
+  day: Day;
+  cart: Cart;
+  setCart: (cart: Cart) => void;
+}) => {
   return (
     <div
       style={{
@@ -65,13 +73,21 @@ const DayComponent = ({ day }: { day: Day }) => {
     >
       <h1>{day.dayOfTheWeek}</h1>
       {day.Meals.map((meal) => (
-        <MealComponent meal={meal} />
+        <MealComponent meal={meal} cart={cart} setCart={setCart} />
       ))}
     </div>
   );
 };
 
-const MealComponent = ({ meal }: { meal: Meal }) => {
+const MealComponent = ({
+  meal,
+  cart,
+  setCart,
+}: {
+  meal: Meal;
+  cart: Cart;
+  setCart: (cart: Cart) => void;
+}) => {
   return (
     <div
       style={{
@@ -82,13 +98,21 @@ const MealComponent = ({ meal }: { meal: Meal }) => {
     >
       <h2 style={{ fontWeight: "bold" }}> &nbsp; {meal.mealName}</h2>
       {meal.recipes.map((recipe) => (
-        <RecipeComponent recipe={recipe} />
+        <RecipeComponent recipe={recipe} cart={cart} setCart={setCart} />
       ))}
     </div>
   );
 };
 
-const RecipeComponent = ({ recipe }: { recipe: Recipe }) => {
+const RecipeComponent = ({
+  recipe,
+  cart,
+  setCart,
+}: {
+  recipe: Recipe;
+  cart: Cart;
+  setCart: (cart: Cart) => void;
+}) => {
   return (
     <div
       style={{
@@ -98,7 +122,7 @@ const RecipeComponent = ({ recipe }: { recipe: Recipe }) => {
       }}
     >
       <RecipeHeader recipe={recipe} />
-      <RecipeIngredients recipe={recipe} />
+      <RecipeIngredients recipe={recipe} cart={cart} setCart={setCart} />
       <RecipeInstructions recipe={recipe} />
     </div>
   );
@@ -119,12 +143,42 @@ const RecipeHeader = ({ recipe }: { recipe: Recipe }) => {
   );
 };
 
-const RecipeIngredients = ({ recipe }: { recipe: Recipe }) => {
+const RecipeIngredients = ({
+  recipe,
+  cart,
+  setCart,
+}: {
+  recipe: Recipe;
+  cart: Cart;
+  setCart: (cart: Cart) => void;
+}) => {
   return (
     <ul style={{ borderBottom: "1px solid black" }}>
       {recipe.RecipeIngredients.map((recipeIngredient) => (
         <li>
           {recipeIngredient.ingredient.name} {recipeIngredient.amount}
+          <button
+            onClick={() => {
+              setCart({
+                recipeIngredients: [
+                  ...cart.recipeIngredients,
+                  recipeIngredient,
+                ],
+              });
+              console.log(cart.recipeIngredients);
+            }}
+            style={{
+              backgroundColor: "lightblue",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              paddingTop: "0px",
+              paddingBottom: "0px",
+              position: "absolute",
+              right: "60px",
+            }}
+          >
+            +
+          </button>
         </li>
       ))}
     </ul>
