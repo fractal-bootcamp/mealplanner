@@ -2,16 +2,26 @@ import React, { useState, useEffect } from "react";
 import Recipes from "./Recipes";
 import MealCalendar from "./MealCalendar";
 import Shopping from "./Shopping";
+import frontImageMedieval from "../../assets/manna.jpg";
+import frontImageKawaii from "../../assets/frontIcon.png";
+import { RecipeIngredient } from "../types/mealTypes";
+
 // import frontImage from "../../assets/manna.jpg";
 // import frontImageKawaii from "../../assets/frontIcon.png";
 import frontImage from "../../assets/frontImage.png";
 
 import { listOfShoppingLists } from "../../../../shared/sample";
+type Cart = {
+  recipeIngredients: RecipeIngredient[];
+};
 
 const Front = () => {
   // Initialize with no view (image and title visible by default)
   const [view, setView] = useState<null | string>(null);
   const [shoppingLists, setShoppingLists] = useState<object[]>();
+  const [selectedDay, setSelectedDay] = useState<Day | null>(null);
+  const [cart, setCart] = useState<Cart>({ recipeIngredients: [] });
+
   // Event handler to change the view
   const handleViewChange = (newView: string) => {
     setView((prevView) => (prevView === newView ? null : newView));
@@ -70,9 +80,11 @@ const Front = () => {
             </div>
           </div>
         )}
-        {view === "recipes" && <Recipes />}
-        {view === "calendar" && <MealCalendar />}
-        {view === "shopping" && <Shopping lists={shoppingLists} />}
+
+        {view === "recipes" && <RecipeCreator />}
+        {view === "calendar" && <MealCalendar cart={cart} setCart={setCart} />}
+
+        {view === "shopping" && <Shopping />}
       </div>
     </div>
   );

@@ -1,0 +1,128 @@
+.day-container {
+  background-color: #f0f8ff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.day-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.meal-container {
+  background-color: #e6f3e6;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.meal-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.recipe-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-title {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin: 0;
+}
+
+.recipe-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipe-ingredients-container {
+  margin-bottom: 1rem;
+}
+
+.ingredients-title,
+.instructions-title {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-ingredients {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.add-to-cart-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.recipe-instructions ol {
+  padding-left: 1.5rem;
+}
+
+.recipe-instructions li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .day-container {
+    padding: 1rem;
+  }
+
+  .day-title {
+    font-size: 2rem;
+  }
+
+  .meal-title {
+    font-size: 1.5rem;
+  }
+
+  .recipe-title {
+    font-size: 1.3rem;
+  }
+}

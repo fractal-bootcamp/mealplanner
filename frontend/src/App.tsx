@@ -8,7 +8,7 @@ import React from "react";
 
 import Front from "../src/components/pages/Front";
 
-export default function App() {
+const App = () => {
   return (
     <>
       <div className="bg-sky-500 w-full min-h-screen">
@@ -26,4 +26,6 @@ export default function App() {
       </div>
     </>
   );
-}
+};
+
+export default App;
