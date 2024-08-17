@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Pen, PenIcon, Trash } from "lucide-react";
+import { ShoppingBasketIcon } from "lucide-react";
+
 type Ingredient = {
   ingredient: {
     name: string;
@@ -105,54 +107,59 @@ const FinalListCreator: React.FC = () => {
   };
 
   return (
-    <div className="font-mono flex flex-col gap-2 items-center">
-      <ul className="flex flex-col gap-2">
-        {list.map((item, index) => (
-          <li
-            key={index}
-            className="flex items-center justify-between gap-2 p-2 border-b"
-          >
-            <div>
-              <span>{item.ingredient.name}</span>
-              <span>
-                {" "}
-                // {item.amount} {item.unit}
-              </span>
-            </div>
-            <div className="flex gap-2 text-white ">
-              <button
-                onClick={() => handleOpenPopup(index)}
-                className="bg-blue-500 p-1 rounded hover:text-slate-600 "
-              >
-                <PenIcon />
-              </button>
-              <button
-                onClick={() => handleDelete(index)}
-                className="bg-red-500 p-1 hover:text-slate-600 rounded"
-              >
-                <Trash />
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
-      <div className="flex gap-4 items-start">
-        <button
-          onClick={() => handleOpenPopup()}
-          className="bg-green-500 text-white px-4 py-2 rounded"
-        >
-          add item
-        </button>
-        <button
-          onClick={handleAddToCart}
-          className="bg-purple-500 text-white px-4 py-2 rounded"
-        >
-          add to cart
-        </button>
+    <div className="">
+      <div className="font-mono font-semibold text-blue-900 flex flex-col gap-2 items-center">
+        <ul className="flex flex-col gap-2 bg-blue-100 rounded-2xl p-2">
+          {list.map((item, index) => (
+            <li
+              key={index}
+              className="flex items-center justify-between gap-2 p-2 border-b"
+            >
+              <div>
+                <span>{item.ingredient.name}</span>
+                <span>
+                  {" "}
+                  // {item.amount} {item.unit}
+                </span>
+              </div>
+              <div className="flex gap-2 text-white ">
+                <button
+                  onClick={() => handleOpenPopup(index)}
+                  className="bg-blue-500 p-1 rounded hover:text-slate-600 "
+                >
+                  <PenIcon />
+                </button>
+                <button
+                  onClick={() => handleDelete(index)}
+                  className="bg-red-500 p-1 hover:text-slate-600 rounded"
+                >
+                  <Trash />
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+
+        <div>
+          <div className="flex gap-4 items-start pt-4">
+            <button
+              onClick={() => handleOpenPopup()}
+              className="bg-green-400 text-green-950 px-4 py-3 rounded-2xl font-semibold"
+            >
+              new item
+            </button>
+            <button
+              onClick={handleAddToCart}
+              className="bg-purple-500 text-white px-6 py-3 rounded-2xl"
+            >
+              <ShoppingBasketIcon />
+            </button>
+          </div>
+        </div>
       </div>
       {showPopup && (
-        <div className="fixed inset-0 bg-purple-700 bg-opacity-50 flex items-center justify-center">
-          <div className="bg-sky-300 p-6 rounded-lg shadow-lg max-w-lg w-96">
+        <div className="fixed inset-0 bg-purple-700 bg-opacity-50 flex items-center justify-center font-mono">
+          <div className="bg-sky-300 p-6 rounded-2xl shadow-lg max-w-lg w-96">
             <h3 className="text-xl mb-4 font-bold text-sky-900">
               {editIndex !== null ? "edit item" : "add item"}
             </h3>
@@ -178,7 +185,7 @@ const FinalListCreator: React.FC = () => {
                       },
                     })
                   }
-                  className="border bg-sky-200 text-sky-800  p-2 w-full"
+                  className="border bg-sky-200 text-sky-800  p-2 w-full rounded-2xl"
                   required
                 />
               </div>
@@ -198,7 +205,7 @@ const FinalListCreator: React.FC = () => {
                       },
                     })
                   }
-                  className="border bg-sky-200 text-sky-800  p-2 w-full"
+                  className="border bg-sky-200 text-sky-800   rounded-2xl p-2 w-full"
                   required
                 />
               </div>
@@ -212,7 +219,7 @@ const FinalListCreator: React.FC = () => {
                   onChange={(e) =>
                     setNewItem({ ...newItem, amount: Number(e.target.value) })
                   }
-                  className="border bg-sky-200 text-sky-800 p-2 w-full"
+                  className="border bg-sky-200 text-sky-800 p-2 w-full  rounded-2xl"
                   required
                 />
               </div>
@@ -226,7 +233,7 @@ const FinalListCreator: React.FC = () => {
                   onChange={(e) =>
                     setNewItem({ ...newItem, unit: e.target.value })
                   }
-                  className="border bg-sky-200 text-sky-800 p-2 w-full"
+                  className="border bg-sky-200 text-sky-800  rounded-2xl p-2 w-full"
                 />
               </div>
               <div className="mb-4">
@@ -238,7 +245,7 @@ const FinalListCreator: React.FC = () => {
                   onChange={(e) =>
                     setNewItem({ ...newItem, notes: e.target.value })
                   }
-                  className="border bg-sky-200 text-sky-800 p-2 w-full"
+                  className="border bg-sky-200 text-sky-800 p-2  rounded-2xl w-full"
                 />
               </div>
               <div className="flex justify-center items-center space-x-10">

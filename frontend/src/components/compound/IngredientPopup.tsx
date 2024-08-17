@@ -101,14 +101,14 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-      <div className="bg-white p-4 rounded-lg shadow-lg">
+    <div className="fixed font-mono inset-0 flex items-center justify-center bg-violet-800 bg-opacity-50">
+      <div className="bg-lime-100 h-96 p-8 rounded-lg shadow-lg">
         <h3 className="text-lg mb-2">
-          {ingredientToEdit ? "Edit Ingredient" : "Add Ingredient"}
+          {ingredientToEdit ? "edit ingredient" : "add ingredient"}
         </h3>
         <input
           type="text"
-          placeholder="Enter a name"
+          placeholder="enter a name"
           value={ingredientInput}
           onChange={handleIngredientInputChange}
           className="border border-gray-300 p-2 rounded text-black w-full mb-2"
@@ -116,7 +116,7 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
         <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0 mb-2">
           <input
             type="text"
-            placeholder="Amount"
+            placeholder="amount"
             value={amountInput}
             onChange={(e) => setAmountInput(e.target.value)}
             className="border border-gray-300 p-2 rounded text-black w-full sm:w-1/3"
@@ -138,7 +138,7 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
           </select>
           <input
             type="text"
-            placeholder="Category"
+            placeholder="category"
             value={categoryInput}
             onChange={(e) => setCategoryInput(e.target.value)}
             className="border border-gray-300 p-2 rounded text-black w-full sm:w-1/3"
@@ -146,15 +146,15 @@ const IngredientPopup: React.FC<IngredientPopupProps> = ({
         </div>
         <button
           onClick={handleSubmit}
-          className="bg-green-500 text-white p-2 rounded mt-2 w-full"
+          className="bg-green-500 font-semibold text-white p-2 rounded mt-2 w-full"
         >
-          {ingredientToEdit ? "Update Ingredient" : "Add Ingredient"}
+          {ingredientToEdit ? "update ingredient" : "add ingredient"}
         </button>
         <button
           onClick={onClose}
-          className="bg-gray-500 text-white p-2 rounded mt-2 w-full"
+          className="bg-red-400 font-semibold text-white p-2 rounded mt-2 w-full"
         >
-          Close
+          close
         </button>
       </div>
     </div>

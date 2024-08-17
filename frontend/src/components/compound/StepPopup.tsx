@@ -35,26 +35,26 @@ const StepPopup: React.FC<StepPopupProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-      <div className="bg-white p-4 rounded-lg shadow-lg">
+    <div className="fixed inset-0 flex items-center justify-center bg-violet-800 bg-opacity-50 font-mono">
+      <div className="bg-lime-100 h-72 p-6 rounded-lg shadow-lg">
         <h3 className="text-lg mb-2">
-          {stepToEdit ? "Edit Step" : "Add Step"}
+          {stepToEdit ? "edit step" : "add step"}
         </h3>
         <textarea
-          placeholder="Describe the step"
+          placeholder="describe the step"
           value={stepInput}
           onChange={(e) => setStepInput(e.target.value)}
           className="border border-gray-300 p-2 rounded text-black w-full mb-2"
         />
         <button
           onClick={handleSubmit}
-          className="bg-green-500 text-white p-2 rounded mt-2 w-full"
+          className="bg-green-500 text-white p-2 font-semibold rounded mt-2 w-full"
         >
           {stepToEdit ? "Update Step" : "Add Step"}
         </button>
         <button
           onClick={onClose}
-          className="bg-gray-500 text-white p-2 rounded mt-2 w-full"
+          className="bg-red-400 text-white  font-semibold p-2 rounded mt-2 w-full"
         >
           Close
         </button>

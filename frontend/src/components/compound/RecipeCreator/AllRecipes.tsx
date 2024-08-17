@@ -627,7 +627,7 @@ const AllRecipes = () => {
 
   return (
     <>
-      <div>
+      <div className="mt-8">
         <ul>
           {recipes.map((recipe, index) => {
             const colorClass = colorPalette[index % colorPalette.length];
