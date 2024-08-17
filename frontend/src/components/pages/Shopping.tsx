@@ -5,6 +5,7 @@ import shoppingIcon from "../../assets/shoppingIcon.png";
 import Lists from "../compound/Shopping/Lists";
 import FinalListCreator from "../compound/Shopping/FinalListCreator";
 import ShoppingOrder from "../compound/Shopping/ShoppingOrder";
+import { LucideSquareArrowDownRight, ShoppingCartIcon } from "lucide-react";
 
 // Define the type for lists if not already defined
 type Ingredient = {
@@ -60,7 +61,7 @@ const Shopping: React.FC<ShoppingProps> = ({ lists }) => {
           {/* Middle row of buttons */}
           <div className="flex pt-0 space-x-4 mb-4">
             <button
-              className="py-4 font-mono font-semibold text-md bg-blue-500 text-white rounded-full border-8 w-28 border-b-blue-800 border-l-blue-950"
+              className="py-4 font-mono font-semibold text-md bg-blue-500 text-xl text-white rounded-full border-8 w-28 border-b-blue-800 border-l-blue-950"
               onClick={() => handleOnView("lists")}
             >
               all lists
@@ -76,20 +77,21 @@ const Shopping: React.FC<ShoppingProps> = ({ lists }) => {
             </div>
 
             <button
-              className="py-4 font-mono font-semibold text-sm bg-fuchsia-400 text-white rounded-full border-8 w-28 border-b-fuchsia-700 border-l-fuchsia-950"
+              className="py-4 font-mono font-semibold  bg-fuchsia-400 text-white text-xl rounded-full border-8 w-28 border-b-fuchsia-700 border-l-fuchsia-950"
               onClick={() => handleOnView("create unified list")}
             >
-              create shopping list
+              new list
             </button>
           </div>
 
           {/* Bottom row of buttons */}
           <div className="flex space-x-4">
             <button
-              className="py-4 font-mono font-semibold text-md bg-yellow-500 text-white rounded-full border-8 border-b-yellow-700 border-l-yellow-950"
+              className="flex flex-col justify-center items-center py-4 font-mono font-semibold text-md bg-red-500 text-white rounded-full border-8 border-b-red-800 border-l-red-950"
               onClick={() => handleOnView("place a shopping order")}
             >
-              Place Your Order
+              <ShoppingCartIcon />
+              place your order
             </button>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import List from "../../base/List";
+import { ShoppingBasketIcon } from "lucide-react";
 
 type Ingredient = {
   ingredient: {
@@ -19,16 +20,6 @@ type ListsProps = {
   lists: ShoppingLists;
 };
 
-const colorPalette = [
-  "bg-lime-300",
-  "bg-rose-300",
-  "bg-blue-300",
-  "bg-green-300",
-  "bg-yellow-300",
-  "bg-purple-300",
-  "bg-teal-300",
-];
-
 const Lists: React.FC<ListsProps> = ({ lists }) => {
   const [showListPopup, setShowListPopup] = useState<boolean>(false);
   const [displayList, setDisplayList] = useState<Ingredient[]>([]);
@@ -40,6 +31,16 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
 
   // State for cart management
   const [cart, setCart] = useState<Omit<Ingredient, "notes">[]>([]);
+
+  const colorPalette = [
+    "bg-lime-300",
+    "bg-rose-300",
+    "bg-blue-300",
+    "bg-green-300",
+    "bg-yellow-300",
+    "bg-purple-300",
+    "bg-teal-300",
+  ];
 
   const handleList = (list: Ingredient[], colorClass: string) => {
     setShowListPopup(true);
@@ -96,15 +97,15 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
             <h2 className="flex items-center">
               <button
                 onClick={() => handleList(lists[key], colorClass)}
-                className={`${colorClass} font-bold text-left p-3 bg-gray-200 w-52 rounded-md`}
+                className={` ${colorClass} font-bold text-left p-3 w-52 rounded-md`}
               >
                 {key}
               </button>
               <button
                 onClick={() => addToCart(lists[key])}
-                className="ml-4 font-mono font-bold bg-red-500 text-white px-4 py-2 rounded"
+                className="ml-4 font-mono font-bold bg-red-500 text-white px-4 py-2 rounded hover:bg-red-900"
               >
-                Add to Cart
+                <ShoppingBasketIcon />
               </button>
             </h2>
           </div>
@@ -114,7 +115,7 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
       {showListPopup && (
         <div className="fixed font-mono inset-0 bg-purple-900 bg-opacity-50 flex items-center justify-center">
           <div
-            className={`p-4 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto ${popupColorClass}`}
+            className={`p-4 rounded-lg max-w-2xl w-96 max-h-[90vh] overflow-y-auto ${popupColorClass}`}
           >
             <div>
               {displayList.map((item, index) => (
