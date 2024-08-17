@@ -18,15 +18,21 @@ type Ingredient = {
   unit: string;
 };
 
+type Cart = {
+  recipeIngredients: RecipeIngredient[];
+};
+
 type ShoppingLists = {
   [key: string]: Ingredient[];
 };
 
 type ShoppingProps = {
   lists: ShoppingLists;
+  cart: Cart;
+  setCart: React.Dispatch<React.SetStateAction<Cart>>;
 };
 
-const Shopping: React.FC<ShoppingProps> = ({ lists }) => {
+const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
   const [view, setView] = useState("lists");
 
   // Determine the icon based on the current view
@@ -98,9 +104,13 @@ const Shopping: React.FC<ShoppingProps> = ({ lists }) => {
 
         {/* Render component based on view state */}
         <div className="flex flex-col items-center mt-8">
-          {view === "lists" && <Lists lists={lists} />}
-          {view === "create unified list" && <FinalListCreator />}
-          {view === "place a shopping order" && <ShoppingOrder />}
+          {view === "lists" && (
+            <Lists lists={lists} cart={cart} setCart={setCart} />
+          )}
+          {view === "create unified list" && (
+            <FinalListCreator setCart={setCart} cart={cart} />
+          )}
+          {view === "place a shopping order" && <ShoppingOrder cart={cart} />}
         </div>
       </div>
     </div>

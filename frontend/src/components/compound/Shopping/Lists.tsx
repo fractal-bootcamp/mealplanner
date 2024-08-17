@@ -18,9 +18,11 @@ type ShoppingLists = {
 
 type ListsProps = {
   lists: ShoppingLists;
+  cart: Cart;
+  setCart: React.Dispatch<React.SetStateAction<Cart>>;
 };
 
-const Lists: React.FC<ListsProps> = ({ lists }) => {
+const Lists: React.FC<ListsProps> = ({ lists, cart, setCart }) => {
   const [showListPopup, setShowListPopup] = useState<boolean>(false);
   const [displayList, setDisplayList] = useState<Ingredient[]>([]);
   const [popupColorClass, setPopupColorClass] = useState<string>("");
@@ -29,8 +31,8 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [editedItem, setEditedItem] = useState<Ingredient | null>(null);
 
-  // State for cart management
-  const [cart, setCart] = useState<Omit<Ingredient, "notes">[]>([]);
+  //   // State for cart management
+  //   const [cart, setCart] = useState<Omit<Ingredient, "notes">[]>([]);
 
   const colorPalette = [
     "bg-lime-300",
@@ -76,7 +78,11 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
     // Filter out the notes and add to cart
     const itemsWithoutNotes = list.map(({ notes, ...item }) => item);
     setCart((prevCart) => {
-      const updatedCart = [...prevCart, ...itemsWithoutNotes];
+      // Ensure prevCart is an array before spreading it
+      const updatedCart = [
+        ...(Array.isArray(prevCart) ? prevCart : []),
+        ...itemsWithoutNotes,
+      ];
       // Log updated cart state
       console.log("Cart is:", updatedCart);
       return updatedCart;

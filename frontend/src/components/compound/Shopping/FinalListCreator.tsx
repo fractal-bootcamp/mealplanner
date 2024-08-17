@@ -51,7 +51,27 @@ const initialList: Ingredient[] = [
   },
 ];
 
-const FinalListCreator: React.FC = () => {
+type Ingredient = {
+  ingredient: {
+    name: string;
+    category: string;
+  };
+  notes: string;
+  amount: number;
+  unit: string;
+};
+
+type ShoppingLists = {
+  [key: string]: Ingredient[];
+};
+
+type ListsProps = {
+  lists: ShoppingLists;
+  cart: Cart;
+  setCart: React.Dispatch<React.SetStateAction<Cart>>;
+};
+
+const FinalListCreator: React.FC<Cart> = ({ cart, setCart }) => {
   const [list, setList] = useState<Ingredient[]>(initialList);
   const [showPopup, setShowPopup] = useState<boolean>(false);
   const [editIndex, setEditIndex] = useState<number | null>(null);
@@ -61,7 +81,6 @@ const FinalListCreator: React.FC = () => {
     amount: 0,
     unit: "",
   });
-  const [cart, setCart] = useState<Ingredient[]>([]);
 
   const handleOpenPopup = (index?: number) => {
     setEditIndex(index ?? null);
