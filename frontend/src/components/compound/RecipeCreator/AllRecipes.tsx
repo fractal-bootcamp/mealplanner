@@ -650,7 +650,7 @@ const AllRecipes = () => {
           className={`fixed font-mono inset-0 bg-purple-900 bg-opacity-50 flex items-center justify-center`}
         >
           <div
-            className={`${popupColorClass} bg-white p-4 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto`} // Use popupColorClass
+            className={`${popupColorClass} p-4 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto`} // Use popupColorClass
           >
             <RecipeComponent recipe={displayRecipe} />
             <button

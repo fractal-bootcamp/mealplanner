@@ -19,16 +19,6 @@ type ListsProps = {
   lists: ShoppingLists;
 };
 
-const colorPalette = [
-  "bg-lime-300",
-  "bg-rose-300",
-  "bg-blue-300",
-  "bg-green-300",
-  "bg-yellow-300",
-  "bg-purple-300",
-  "bg-teal-300",
-];
-
 const Lists: React.FC<ListsProps> = ({ lists }) => {
   const [showListPopup, setShowListPopup] = useState<boolean>(false);
   const [displayList, setDisplayList] = useState<Ingredient[]>([]);
@@ -40,6 +30,16 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
 
   // State for cart management
   const [cart, setCart] = useState<Omit<Ingredient, "notes">[]>([]);
+
+  const colorPalette = [
+    "bg-lime-300",
+    "bg-rose-300",
+    "bg-blue-300",
+    "bg-green-300",
+    "bg-yellow-300",
+    "bg-purple-300",
+    "bg-teal-300",
+  ];
 
   const handleList = (list: Ingredient[], colorClass: string) => {
     setShowListPopup(true);
@@ -96,7 +96,7 @@ const Lists: React.FC<ListsProps> = ({ lists }) => {
             <h2 className="flex items-center">
               <button
                 onClick={() => handleList(lists[key], colorClass)}
-                className={`${colorClass} font-bold text-left p-3 bg-gray-200 w-52 rounded-md`}
+                className={` ${colorClass} font-bold text-left p-3 w-52 rounded-md`}
               >
                 {key}
               </button>

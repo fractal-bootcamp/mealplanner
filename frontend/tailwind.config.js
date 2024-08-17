@@ -17,6 +17,10 @@ module.exports = {
       },
     },
     extend: {
+      height: {
+        '128': '32rem', // Example: Add custom height of 32rem
+        '144': '36rem', // Example: Add custom height of 36rem
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

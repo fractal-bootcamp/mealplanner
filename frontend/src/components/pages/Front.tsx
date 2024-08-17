@@ -81,10 +81,9 @@ const Front = () => {
           </div>
         )}
 
-        {view === "recipes" && <RecipeCreator />}
+        {view === "recipes" && <Recipes />}
         {view === "calendar" && <MealCalendar cart={cart} setCart={setCart} />}
-
-        {view === "shopping" && <Shopping />}
+        {view === "shopping" && <Shopping lists={shoppingLists} />}
       </div>
     </div>
   );

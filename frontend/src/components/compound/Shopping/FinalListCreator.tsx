@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Pen, PenIcon, Trash } from "lucide-react";
 type Ingredient = {
   ingredient: {
     name: string;
@@ -103,53 +103,58 @@ const FinalListCreator: React.FC = () => {
     setCart([...cart, ...itemsWithoutNotes]);
     alert("Items added to cart!");
   };
+
   return (
-    <div className="font-mono">
-      <h2>Final List Creator</h2>
-      <ul>
+    <div className="font-mono flex flex-col gap-2 items-center">
+      <ul className="flex flex-col gap-2">
         {list.map((item, index) => (
           <li
             key={index}
-            className="flex items-center justify-between mb-2 p-2 border-b"
+            className="flex items-center justify-between gap-2 p-2 border-b"
           >
-            <div>{item.ingredient.name}</div>
             <div>
-              // {item.amount} {item.unit}
+              <span>{item.ingredient.name}</span>
+              <span>
+                {" "}
+                // {item.amount} {item.unit}
+              </span>
             </div>
-            <div>
+            <div className="flex gap-2 text-white ">
               <button
                 onClick={() => handleOpenPopup(index)}
-                className="bg-blue-500 text-white px-2 py-1 rounded mr-2"
+                className="bg-blue-500 p-1 rounded hover:text-slate-600 "
               >
-                Edit
+                <PenIcon />
               </button>
               <button
                 onClick={() => handleDelete(index)}
-                className="bg-red-500 text-white px-2 py-1 rounded"
+                className="bg-red-500 p-1 hover:text-slate-600 rounded"
               >
-                Delete
+                <Trash />
               </button>
             </div>
           </li>
         ))}
       </ul>
-      <button
-        onClick={() => handleOpenPopup()}
-        className="bg-green-500 text-white px-4 py-2 rounded"
-      >
-        Add Item
-      </button>
-      <button
-        onClick={handleAddToCart}
-        className="bg-purple-500 text-white px-4 py-2 rounded mt-4"
-      >
-        Add to Cart
-      </button>
+      <div className="flex gap-4 items-start">
+        <button
+          onClick={() => handleOpenPopup()}
+          className="bg-green-500 text-white px-4 py-2 rounded"
+        >
+          add item
+        </button>
+        <button
+          onClick={handleAddToCart}
+          className="bg-purple-500 text-white px-4 py-2 rounded"
+        >
+          add to cart
+        </button>
+      </div>
       {showPopup && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
-            <h3 className="text-xl mb-4">
-              {editIndex !== null ? "Edit Item" : "Add Item"}
+        <div className="fixed inset-0 bg-purple-700 bg-opacity-50 flex items-center justify-center">
+          <div className="bg-sky-300 p-6 rounded-lg shadow-lg max-w-lg w-96">
+            <h3 className="text-xl mb-4 font-bold text-sky-900">
+              {editIndex !== null ? "edit item" : "add item"}
             </h3>
             <form
               onSubmit={(e) => {
@@ -158,7 +163,9 @@ const FinalListCreator: React.FC = () => {
               }}
             >
               <div className="mb-4">
-                <label className="block mb-2">Name</label>
+                <label className="block mb-2 font-bold text-sky-900">
+                  name
+                </label>
                 <input
                   type="text"
                   value={newItem.ingredient.name}
@@ -171,12 +178,14 @@ const FinalListCreator: React.FC = () => {
                       },
                     })
                   }
-                  className="border p-2 w-full"
+                  className="border bg-sky-200 text-sky-800  p-2 w-full"
                   required
                 />
               </div>
               <div className="mb-4">
-                <label className="block mb-2">Category</label>
+                <label className="block mb-2 font-bold text-sky-900">
+                  category
+                </label>
                 <input
                   type="text"
                   value={newItem.ingredient.category}
@@ -189,56 +198,64 @@ const FinalListCreator: React.FC = () => {
                       },
                     })
                   }
-                  className="border p-2 w-full"
+                  className="border bg-sky-200 text-sky-800  p-2 w-full"
                   required
                 />
               </div>
               <div className="mb-4">
-                <label className="block mb-2">Amount</label>
+                <label className="block mb-2 font-bold text-sky-900">
+                  amount
+                </label>
                 <input
                   type="number"
                   value={newItem.amount}
                   onChange={(e) =>
                     setNewItem({ ...newItem, amount: Number(e.target.value) })
                   }
-                  className="border p-2 w-full"
+                  className="border bg-sky-200 text-sky-800 p-2 w-full"
                   required
                 />
               </div>
               <div className="mb-4">
-                <label className="block mb-2">Unit</label>
+                <label className="block mb-2 font-bold text-sky-900">
+                  unit
+                </label>
                 <input
                   type="text"
                   value={newItem.unit}
                   onChange={(e) =>
                     setNewItem({ ...newItem, unit: e.target.value })
                   }
-                  className="border p-2 w-full"
+                  className="border bg-sky-200 text-sky-800 p-2 w-full"
                 />
               </div>
               <div className="mb-4">
-                <label className="block mb-2">Notes</label>
+                <label className="block mb-2 font-bold text-sky-900">
+                  notes
+                </label>
                 <textarea
                   value={newItem.notes}
                   onChange={(e) =>
                     setNewItem({ ...newItem, notes: e.target.value })
                   }
-                  className="border p-2 w-full"
+                  className="border bg-sky-200 text-sky-800 p-2 w-full"
                 />
               </div>
-              <button
-                type="submit"
-                className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
-              >
-                Save
-              </button>
-              <button
-                type="button"
-                onClick={handleClosePopup}
-                className="bg-gray-500 text-white px-4 py-2 rounded"
-              >
-                Cancel
-              </button>
+              <div className="flex justify-center items-center space-x-10">
+                <button
+                  type="submit"
+                  className="bg-green-600  text-yellow-300 font-bold px-6 py-3 rounded-xl mr-2 w-[110px]"
+                >
+                  save
+                </button>
+                <button
+                  type="button"
+                  onClick={handleClosePopup}
+                  className="bg-amber-500  text-orange-900 font-bold px-6 py-3 rounded-xl w-[110px]"
+                >
+                  cancel
+                </button>
+              </div>
             </form>
           </div>
         </div>
