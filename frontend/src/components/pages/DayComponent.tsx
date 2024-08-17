@@ -70,16 +70,19 @@ const DayComponent = ({
 }) => {
   return (
     <div className="day-container">
-      <h1 style={{ fontSize: "2rem", fontWeight: "bold" }}>
+      <h1 className="day-title">
         {date.toDateString()}
         <button
           onClick={onClose}
           style={{
             position: "absolute",
-            right: "22%",
-            transform: "scale(0.5)",
-            top: "0%",
-            color: "white",
+            right: "1rem",
+            top: "1rem",
+            background: "none",
+            border: "none",
+            fontSize: "1.5rem",
+            color: "#333",
+            cursor: "pointer",
           }}
         >
           ✕
@@ -131,10 +134,26 @@ const RecipeComponent = ({
   cart: Cart;
   setCart: (cart: Cart) => void;
 }) => {
+  const addAllIngredientsToCart = () => {
+    setCart({
+      recipeIngredients: [
+        ...cart.recipeIngredients,
+        ...recipe.RecipeIngredients,
+      ],
+    });
+    console.log(cart);
+  };
+
   return (
     <div className="recipe-container">
       <RecipeHeader recipe={recipe} />
       <RecipeIngredients recipe={recipe} cart={cart} setCart={setCart} />
+      <button
+        onClick={addAllIngredientsToCart}
+        className="add-all-ingredients-btn"
+      >
+        Add All Ingredients
+      </button>
       <RecipeInstructions recipe={recipe} />
     </div>
   );
@@ -169,7 +188,7 @@ const RecipeIngredients = ({
         {recipe.RecipeIngredients.map((recipeIngredient, index) => (
           <li key={index} className="ingredient-item">
             <span>
-              {recipeIngredient.ingredient.name} {recipeIngredient.amount}
+              {recipeIngredient.ingredient.name} ({recipeIngredient.amount})
             </span>
             <button
               onClick={() => {
@@ -179,7 +198,6 @@ const RecipeIngredients = ({
                     recipeIngredient,
                   ],
                 });
-                console.log(cart.recipeIngredients);
               }}
               className="add-to-cart-btn"
               title="Add to cart"
@@ -192,7 +210,6 @@ const RecipeIngredients = ({
     </div>
   );
 };
-
 const RecipeInstructions = ({ recipe }: { recipe: Recipe }) => {
   return (
     <div className="recipe-instructions">
