@@ -36,6 +36,10 @@ const Front = () => {
     console.log("Updated list of shopping lists:", shoppingLists);
   }, [shoppingLists]); // Depend on `shoppingLists` to log when it changes
 
+  useEffect(() => {
+    console.log("FRONT Cart has been updated", cart);
+  }, [cart]);
+
   return (
     <div className="fixed bg-sky-400 w-full h-screen flex flex-col overflow-y-auto">
       {/* Fixed Navbar */}
@@ -83,7 +87,9 @@ const Front = () => {
 
         {view === "recipes" && <Recipes />}
         {view === "calendar" && <MealCalendar cart={cart} setCart={setCart} />}
-        {view === "shopping" && <Shopping lists={shoppingLists} />}
+        {view === "shopping" && (
+          <Shopping setCart={setCart} cart={cart} lists={shoppingLists} />
+        )}
       </div>
     </div>
   );
