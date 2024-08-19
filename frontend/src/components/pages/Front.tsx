@@ -2,27 +2,21 @@ import React, { useState, useEffect } from "react";
 import Recipes from "./Recipes";
 import MealCalendar from "./MealCalendar";
 import Shopping from "./Shopping";
-import frontImageMedieval from "../../assets/manna.jpg";
-import frontImageKawaii from "../../assets/frontIcon.png";
-import { RecipeIngredient } from "../types/mealTypes";
-
-// import frontImage from "../../assets/manna.jpg";
-// import frontImageKawaii from "../../assets/frontIcon.png";
 import frontImage from "../../assets/frontImage.png";
-
+import { RecipeIngredient } from "../types/mealTypes";
 import { listOfShoppingLists } from "../../../../shared/sample";
+import { Day } from "./DayComponent";
+
 type Cart = {
   recipeIngredients: RecipeIngredient[];
 };
 
 const Front = () => {
-  // Initialize with no view (image and title visible by default)
   const [view, setView] = useState<null | string>(null);
   const [shoppingLists, setShoppingLists] = useState<object[]>();
   const [selectedDay, setSelectedDay] = useState<Day | null>(null);
   const [cart, setCart] = useState<Cart>({ recipeIngredients: [] });
 
-  // Event handler to change the view
   const handleViewChange = (newView: string) => {
     setView((prevView) => (prevView === newView ? null : newView));
   };
@@ -34,11 +28,15 @@ const Front = () => {
 
   useEffect(() => {
     console.log("Updated list of shopping lists:", shoppingLists);
-  }, [shoppingLists]); // Depend on `shoppingLists` to log when it changes
+  }, [shoppingLists]);
 
   useEffect(() => {
     console.log("FRONT Cart has been updated", cart);
   }, [cart]);
+
+  const clearCart = () => {
+    setCart({ recipeIngredients: [] });
+  };
 
   return (
     <div className="fixed bg-sky-400 w-full h-screen flex flex-col overflow-y-auto">
@@ -61,6 +59,26 @@ const Front = () => {
           onClick={() => handleViewChange("shopping")}
         >
           Shopping
+        </button>
+      </div>
+
+      {/* Cart Display */}
+      <div className="fixed bottom-0 right-0 bg-white p-4 rounded-tl-lg shadow-lg z-20">
+        <h3 className="font-bold mb-2">
+          Cart ({cart.recipeIngredients.length})
+        </h3>
+        <ul className="max-h-40 overflow-y-auto mb-2">
+          {cart.recipeIngredients.map((item, index) => (
+            <li key={index} className="text-sm">
+              {item.ingredient.name} ({item.amount})
+            </li>
+          ))}
+        </ul>
+        <button
+          onClick={clearCart}
+          className="bg-red-500 text-white px-2 py-1 rounded text-sm"
+        >
+          Clear Cart
         </button>
       </div>
 
