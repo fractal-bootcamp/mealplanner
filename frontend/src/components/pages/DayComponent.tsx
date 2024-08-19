@@ -69,7 +69,7 @@ const DayComponent = ({
   onClose: () => void;
 }) => {
   return (
-    <div className="day-container">
+    <div className="day-container bg-red-400 text-md">
       <h1 style={{ fontSize: "2rem", fontWeight: "bold" }}>
         {date.toDateString()}
         <button
@@ -80,6 +80,7 @@ const DayComponent = ({
             transform: "scale(0.5)",
             top: "0%",
             color: "white",
+            background: "red",
           }}
         >
           ✕
@@ -108,7 +109,7 @@ const MealComponent = ({
   setCart: (cart: Cart) => void;
 }) => {
   return (
-    <div className="meal-container">
+    <div className="meal-container bg-amber-300">
       <h2 className="meal-title">{meal.mealName}</h2>
       {meal.recipes.map((recipe, index) => (
         <RecipeComponent
@@ -132,7 +133,7 @@ const RecipeComponent = ({
   setCart: (cart: Cart) => void;
 }) => {
   return (
-    <div className="recipe-container">
+    <div className="recipe-container ">
       <RecipeHeader recipe={recipe} />
       <RecipeIngredients recipe={recipe} cart={cart} setCart={setCart} />
       <RecipeInstructions recipe={recipe} />
@@ -142,7 +143,7 @@ const RecipeComponent = ({
 
 const RecipeHeader = ({ recipe }: { recipe: Recipe }) => {
   return (
-    <div className="recipe-header">
+    <div className="recipe-header bg-lime-200">
       <h3 className="recipe-title">{recipe.name}</h3>
       {recipe.URL && (
         <a href={recipe.URL} className="recipe-link">
@@ -163,7 +164,7 @@ const RecipeIngredients = ({
   setCart: (cart: Cart) => void;
 }) => {
   return (
-    <div className="recipe-ingredients-container">
+    <div className="recipe-ingredients-container bg-green-500">
       <h4 className="ingredients-title">Ingredients</h4>
       <ul className="recipe-ingredients">
         {recipe.RecipeIngredients.map((recipeIngredient, index) => (
@@ -181,7 +182,7 @@ const RecipeIngredients = ({
                 });
                 console.log(cart.recipeIngredients);
               }}
-              className="add-to-cart-btn"
+              className="add-to-cart-btn bg-cyan-100"
               title="Add to cart"
             >
               +
@@ -195,7 +196,7 @@ const RecipeIngredients = ({
 
 const RecipeInstructions = ({ recipe }: { recipe: Recipe }) => {
   return (
-    <div className="recipe-instructions">
+    <div className="recipe-instructions bg-sky-300">
       <h4 className="instructions-title">Instructions</h4>
       <ol>
         {recipe.instructions.map((instruction, index) => (
