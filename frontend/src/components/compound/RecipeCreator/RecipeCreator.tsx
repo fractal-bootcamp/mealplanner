@@ -190,9 +190,9 @@ const RecipeCreator: React.FC = () => {
             {isEditing ? (
               <button
                 onClick={handleSaveClick}
-                className="bg-blue-500 font-mono font-bold text-white rounded-full px-4 py-2"
+                className="bg-orange-400 font-mono font-bold text-white rounded-full px-4 py-2"
               >
-                Save
+                save
               </button>
             ) : (
               <button
@@ -212,7 +212,7 @@ const RecipeCreator: React.FC = () => {
             </h2>
             <button
               onClick={() => setShowIngredientPopup(true)}
-              className="bg-green-600 font-mono font-semibold text-white rounded-full w-20 px-4 py-2 border-2"
+              className="bg-emerald-200 font-mono font-semibold text-emerald-800 rounded-full w-20 px-4 py-2 border-2"
             >
               add
             </button>
