@@ -163,3 +163,53 @@ h2 {
         width: 100%;
     }
 }
+
+/* MealCalendar.css */
+
+.day-container {
+    font-family: monospace;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 49, 87, 0.1); /* Subtle shadow */
+    max-width: 800px; /* Set a max-width for the calendar */
+    margin: 0 auto; /* Center horizontally */
+    position: relative; /* Ensure that child elements can be absolutely positioned */
+  }
+  
+  .title-with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .close-button {
+    background-color: #f87171; /* Red color for close button */
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%) translateY(-50%); /* Adjust button position */
+  }
+  
+  .close-button:hover {
+    background-color: #ef4444; /* Darker red on hover */
+  }
+  
+  /* Optional: style for MealComponent */
+  .meal-container {
+    background-color: #f8d7da; /* Example color */
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Add other styles as necessary */
+  
