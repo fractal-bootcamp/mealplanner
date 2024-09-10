@@ -16,11 +16,13 @@ type Cart = {
 
 interface ShoppingOrderPopupProps {
   onClose: () => void;
+  onPlaceOrder: () => void;
   cart: Cart;
 }
 
 const ShoppingOrderPopup: React.FC<ShoppingOrderPopupProps> = ({
   onClose,
+  onPlaceOrder,
   cart,
 }) => {
   const groupedIngredients = cart.recipeIngredients.reduce(
@@ -37,16 +39,19 @@ const ShoppingOrderPopup: React.FC<ShoppingOrderPopupProps> = ({
 
   const sortedCategories = Object.keys(groupedIngredients).sort();
 
+  const handlePlaceOrder = () => {
+    onPlaceOrder();
+    onClose();
+  };
+
   return (
     <div className="fixed inset-0 bg-green-900 bg-opacity-50 flex items-center justify-center z-50 font-mono">
       <div className="p-6 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto bg-blue-100">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold text-blue-800">
-            your shopping list
-          </h2>
+          <h2 className="text-2xl font-bold text-blue-800">your cart</h2>
           <button
             onClick={onClose}
-            className=" bg-red-400 text-white font-bold hover:bg-red-500"
+            className="bg-red-400 text-white font-bold hover:bg-red-500"
           >
             <XIcon size={24} />
           </button>
@@ -72,12 +77,20 @@ const ShoppingOrderPopup: React.FC<ShoppingOrderPopupProps> = ({
             Your shopping list is empty
           </p>
         )}
-        <button
-          onClick={onClose}
-          className="mt-4 w-full bg-green-500 text-white py-2 rounded hover:bg-green-600"
-        >
-          Close
-        </button>
+        <div className="mt-4 flex justify-between">
+          <button
+            onClick={handlePlaceOrder}
+            className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 mr-2"
+          >
+            place order
+          </button>
+          <button
+            onClick={onClose}
+            className="w-full bg-red-400 text-white py-2 rounded hover:bg-red-500 ml-2"
+          >
+            close
+          </button>
+        </div>
       </div>
     </div>
   );

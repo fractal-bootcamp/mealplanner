@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import seeAllList from "../../assets/seeAllList.png";
 import createNewList from "../../assets/createNewList.png";
 import shoppingIcon from "../../assets/shoppingIcon.png";
 import Lists from "../compound/Shopping/Lists";
 import FinalListCreator from "../compound/Shopping/FinalListCreator";
-import ShoppingOrder from "../compound/Shopping/ShoppingOrder";
 import ShoppingOrderPopup from "../compound/Shopping/ShoppingOrderPopup";
+import PlaceOrderPopup from "../base/PlaceOrderPopup";
 
 import { LucideSquareArrowDownRight, ShoppingCartIcon } from "lucide-react";
 
@@ -37,6 +37,7 @@ type ShoppingProps = {
 const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
   const [view, setView] = useState("lists");
   const [showOrderPopup, setShowOrderPopup] = useState(false);
+  const [showPlaceOrderPopup, setShowPlaceOrderPopup] = useState(false);
 
   // Determine the icon based on the current view
   const getIconSrc = () => {
@@ -56,10 +57,27 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
     setView(view);
   };
 
-  const handlePlaceOrder = () => {
-    console.log("Placing order...");
+  // const handlePlaceOrder = () => {
+  //   console.log("Placing order...");
+  //   setShowOrderPopup(true);
+  // };
+
+  // const handleGoToCart = () => {
+  //   setView("place a shopping order");
+  //   // Add any additional logic for navigating to the cart view
+  // };
+
+  const handleGoToCart = useCallback(() => {
+    setView("place a shopping order");
+  }, []);
+
+  const handleShowOrderPopup = useCallback(() => {
     setShowOrderPopup(true);
-  };
+  }, []);
+
+  const handlePlaceOrder = useCallback(() => {
+    setShowPlaceOrderPopup(true);
+  }, []);
 
   return (
     <div className="fixed bg-sky-400 flex flex-col min-h-screen w-full max-w-screen-lg mx-auto ">
@@ -97,14 +115,14 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
               new list
             </button>
           </div>
+
           {/* Bottom row of buttons */}
           <div className="flex space-x-4">
             <button
               className="flex flex-col justify-center items-center py-4 font-mono font-semibold text-md bg-red-500 text-white rounded-full border-8 border-b-red-800 border-l-red-950"
-              onClick={handlePlaceOrder}
+              onClick={handleShowOrderPopup}
             >
               <ShoppingCartIcon />
-              place your order
             </button>
           </div>
         </div>
@@ -112,13 +130,19 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
         {/* Render component based on view state */}
         <div className="flex flex-col items-center mt-8">
           {view === "lists" && (
-            <Lists lists={lists} cart={cart} setCart={setCart} />
+            <Lists
+              lists={lists}
+              cart={cart}
+              setCart={setCart}
+              onGoToCart={handleShowOrderPopup}
+            />
           )}
           {view === "create unified list" && (
-            <FinalListCreator setCart={setCart} cart={cart} />
-          )}
-          {view === "place a shopping order" && (
-            <ShoppingOrder cart={cart} onPlaceOrder={handlePlaceOrder} />
+            <FinalListCreator
+              setCart={setCart}
+              cart={cart}
+              onGoToCart={handleShowOrderPopup}
+            />
           )}
         </div>
 
@@ -128,6 +152,10 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
             onClose={() => setShowOrderPopup(false)}
             cart={cart}
           />
+        )}
+        {/* Render the PlaceOrderPopup when showPlaceOrderPopup is true */}
+        {showPlaceOrderPopup && (
+          <PlaceOrderPopup onClose={() => setShowPlaceOrderPopup(false)} />
         )}
       </div>
     </div>

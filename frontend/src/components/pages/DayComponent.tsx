@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import AlertPopup from "../base/AlertPopup";
 import "./DayComponent.css";
 
 export type DayOfTheWeek =
@@ -155,7 +156,14 @@ const RecipeIngredients = ({
   recipe: Recipe;
   cart: Cart;
   setCart: React.Dispatch<React.SetStateAction<Cart>>;
+  onGoToCart: () => void;
 }) => {
+  const [showAlert, setShowAlert] = React.useState(false);
+
+  const handleCloseAlert = () => {
+    setShowAlert(false);
+  };
+
   return (
     <div className="bg-green-500 p-4 rounded-lg mb-4">
       <h4 className="text-lg font-semibold mb-2">Ingredients</h4>
@@ -174,6 +182,8 @@ const RecipeIngredients = ({
                     recipeIngredient,
                   ],
                 }));
+                // alert("Item added to cart!");
+                setShowAlert(true);
               }}
               className="bg-cyan-100 text-black px-2 py-1 rounded-full"
               title="Add to cart"
@@ -183,6 +193,10 @@ const RecipeIngredients = ({
           </li>
         ))}
       </ul>
+
+      {showAlert && (
+        <AlertPopup message="Items added to cart!" onClose={handleCloseAlert} />
+      )}
     </div>
   );
 };

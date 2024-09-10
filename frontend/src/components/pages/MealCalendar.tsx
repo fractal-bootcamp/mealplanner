@@ -4,9 +4,10 @@ import "./MealCalendar.css";
 import DayComponent from "./DayComponent";
 import { Day, sampleDay } from "../types/mealTypes";
 
-const MealCalendar: React.FC<{ cart: any; setCart: any }> = ({
+const MealCalendar: React.FC<{ cart: any; setCart: any; onAddToCart: any }> = ({
   cart,
   setCart,
+  onAddToCart,
 }) => {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
 
@@ -81,6 +82,7 @@ const MealCalendar: React.FC<{ cart: any; setCart: any }> = ({
             cart={cart}
             setCart={setCart}
             date={selectedDate}
+            onAddToCart={onAddToCart}
           />
         ) : (
           <Calendar
@@ -108,6 +110,7 @@ const DayView: React.FC<DayViewProps> = ({
   cart,
   setCart,
   date,
+  onAddToCart,
 }) => (
   <div className="DayViewWrapper">
     <button className="CloseButton" onClick={onClose}>
@@ -121,6 +124,7 @@ const DayView: React.FC<DayViewProps> = ({
         setCart={setCart}
         date={date}
         onClose={onClose}
+        onAddToCart={onAddToCart}
       />
     </div>
   </div>

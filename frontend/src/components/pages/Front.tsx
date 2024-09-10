@@ -92,7 +92,13 @@ const Front: React.FC = () => {
         )}
 
         {view === "recipes" && <Recipes onAddToCart={handleAddToCart} />}
-        {view === "calendar" && <MealCalendar cart={cart} setCart={setCart} />}
+        {view === "calendar" && (
+          <MealCalendar
+            cart={cart}
+            setCart={setCart}
+            onAddToCart={handleAddToCart}
+          />
+        )}
         {view === "shopping" && (
           <Shopping
             lists={shoppingLists}
