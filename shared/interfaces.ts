@@ -74,6 +74,8 @@ export type ShoppingListProps = {
 //     ‘PERSONAL_CARE’,
 //     ‘MISC’,
 // ] as const
+
+
 // export const UNITS = [
 //     ‘GRAMS’,
 //     ‘KILOGRAMS’,

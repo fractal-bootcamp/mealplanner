@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import ShoppingOrderPopup from "./ShoppingOrderPopup";
 
-// Define RecipeIngredient type if not already defined
 type Ingredient = {
   ingredient: {
     name: string;
@@ -12,32 +12,35 @@ type Ingredient = {
 };
 
 type Cart = {
-  recipeIngredients: RecipeIngredient[];
+  recipeIngredients: Ingredient[];
 };
 
-type ShoppingLists = {
-  [key: string]: Ingredient[];
-};
-
-type ShoppingProps = {
-  lists: ShoppingLists;
+type ShoppingOrderProps = {
   cart: Cart;
-  setCart: React.Dispatch<React.SetStateAction<Cart>>;
+  onPlaceOrder: () => void;
 };
 
-const ShoppingOrder: React.FC<Cart> = ({ cart }) => {
+const ShoppingOrder: React.FC<ShoppingOrderProps> = ({
+  cart,
+  onPlaceOrder,
+}) => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handlePlaceOrder = () => {
+    setShowPopup(true);
+    onPlaceOrder();
+  };
+
   return (
     <div className="font-mono">
-      <div>
-        <h2> your order: </h2>
-      </div>
+      <h2 className="text-2xl font-bold mb-4">Your Order</h2>
       <div>
         <ul>
-          {cart.length > 0 ? (
-            cart.map((item, index) => (
-              <li key={index}>
-                <h3>{item.ingredient.name} x</h3>
-                <h3>{item.ingredient.category}s</h3>
+          {cart.recipeIngredients.length > 0 ? (
+            cart.recipeIngredients.map((item, index) => (
+              <li key={index} className="mb-2">
+                <h3>{item.ingredient.name}</h3>
+                <h3>{item.ingredient.category}</h3>
                 <h3>
                   {item.amount} {item.unit}
                 </h3>
@@ -48,6 +51,15 @@ const ShoppingOrder: React.FC<Cart> = ({ cart }) => {
           )}
         </ul>
       </div>
+      <button
+        onClick={handlePlaceOrder}
+        className="mt-4 bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+      >
+        Place Order
+      </button>
+      {showPopup && (
+        <ShoppingOrderPopup onClose={() => setShowPopup(false)} cart={cart} />
+      )}
     </div>
   );
 };

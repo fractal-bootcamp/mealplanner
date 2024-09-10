@@ -5,6 +5,8 @@ import shoppingIcon from "../../assets/shoppingIcon.png";
 import Lists from "../compound/Shopping/Lists";
 import FinalListCreator from "../compound/Shopping/FinalListCreator";
 import ShoppingOrder from "../compound/Shopping/ShoppingOrder";
+import ShoppingOrderPopup from "../compound/Shopping/ShoppingOrderPopup";
+
 import { LucideSquareArrowDownRight, ShoppingCartIcon } from "lucide-react";
 
 // Define the type for lists if not already defined
@@ -34,6 +36,7 @@ type ShoppingProps = {
 
 const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
   const [view, setView] = useState("lists");
+  const [showOrderPopup, setShowOrderPopup] = useState(false);
 
   // Determine the icon based on the current view
   const getIconSrc = () => {
@@ -51,6 +54,11 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
 
   const handleOnView = (view: string) => {
     setView(view);
+  };
+
+  const handlePlaceOrder = () => {
+    console.log("Placing order...");
+    setShowOrderPopup(true);
   };
 
   return (
@@ -89,12 +97,11 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
               new list
             </button>
           </div>
-
           {/* Bottom row of buttons */}
           <div className="flex space-x-4">
             <button
               className="flex flex-col justify-center items-center py-4 font-mono font-semibold text-md bg-red-500 text-white rounded-full border-8 border-b-red-800 border-l-red-950"
-              onClick={() => handleOnView("place a shopping order")}
+              onClick={handlePlaceOrder}
             >
               <ShoppingCartIcon />
               place your order
@@ -110,8 +117,18 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
           {view === "create unified list" && (
             <FinalListCreator setCart={setCart} cart={cart} />
           )}
-          {view === "place a shopping order" && <ShoppingOrder cart={cart} />}
+          {view === "place a shopping order" && (
+            <ShoppingOrder cart={cart} onPlaceOrder={handlePlaceOrder} />
+          )}
         </div>
+
+        {/* Render the ShoppingOrderPopup when showOrderPopup is true */}
+        {showOrderPopup && (
+          <ShoppingOrderPopup
+            onClose={() => setShowOrderPopup(false)}
+            cart={cart}
+          />
+        )}
       </div>
     </div>
   );

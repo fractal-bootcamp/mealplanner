@@ -109,19 +109,20 @@ const DayView: React.FC<DayViewProps> = ({
   setCart,
   date,
 }) => (
-  <div className="DayViewContainer">
-    <div className="DayViewHeader">
-      <button className="CloseButton" onClick={onClose}>
-        Close
-      </button>
+  <div className="DayViewWrapper">
+    <button className="CloseButton" onClick={onClose}>
+      X
+    </button>
+    <div className="DayViewContainer">
+      {/* <h2 className="DayViewDate">{date.toDateString()}</h2> */}
+      <DayComponent
+        day={day}
+        cart={cart}
+        setCart={setCart}
+        date={date}
+        onClose={onClose}
+      />
     </div>
-    <DayComponent
-      day={day}
-      cart={cart}
-      setCart={setCart}
-      date={date}
-      onClose={onClose}
-    />
   </div>
 );
 

@@ -75,18 +75,10 @@ const Lists: React.FC<ListsProps> = ({ lists, cart, setCart }) => {
 
   // Function to add all items from a list to the cart without notes
   const addToCart = (list: Ingredient[]) => {
-    // Filter out the notes and add to cart
     const itemsWithoutNotes = list.map(({ notes, ...item }) => item);
-    setCart((prevCart) => {
-      // Ensure prevCart is an array before spreading it
-      const updatedCart = [
-        ...(Array.isArray(prevCart) ? prevCart : []),
-        ...itemsWithoutNotes,
-      ];
-      // Log updated cart state
-      console.log("Cart is:", updatedCart);
-      return updatedCart;
-    });
+    setCart((prevCart) => ({
+      recipeIngredients: [...prevCart.recipeIngredients, ...itemsWithoutNotes],
+    }));
   };
 
   // Optional: If you need to perform actions when cart changes

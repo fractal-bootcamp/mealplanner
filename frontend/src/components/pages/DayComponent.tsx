@@ -54,7 +54,6 @@ export interface Day {
 export interface Cart {
   recipeIngredients: RecipeIngredient[];
 }
-
 const DayComponent = ({
   day,
   date,
@@ -73,12 +72,12 @@ const DayComponent = ({
       <div className="relative">
         <h2 className="text-2xl font-bold mb-4">
           {date.toDateString()}
-          <button
+          {/* <button
             onClick={onClose}
             className="absolute top-2 right-2 p-2 bg-red-500 text-white rounded-full border-2 border-red-800"
           >
             ✕
-          </button>
+          </button> */}
         </h2>
         {day.Meals.map((meal) => (
           <MealComponent
@@ -155,7 +154,7 @@ const RecipeIngredients = ({
 }: {
   recipe: Recipe;
   cart: Cart;
-  setCart: (cart: Cart) => void;
+  setCart: React.Dispatch<React.SetStateAction<Cart>>;
 }) => {
   return (
     <div className="bg-green-500 p-4 rounded-lg mb-4">
@@ -169,12 +168,12 @@ const RecipeIngredients = ({
             </span>
             <button
               onClick={() => {
-                setCart({
+                setCart((prevCart) => ({
                   recipeIngredients: [
-                    ...cart.recipeIngredients,
+                    ...prevCart.recipeIngredients,
                     recipeIngredient,
                   ],
-                });
+                }));
               }}
               className="bg-cyan-100 text-black px-2 py-1 rounded-full"
               title="Add to cart"
@@ -202,4 +201,5 @@ const RecipeInstructions = ({ recipe }: { recipe: Recipe }) => {
     </div>
   );
 };
+
 export default DayComponent;

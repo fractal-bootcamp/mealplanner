@@ -42,6 +42,7 @@
     background-color: #f87171; /* Apply background color */
     font-weight: bold;
     color: white; /* Ensure text/icon is readable */
+
     border-radius: 25%;
     font-weight: bold;
     width: 40px;
@@ -136,6 +137,8 @@ h2 {
 
 .CloseButton {
     background-color: #f87171; /* Red color for close button */
+    justify-content: flex-end;
+    font-weight: bold;
     color: white;
     border: none;
     border-radius: 0.25rem;
@@ -164,52 +167,14 @@ h2 {
     }
 }
 
-/* MealCalendar.css */
-
-.day-container {
-    font-family: monospace;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 49, 87, 0.1); /* Subtle shadow */
-    max-width: 800px; /* Set a max-width for the calendar */
-    margin: 0 auto; /* Center horizontally */
-    position: relative; /* Ensure that child elements can be absolutely positioned */
-  }
-  
-  .title-with-button {
+.DayViewWrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .close-button {
-    background-color: #f87171; /* Red color for close button */
-    color: white;
-    border: none;
-    border-radius: 0.25rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-size: 1.25rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%) translateY(-50%); /* Adjust button position */
-  }
-  
-  .close-button:hover {
-    background-color: #ef4444; /* Darker red on hover */
-  }
-  
-  /* Optional: style for MealComponent */
-  .meal-container {
-    background-color: #f8d7da; /* Example color */
+    flex-direction: column;
+    align-items: flex-end;
     padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Add other styles as necessary */
-  
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
