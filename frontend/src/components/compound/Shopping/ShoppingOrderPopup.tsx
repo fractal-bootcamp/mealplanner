@@ -6,7 +6,6 @@ type Ingredient = {
     name: string;
     category: string;
   };
-  notes: string;
   amount: number;
   unit: string;
 };
@@ -24,14 +23,30 @@ const ShoppingOrderPopup: React.FC<ShoppingOrderPopupProps> = ({
   onClose,
   cart,
 }) => {
+  const groupedIngredients = cart.recipeIngredients.reduce(
+    (acc, item) => {
+      const category = item.ingredient.category || "Uncategorized";
+      if (!acc[category]) {
+        acc[category] = [];
+      }
+      acc[category].push(item);
+      return acc;
+    },
+    {} as Record<string, Ingredient[]>
+  );
+
+  const sortedCategories = Object.keys(groupedIngredients).sort();
+
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-6 rounded-lg max-w-md w-full">
+    <div className="fixed inset-0 bg-green-900 bg-opacity-50 flex items-center justify-center z-50 font-mono">
+      <div className="p-6 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto bg-blue-100">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold">Your Order</h2>
+          <h2 className="text-2xl font-bold text-blue-800">
+            your shopping list
+          </h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700"
+            className=" bg-red-400 text-white font-bold hover:bg-red-500"
           >
             <XIcon size={24} />
           </button>
@@ -39,22 +54,24 @@ const ShoppingOrderPopup: React.FC<ShoppingOrderPopupProps> = ({
         <div className="mb-4">
           <ShoppingCartIcon size={48} className="text-green-500 mx-auto" />
         </div>
-        <div className="max-h-96 overflow-y-auto">
-          {cart.recipeIngredients.length > 0 ? (
-            cart.recipeIngredients.map((item, index) => (
-              <div key={index} className="mb-2 p-2 bg-gray-100 rounded">
-                <p>
-                  {item.ingredient.name} - {item.amount} {item.unit}
-                </p>
-                <p className="text-sm text-gray-600">
-                  Category: {item.ingredient.category}
-                </p>
-              </div>
-            ))
-          ) : (
-            <p className="text-center text-gray-500">Your cart is empty</p>
-          )}
-        </div>
+        {sortedCategories.length > 0 ? (
+          sortedCategories.map((category) => (
+            <div key={category} className="mb-4">
+              <h3 className="text-lg font-semibold mb-2">{category}</h3>
+              <ul className="list-disc pl-5">
+                {groupedIngredients[category].map((item, index) => (
+                  <li key={index} className="mb-1">
+                    {item.ingredient.name} - {item.amount} {item.unit}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-gray-500">
+            Your shopping list is empty
+          </p>
+        )}
         <button
           onClick={onClose}
           className="mt-4 w-full bg-green-500 text-white py-2 rounded hover:bg-green-600"

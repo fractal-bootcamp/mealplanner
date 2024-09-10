@@ -34,7 +34,16 @@ const Front: React.FC = () => {
 
   const handleAddToCart = (ingredient: RecipeIngredient) => {
     setCart((prevCart) => ({
-      recipeIngredients: [...prevCart.recipeIngredients, ingredient],
+      recipeIngredients: [
+        ...prevCart.recipeIngredients,
+        {
+          ...ingredient,
+          ingredient: {
+            ...ingredient.ingredient,
+            category: ingredient.ingredient.category || "Uncategorized",
+          },
+        },
+      ],
     }));
   };
 
