@@ -1,5 +1,5 @@
-import React from "react";
-import { XIcon, ShoppingCartIcon } from "lucide-react";
+import React, { useMemo } from "react";
+import { XIcon } from "lucide-react";
 
 type Ingredient = {
   ingredient: {
@@ -16,79 +16,73 @@ type Cart = {
 
 interface ShoppingOrderPopupProps {
   onClose: () => void;
-  onPlaceOrder: () => void;
   cart: Cart;
+  onPlaceOrder: () => void;
 }
 
 const ShoppingOrderPopup: React.FC<ShoppingOrderPopupProps> = ({
   onClose,
-  onPlaceOrder,
   cart,
+  onPlaceOrder,
 }) => {
-  const groupedIngredients = cart.recipeIngredients.reduce(
-    (acc, item) => {
-      const category = item.ingredient.category || "Uncategorized";
-      if (!acc[category]) {
-        acc[category] = [];
-      }
-      acc[category].push(item);
-      return acc;
-    },
-    {} as Record<string, Ingredient[]>
-  );
-
-  const sortedCategories = Object.keys(groupedIngredients).sort();
-
   const handlePlaceOrder = () => {
     onPlaceOrder();
     onClose();
   };
 
+  const organizedIngredients = useMemo(() => {
+    const categorized: Record<string, Ingredient[]> = {};
+    cart.recipeIngredients.forEach((item) => {
+      const category = item.ingredient.category || "Uncategorized";
+      if (!categorized[category]) {
+        categorized[category] = [];
+      }
+      const existingItem = categorized[category].find(
+        (i) =>
+          i.ingredient.name === item.ingredient.name && i.unit === item.unit
+      );
+      if (existingItem) {
+        existingItem.amount += item.amount;
+      } else {
+        categorized[category].push({ ...item });
+      }
+    });
+    return categorized;
+  }, [cart.recipeIngredients]);
+
   return (
-    <div className="fixed inset-0 bg-green-900 bg-opacity-50 flex items-center justify-center z-50 font-mono">
-      <div className="p-6 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto bg-blue-100">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 font-mono">
+      <div className="bg-green-100 rounded-lg shadow-lg p-6 max-w-md w-full max-h-[80vh] overflow-y-auto">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold text-blue-800">your cart</h2>
+          <h3 className="text-lg font-semibold">Your Shopping Order</h3>
           <button
             onClick={onClose}
-            className="bg-red-400 text-white font-bold hover:bg-red-500"
+            className="text-white hover:text-gray-700 hover:bg-red-600 bg-red-400"
           >
-            <XIcon size={24} />
+            <XIcon size={20} />
           </button>
         </div>
         <div className="mb-4">
-          <ShoppingCartIcon size={48} className="text-green-500 mx-auto" />
-        </div>
-        {sortedCategories.length > 0 ? (
-          sortedCategories.map((category) => (
+          {Object.entries(organizedIngredients).map(([category, items]) => (
             <div key={category} className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">{category}</h3>
+              <h4 className="font-bold text-lg mb-2">{category}</h4>
               <ul className="list-disc pl-5">
-                {groupedIngredients[category].map((item, index) => (
-                  <li key={index} className="mb-1">
-                    {item.ingredient.name} - {item.amount} {item.unit}
+                {items.map((item, index) => (
+                  <li key={index} className="mb-2">
+                    <span className="font-medium">{item.ingredient.name}</span>{" "}
+                    - {item.amount} {item.unit}
                   </li>
                 ))}
               </ul>
             </div>
-          ))
-        ) : (
-          <p className="text-center text-gray-500">
-            Your shopping list is empty
-          </p>
-        )}
-        <div className="mt-4 flex justify-between">
+          ))}
+        </div>
+        <div className="flex justify-end mt-6">
           <button
             onClick={handlePlaceOrder}
-            className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 mr-2"
+            className="bg-red-400 text-white px-4 py-2 rounded-lg hover:bg-red-700"
           >
-            place order
-          </button>
-          <button
-            onClick={onClose}
-            className="w-full bg-red-400 text-white py-2 rounded hover:bg-red-500 ml-2"
-          >
-            close
+            Place Order
           </button>
         </div>
       </div>

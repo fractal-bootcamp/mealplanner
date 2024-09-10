@@ -13,24 +13,15 @@ const PlaceOrderPopup: React.FC<PlaceOrderPopupProps> = ({ onClose }) => {
           <h3 className="text-lg font-semibold">Place Your Order</h3>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700"
+            className=" bg-red-400 text-white hover:bg-red-600"
           >
             <XIcon size={20} />
           </button>
         </div>
         <div className="text-center py-4">
-          <p className="text-xl font-bold">
-            INSERT YOUR SHOPPING API HERE &lt;3
-          </p>
+          <p className="text-xl font-bold">insert shopping API here &lt;3</p>
         </div>
-        <div className="flex justify-end mt-6">
-          <button
-            onClick={onClose}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-          >
-            Close
-          </button>
-        </div>
+        <div className="flex justify-end mt-6"></div>
       </div>
     </div>
   );

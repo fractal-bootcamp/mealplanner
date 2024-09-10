@@ -5,11 +5,10 @@ import shoppingIcon from "../../assets/shoppingIcon.png";
 import Lists from "../compound/Shopping/Lists";
 import FinalListCreator from "../compound/Shopping/FinalListCreator";
 import ShoppingOrderPopup from "../compound/Shopping/ShoppingOrderPopup";
-import PlaceOrderPopup from "../base/PlaceOrderPopup";
+import PlaceOrderPopup from "../../components/base/PlaceOrderPopup";
 
-import { LucideSquareArrowDownRight, ShoppingCartIcon } from "lucide-react";
+import { ShoppingCartIcon } from "lucide-react";
 
-// Define the type for lists if not already defined
 type Ingredient = {
   ingredient: {
     name: string;
@@ -21,7 +20,7 @@ type Ingredient = {
 };
 
 type Cart = {
-  recipeIngredients: RecipeIngredient[];
+  recipeIngredients: Omit<Ingredient, "notes">[];
 };
 
 type ShoppingLists = {
@@ -39,17 +38,14 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
   const [showOrderPopup, setShowOrderPopup] = useState(false);
   const [showPlaceOrderPopup, setShowPlaceOrderPopup] = useState(false);
 
-  // Determine the icon based on the current view
   const getIconSrc = () => {
     switch (view) {
       case "lists":
         return seeAllList;
       case "create unified list":
         return createNewList;
-      case "place a shopping order":
-        return shoppingIcon;
       default:
-        return seeAllList; // Fallback icon
+        return shoppingIcon;
     }
   };
 
@@ -57,31 +53,17 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
     setView(view);
   };
 
-  // const handlePlaceOrder = () => {
-  //   console.log("Placing order...");
-  //   setShowOrderPopup(true);
-  // };
-
-  // const handleGoToCart = () => {
-  //   setView("place a shopping order");
-  //   // Add any additional logic for navigating to the cart view
-  // };
-
-  const handleGoToCart = useCallback(() => {
-    setView("place a shopping order");
-  }, []);
-
   const handleShowOrderPopup = useCallback(() => {
     setShowOrderPopup(true);
   }, []);
 
   const handlePlaceOrder = useCallback(() => {
     setShowPlaceOrderPopup(true);
+    setShowOrderPopup(false);
   }, []);
 
   return (
-    <div className="fixed bg-sky-400 flex flex-col min-h-screen w-full max-w-screen-lg mx-auto ">
-      {/* Centered container */}
+    <div className="fixed bg-sky-400 flex flex-col min-h-screen w-full max-w-screen-lg mx-auto">
       <div className="flex flex-col items-center justify-center h-full relative">
         {/* Button Container */}
         <div className="flex flex-col items-center space-y-4">
@@ -151,8 +133,10 @@ const Shopping: React.FC<ShoppingProps> = ({ lists, cart, setCart }) => {
           <ShoppingOrderPopup
             onClose={() => setShowOrderPopup(false)}
             cart={cart}
+            onPlaceOrder={handlePlaceOrder}
           />
         )}
+
         {/* Render the PlaceOrderPopup when showPlaceOrderPopup is true */}
         {showPlaceOrderPopup && (
           <PlaceOrderPopup onClose={() => setShowPlaceOrderPopup(false)} />
